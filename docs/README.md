@@ -1,22 +1,34 @@
 ---
 pageLayout: home
-externalLinkIcon: false
+
 config:
-  -
-    type: hero
-    full: true
-    background: tint-plate
+  - type: banner
+    banner: https://api.pengzhanbo.cn/wallpaper/bing
+    bannerMask:
+      light: 0.1
+      dark: 0.3
     hero:
-      name: Theme Plume
-      tagline: VuePress Next Theme
-      text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
+      name: 鹏展博
+      tagline: Front End Developer
+      text: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
       actions:
         -
-          theme: brand
-          text: 博客
+          text: 我的博客
           link: /blog/
+          theme: brand
         -
+          text: Github
+          link: https://github.com/pengzhanbo
           theme: alt
-          text: Github →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
+
+  - type: custom
 ---
+
+<h2 style="text-align: center;margin: 32px 0 32px">开源项目</h2>
+
+<CardGrid>
+  <RepoCard repo="loxi-opensource/luna-swapping" />
+  <RepoCard repo="loxi-opensource/luna-headshot" />
+  <RepoCard repo="loxi-opensource/laravel-queue-example" />
+  <RepoCard repo="josiahcarlson/redis-in-action" />
+</CardGrid>
