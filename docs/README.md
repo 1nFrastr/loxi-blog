@@ -8,8 +8,8 @@ config:
       light: 0.1
       dark: 0.3
     hero:
-      name: 鹏展博
-      tagline: Front End Developer
+      name: 阿凯呵
+      tagline: 全栈开发 / 产品经理 / 数字游民 / 一人公司
       text: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
       actions:
         -
@@ -18,7 +18,7 @@ config:
           theme: brand
         -
           text: Github
-          link: https://github.com/pengzhanbo
+          link: https://github.com/1nFrastr
           theme: alt
 
   - type: custom

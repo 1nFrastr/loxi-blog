@@ -15,7 +15,7 @@ export default defineThemeConfig({
 
   profile: {
     avatar: 'https://theme-plume.vuejs.press/plume.png',
-    name: 'My Vuepress Site',
+    name: '阿凯呵',
     description: '',
     // circle: true,
     // location: '',
@@ -25,7 +25,7 @@ export default defineThemeConfig({
   navbar,
   notes,
   social: [
-    { icon: 'github', link: '/' },
+    { icon: 'github', link: 'https://github.com/1nFrastr' },
   ],
 
 })
