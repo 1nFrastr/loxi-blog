@@ -2,7 +2,8 @@
 pageLayout: home
 
 config:
-  - type: banner
+  - 
+    type: banner
     banner: https://api.pengzhanbo.cn/wallpaper/bing
     bannerMask:
       light: 0.1
@@ -20,8 +21,8 @@ config:
           text: Github
           link: https://github.com/1nFrastr
           theme: alt
-
-  - type: custom
+  - 
+    type: custom
 ---
 
 <h2 style="text-align: center;margin: 32px 0 32px">开源项目</h2>
