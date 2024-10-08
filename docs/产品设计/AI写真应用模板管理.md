@@ -47,6 +47,7 @@ permalink: /article/jxj0mwlt/
 
 ### 管理后台
 <table>
+<tbody>
 	<tr>
         <td width="20%">换脸测试</td>
         <td><img src="/image/jxj0mwlt/swap-test.png"/></td>
@@ -63,10 +64,12 @@ permalink: /article/jxj0mwlt/
         <td>作图任务</td>
         <td><img src="/image/jxj0mwlt/swap-task.png"/></td>
     </tr>
+</tbody>
 </table>
 
 ### 小程序
 <table>
+<tbody>
     <tr>
         <td><img src="/image/jxj0mwlt/show-1.jpg"/>
 <p align="center">AI写真盲盒</p>
@@ -94,11 +97,13 @@ permalink: /article/jxj0mwlt/
 <p align="center">电影定妆照</p>
 </td>
     </tr>
+</tbody>
 </table>
 
 ## 体验入口
 
 <table>
+<tbody>
     <tr>
         <td width="30%">
             <img src="/image/jxj0mwlt/qrcode.jpg" alt="小程序演示"/>
@@ -112,4 +117,5 @@ permalink: /article/jxj0mwlt/
             </p>
         </td>
     </tr>
+</tbody>
 </table>
