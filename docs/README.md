@@ -4,13 +4,13 @@ pageLayout: home
 config:
   - 
     type: banner
-    banner: https://api.pengzhanbo.cn/wallpaper/bing
+    banner: /banner.jpg
     bannerMask:
       light: 0.1
       dark: 0.3
     hero:
       name: 阿凯呵
-      tagline: 全栈开发 / 产品经理 / 数字游民 / 一人公司
+      tagline: 全栈开发 / 产品经理 / 数字游民
       text: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
       actions:
         -
