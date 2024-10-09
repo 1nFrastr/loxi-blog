@@ -1,5 +1,5 @@
 ---
-title: uniapp在低版本安卓UI样式显示错乱
+title: Uniapp在低版本安卓下的样式混乱：如何修复？
 createTime: 2024/10/09 02:01:14
 permalink: /article/r932ez77/
 tags:
