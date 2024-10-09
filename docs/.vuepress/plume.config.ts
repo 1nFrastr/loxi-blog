@@ -26,6 +26,7 @@ export default defineThemeConfig({
   notes,
   social: [
     { icon: 'github', link: 'https://github.com/1nFrastr' },
+    { icon: 'bilibili', link: 'https://space.bilibili.com/36022612' },
   ],
-
+  navbarSocialInclude: ['github', 'bilibili'],
 })
