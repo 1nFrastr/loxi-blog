@@ -1,5 +1,5 @@
 ---
-title: UI优化：一个小改动如何减少用户60%操作成本
+title: UI优化：一个小改动如何减少用户66%操作成本
 createTime: 2024/10/09 01:39:42
 permalink: /article/a2t8ke9p/
 tags:
