@@ -1,5 +1,5 @@
 ---
-title: 减少用户66%操作成本的下拉选择输入UI优化方案
+title: UI优化：一个小改动如何帮助用户节省60%操作成本
 createTime: 2024/10/09 01:39:42
 permalink: /article/a2t8ke9p/
 tags:
