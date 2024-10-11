@@ -21,7 +21,7 @@ tags:
 
 > **使用[分段控制器](https://element-plus.org/zh-CN/component/segmented.html)，而不是[下拉选择器](https://element-plus.org/zh-CN/component/select.html)，需要升级ElementPlus版本到2.7.0+**
 
-所有选项平铺显示，点击某个分段tab即可触发搜索。
+如图所示，所有选项平铺显示，点击某个分段tab立即触发搜索。
 
 <p algin="center">
 <img src="/image/a2t8ke9p/img_1.png" alt="效果图" width="60%">
