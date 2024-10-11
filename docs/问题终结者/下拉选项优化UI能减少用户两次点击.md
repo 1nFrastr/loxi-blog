@@ -6,12 +6,14 @@ tags:
     - ElementPlus
     - UI优化
 ---
-管理后台大多数以表格为主，顶部一般都是搜索筛选项目输入表单，有些时候某些字段仅有几个可选值。使用下拉选择器实现不容易让直观看到选项的内容，而且可选值不多的情况下使用下拉选择器，对于用户操作步骤是不够简化的。
+管理后台大多数以表格为主，顶部一般是包含多个筛选输入项的表单，有些时候某些字段仅有几个可选值。
+如果使用下拉选择器实现，用户是不能直观看到所有选项内容的，
+而且在可选值很少的情况下使用下拉选择器，用户的操作步骤是不够简化的。
 
-用户选择一个选项要经历以下3步
+比如用户选择一个选项要经历以下3步
 
 1. 点击下拉菜单，寻找到目标
-2. 点击目标选项，确认
+2. 点击目标选项，确认选择
 3. 点击搜索框搜索
 
 是否可以优化到一步？
@@ -19,7 +21,7 @@ tags:
 
 可以的！
 
-> **升级ElementPlus版本到2.7.0+，使用[ Segmented 分段控制器 ](https://element-plus.org/zh-CN/component/segmented.html)来替代[ Select 下拉选择器 ](https://element-plus.org/zh-CN/component/select.html)**
+> **使用[分段控制器](https://element-plus.org/zh-CN/component/segmented.html)，而不是[下拉选择器](https://element-plus.org/zh-CN/component/select.html)，需要升级ElementPlus版本到2.7.0+**
 
 所有选项平铺显示，点击某个分段tab即可触发搜索。
 
