@@ -17,7 +17,7 @@ export default defineThemeConfig({
     avatar: '/logo.jpg',
     name: '阿凯呵',
     description: '',
-    // circle: true,
+    circle: true,
     // location: '',
     // organization: '',
   },
