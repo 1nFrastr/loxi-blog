@@ -6,7 +6,7 @@ import { notes } from './notes'
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
-  logo: 'https://theme-plume.vuejs.press/plume.png',
+  logo: '/logo.jpg',
   // your git repo url
   docsRepo: '',
   docsDir: 'docs',
@@ -14,7 +14,7 @@ export default defineThemeConfig({
   appearance: true,
 
   profile: {
-    avatar: 'https://theme-plume.vuejs.press/plume.png',
+    avatar: '/logo.jpg',
     name: '阿凯呵',
     description: '',
     // circle: true,
