@@ -29,4 +29,8 @@ export default defineThemeConfig({
     { icon: 'bilibili', link: 'https://space.bilibili.com/36022612' },
   ],
   navbarSocialInclude: ['github', 'bilibili'],
+  footer: {
+    message: 'Power by <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
+    copyright: '© 2024-present 1nFrastr <a target="_blank" href="http://beian.miit.gov.cn/">粤ICP备2021066979号</a>',
+  }
 })
