@@ -29,7 +29,7 @@ config:
 
 <CardGrid>
   <RepoCard repo="loxi-opensource/luna-swapping" />
+  <RepoCard repo="1nFrastr/likeadmin_laravel" />
   <RepoCard repo="loxi-opensource/luna-headshot" />
-  <RepoCard repo="loxi-opensource/laravel-queue-example" />
   <RepoCard repo="josiahcarlson/redis-in-action" />
 </CardGrid>

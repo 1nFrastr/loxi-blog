@@ -5,7 +5,6 @@ tags:
   - 开源项目
   - 系统设计
 createTime: 2024/10/08 17:38:41
-sticky: 80
 permalink: /article/jxj0mwlt/
 ---
 大家可能听说过妙鸭相机和欧美市场的EPIK年鉴，这些都是基于AI换脸技术生成艺术写真照的应用。
