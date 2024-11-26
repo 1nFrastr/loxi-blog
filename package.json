@@ -12,7 +12,7 @@
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
-    "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "docs:build": "vuepress build docs --clean-cache --clean-temp && tar czf dist.tar.gz dist && explorer .",
     "docs:preview": "http-server docs/.vuepress/dist",
     "vp-update": "yarn dlx vp-update"
   },

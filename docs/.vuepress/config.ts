@@ -7,6 +7,7 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: '阿凯呵',
   description: '',
+  dest: 'dist',
 
   bundler: viteBundler(),
 
