@@ -28,8 +28,8 @@ config:
 <h2 style="text-align: center;margin: 32px 0 32px">开源项目</h2>
 
 <CardGrid>
-  <RepoCard repo="loxi-opensource/luna-swapping" />
+  <RepoCard repo="loxi-opensource/luna-lite-server" />
   <RepoCard repo="1nFrastr/likeadmin_laravel" />
-  <RepoCard repo="loxi-opensource/luna-headshot" />
+  <RepoCard repo="loxi-opensource/luna-swapping" />
   <RepoCard repo="josiahcarlson/redis-in-action" />
 </CardGrid>
