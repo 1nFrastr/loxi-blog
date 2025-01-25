@@ -1,6 +1,8 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
+import { baiduAnalyticsPlugin } from '@vuepress/plugin-baidu-analytics'
+
 
 export default defineUserConfig({
   base: '/',
@@ -10,6 +12,12 @@ export default defineUserConfig({
   dest: 'dist',
 
   bundler: viteBundler(),
+
+  plugins: [
+    baiduAnalyticsPlugin({
+      id: '19bfdea461908cd747594faa21540509'
+    }),
+  ],
 
   theme: plumeTheme({
     // 添加您的部署域名
