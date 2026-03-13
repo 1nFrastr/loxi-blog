@@ -25,7 +25,7 @@ config:
     type: custom
 ---
 
-<h2 style="text-align: center;margin: 32px 0 32px">开源项目</h2>
+<h2 style="text-align: center;margin: 32px 0 32px">一些过时的开源项目</h2>
 
 <CardGrid>
   <RepoCard repo="1nFrastr/julebu-nextjs-clone-core" />
