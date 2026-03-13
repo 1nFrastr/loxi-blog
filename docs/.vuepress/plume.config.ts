@@ -52,6 +52,6 @@ export default defineThemeConfig({
   navbarSocialInclude: ['github', 'x'],
   footer: {
     message: 'Power by <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
-    copyright: '© 2026-present 1nFrastr <a target="_blank" href="http://beian.miit.gov.cn/">粤ICP备2021066979号</a>',
+    copyright: '© 2024-present 1nFrastr <a target="_blank" href="http://beian.miit.gov.cn/">粤ICP备2021066979号</a>',
   }
 })
