@@ -24,6 +24,27 @@ export default defineThemeConfig({
 
   navbar,
   notes,
+
+  // 博客集合：生成 /blog/、/blog/categories/、/blog/archives/、/blog/tags/
+  collections: [
+    {
+      type: 'post',
+      dir: 'blog',
+      title: '博客',
+      postList: true,
+      link: '/blog/',
+      categories: true,
+      categoriesLink: '/blog/categories/',
+      categoriesText: '分类',
+      archives: true,
+      archivesLink: '/blog/archives/',
+      archivesText: '归档',
+      tags: true,
+      tagsLink: '/blog/tags/',
+      tagsText: '标签',
+    },
+  ],
+
   social: [
     { icon: 'github', link: 'https://github.com/1nFrastr' },
     { icon: 'bilibili', link: 'https://space.bilibili.com/36022612' },
