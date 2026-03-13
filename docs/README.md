@@ -33,3 +33,5 @@ config:
   <RepoCard repo="1nFrastr/likeadmin_laravel" />
   <RepoCard repo="loxi-opensource/luna-swapping" />
 </CardGrid>
+
+<p style="text-align: center; margin-top: 20px; color: #666;">Powered by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a></p>
