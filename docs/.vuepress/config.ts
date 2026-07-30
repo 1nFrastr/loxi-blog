@@ -41,7 +41,7 @@ export default defineUserConfig({
       //   include: true,
       //   chart: true,
       //   echarts: true,
-      //   mermaid: true,
+        mermaid: true,
       //   flowchart: true,
       },
 
