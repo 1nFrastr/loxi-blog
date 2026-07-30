@@ -1,9 +1,7 @@
 ---
-title: Serverless 下的声明式资源调和：Lease、CAS 与 Reconciler
+title: BabyLovable：多个请求抢沙盒，为什么声明式调和比加锁靠谱
 tags:
   - BabyLovable
-  - Serverless
-  - 系统设计
 createTime: 2026/07/30 21:00:00
 permalink: /article/7b623071/
 ---
@@ -396,4 +394,4 @@ Lease、CAS、Reconciler 的分工：
 
 这套方案的重点不是用了一个更复杂的锁。真正的变化是，我们把系统从命令式操作改成了声明式收敛：调用方只负责表达意图；租约负责选出当前的调和器；版本检查负责保护状态一致性；调和器负责观察、行动、再观察，直到工作区进入目标状态。
 
-相关阅读：[实时状态同步设计](/article/8703d140/)、[Workflow Agent 设计](/article/78a52faa/)。
+相关阅读：[会话状态同步，前端只订阅一份读模型](/article/8703d140/)、[Coding Agent 不该绑在一次 HTTP 请求上](/article/78a52faa/)。

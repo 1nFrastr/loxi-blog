@@ -1,9 +1,7 @@
 ---
-title: Serverless 上的可恢复 Coding Agent：WorkflowAgent 设计
+title: BabyLovable：Coding Agent 不该绑在一次 HTTP 请求上
 tags:
   - BabyLovable
-  - Agent
-  - Workflow
 createTime: 2026/07/30 21:20:00
 permalink: /article/78a52faa/
 ---
@@ -120,7 +118,7 @@ Agent 声明需要 preview-ready
 
 这样可以避免多个 Agent 工具调用、后台 warm、用户 Restart 同时操作沙盒时产生重复创建和状态覆盖。
 
-详见：[声明式资源调和设计](/article/7b623071/)
+详见：[多个请求抢沙盒，为什么声明式调和比加锁靠谱](/article/7b623071/)
 
 ## 验证闭环
 
@@ -206,4 +204,4 @@ src/cli/
 
 > Agent 不只是一次聊天请求，而是一条可以持续执行、恢复、观察和验证的云端工作流。
 
-相关阅读：[声明式资源调和](/article/7b623071/)、[实时状态同步](/article/8703d140/)。
+相关阅读：[多个请求抢沙盒，为什么声明式调和比加锁靠谱](/article/7b623071/)、[会话状态同步，前端只订阅一份读模型](/article/8703d140/)。

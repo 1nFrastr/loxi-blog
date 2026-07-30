@@ -1,9 +1,7 @@
 ---
-title: 云端 Coding Agent 的实时状态同步：统一读模型与 Version 防乱序
+title: BabyLovable：会话状态同步，前端只订阅一份读模型
 tags:
   - BabyLovable
-  - Realtime
-  - 系统设计
 createTime: 2026/07/30 21:10:00
 permalink: /article/8703d140/
 ---
@@ -238,4 +236,4 @@ publishRuntimeUpdate
 
 > 后端负责生成一致的运行态视图，前端只负责展示最新版本。
 
-相关阅读：[声明式资源调和](/article/7b623071/)、[Workflow Agent 设计](/article/78a52faa/)。
+相关阅读：[多个请求抢沙盒，为什么声明式调和比加锁靠谱](/article/7b623071/)、[Coding Agent 不该绑在一次 HTTP 请求上](/article/78a52faa/)。
