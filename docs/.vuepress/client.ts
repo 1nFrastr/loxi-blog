@@ -1,10 +1,10 @@
 // @ts-ignore
 import { defineClientConfig } from 'vuepress/client'
-// @ts-ignore
-import RepoCard from 'vuepress-theme-plume/features/RepoCard.vue'
+import RepoCard from './theme/components/RepoCard.vue'
 
 export default defineClientConfig({
   enhance({ app }) {
+    // 使用构建时静态数据的 RepoCard，避免依赖运行时第三方 GitHub 代理
     app.component('RepoCard', RepoCard)
   },
 })

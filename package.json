@@ -10,9 +10,10 @@
     "node": "^18.20.0 || >=20.0.0"
   },
   "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:dev-clean": "vuepress dev docs --clean-cache --clean-temp",
-    "docs:build": "vuepress build docs --clean-cache --clean-temp",
+    "repo:fetch": "node scripts/fetch-repo-data.mjs",
+    "docs:dev": "yarn repo:fetch && vuepress dev docs",
+    "docs:dev-clean": "yarn repo:fetch && vuepress dev docs --clean-cache --clean-temp",
+    "docs:build": "yarn repo:fetch && vuepress build docs --clean-cache --clean-temp",
     "docs:preview": "http-server docs/.vuepress/dist",
     "vp-update": "yarn dlx vp-update"
   },
