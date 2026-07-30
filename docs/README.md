@@ -25,11 +25,11 @@ config:
     type: custom
 ---
 
-<h2 style="text-align: center;margin: 32px 0 32px">一些过时的开源项目</h2>
+<h2 style="text-align: center;margin: 32px 0 32px">开源项目</h2>
 
 <CardGrid>
-  <RepoCard repo="1nFrastr/julebu-nextjs-clone-core" />
-  <RepoCard repo="loxi-opensource/luna-lite-server" />
-  <RepoCard repo="1nFrastr/likeadmin_laravel" />
+  <RepoCard repo="1nFrastr/baby-lovable" />
+  <RepoCard repo="1nFrastr/roadmate" />
+  <RepoCard repo="1nFrastr/super-words" />
   <RepoCard repo="loxi-opensource/luna-swapping" />
 </CardGrid>
