@@ -1,5 +1,5 @@
 ---
-title: Roadmate：三阶段分析社交媒体兴趣标签
+title: Roadmate：三阶段流水线提取社媒兴趣标签
 createTime: 2026/07/30 21:00:00
 permalink: /article/8710aee9/
 ---
