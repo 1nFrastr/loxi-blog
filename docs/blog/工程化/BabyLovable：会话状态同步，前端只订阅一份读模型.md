@@ -1,8 +1,6 @@
 ---
 title: BabyLovable：会话状态同步，前端只订阅一份读模型
-tags:
-  - BabyLovable
-createTime: 2026/07/30 21:10:00
+createTime: 2026/07/30 21:20:00
 permalink: /article/8703d140/
 ---
 

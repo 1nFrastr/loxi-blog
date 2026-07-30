@@ -1,8 +1,6 @@
 ---
-title: Roadmate：怎么从发帖里抽出见面就能聊的兴趣
-tags:
-  - Roadmate
-createTime: 2026/07/30 21:40:00
+title: Roadmate：三阶段流水线抽破冰兴趣——预处理、时间线合并、标签归因
+createTime: 2026/07/30 21:00:00
 permalink: /article/8710aee9/
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: BabyLovable：多个请求抢沙盒，为什么声明式调和比加锁靠谱
-tags:
-  - BabyLovable
-createTime: 2026/07/30 21:00:00
+createTime: 2026/07/30 21:40:00
 permalink: /article/7b623071/
 ---
 
