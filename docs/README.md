@@ -3,26 +3,19 @@ pageLayout: home
 
 config:
   -
-    type: hero
-    hero:
-      name: 阿凯呵
-      tagline: Agent 全栈开发
-      text: 近几年深受影响的作品是《士兵突击》《我的团长我的团》
-      actions:
-        -
-          text: 博客
-          link: /blog/
-          theme: brand
-        -
-          text: Github
-          link: https://github.com/1nFrastr
-          theme: alt
-  -
     type: custom
   -
     type: posts
     collection: blog
 ---
+
+<p style="text-align: center; margin: 48px 0 8px; font-size: 1.75rem; font-weight: 700;">阿凯呵</p>
+<p style="text-align: center; margin: 0 0 8px; color: var(--vp-c-text-2);">Agent 全栈开发</p>
+<p style="text-align: center; margin: 0 0 24px;">
+  <a href="/blog/">博客</a>
+  ·
+  <a href="https://github.com/1nFrastr" target="_blank" rel="noopener noreferrer">Github</a>
+</p>
 
 <h2 style="text-align: center;margin: 32px 0 32px">开源项目</h2>
 
