@@ -13,6 +13,11 @@ export default defineUserConfig({
   description: '',
   dest: 'dist',
 
+  head: [
+    ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' }],
+  ],
+
   bundler: viteBundler(),
 
   alias: {
