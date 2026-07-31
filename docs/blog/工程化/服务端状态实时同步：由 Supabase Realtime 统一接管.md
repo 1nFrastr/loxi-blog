@@ -1,26 +1,15 @@
 ---
-title: BabyLovable：会话状态同步，前端只订阅一份读模型
+title: 服务端状态同步：由 Supabase Realtime 统一接管
 createTime: 2026/07/30 21:20:00
 permalink: /article/8703d140/
+sticky: 1
 ---
-
-Coding Agent 的会话页上，Preview、Agent Run、Browser Test 会同时跳动。如果前端各自轮询、自己拼状态，多 tab 和乱序包很容易把 UI 和服务端真实状态拆开。
-
-[BabyLovable](https://github.com/1nFrastr/baby-lovable) 的做法是：服务端维护一份统一的运行态读模型，前端只订阅这份投影。写路径继续由各领域模块更新真相；推给 UI 的永远是整份、带 version 的视图。
 
 > Github 仓库
 
 <CardGrid>
   <RepoCard repo="1nFrastr/baby-lovable" />
 </CardGrid>
-
-Demo：[baby-lovable.vercel.app](https://baby-lovable.vercel.app/)
-
-## 一句话概括
-
-> 沙盒和任务状态的真相在服务端，UI 只订阅一份投影后的运行态视图。
-
-## 要解决的问题
 
 在一个会话里，很多状态都会频繁变化：
 
@@ -72,12 +61,11 @@ publishRuntimeUpdate(...)
 - `run`
 - `preview`
 - `appTest`
-- `sourceControl`（Freestyle 仓库准备 / 轮次同步状态；聊天输入框仍只看 `run`）
 - `version`
 
 其中 `version` 是单调递增的版本号。每次 UI 相关状态发生变化，服务端都会生成一份新的 projection，并递增 `version`。
 
-前端收到 projection 后，不做局部 merge，而是整份替换。如果收到的 `version` 比当前版本旧，就直接丢弃。这样可以避免网络乱序导致旧状态覆盖新状态。
+前端收到 projection 投影后，不做局部 merge，而是整份替换。如果收到的 `version` 比当前版本旧，就直接丢弃。这样可以避免网络乱序导致旧状态覆盖新状态。
 
 ## 输送层
 
@@ -171,7 +159,7 @@ void publishPreviewFromSnapshot(saved, ownerId);
 
 ### 不再引入第二条状态总线
 
-没有额外引入 Ably、Redis Pub/Sub 或其他消息系统作为第二条 UI 状态通道。状态已经落在 Postgres 中，Realtime 可以直接推送表变化。再加一层状态总线会增加一致性成本。
+没有额外引入 Ably、Redis Pub/Sub 或其他消息系统作为第二条 UI 状态通道。状态已经落在 Postgres 中，Supabase Realtime 可以直接推送表变化。再加一层状态总线会增加一致性成本。
 
 ### 不把 chat token 混进运行态通道
 
@@ -230,8 +218,6 @@ publishRuntimeUpdate
 - Lease 续租等内部协调变化不会触发 UI 刷新
 - Chat token 仍然走 Workflow SSE，不混入运行态通道
 
-最终效果是：
+最终效果是：后端负责生成一致的运行态视图，前端只负责展示最新版本。
 
-> 后端负责生成一致的运行态视图，前端只负责展示最新版本。
-
-相关阅读：[多个请求抢沙盒，为什么声明式调和比加锁靠谱](/article/7b623071/)。
+相关阅读：[沙盒服务状态治理：一个类似 K8s 的声明式调度机制](/article/7b623071/)。

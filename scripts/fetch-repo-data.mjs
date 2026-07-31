@@ -141,20 +141,34 @@ async function loadExisting() {
 }
 
 async function main() {
+  const skipIfCached = process.argv.includes('--skip-if-cached')
   const repos = await collectRepos()
   if (!repos.length) {
     console.log('[fetch-repo-data] no RepoCard found')
     return
   }
 
-  console.log(`[fetch-repo-data] found ${repos.length} repos`)
+  const existing = await loadExisting()
+  const cached = existing.repos || {}
+  const missingCached = repos.filter((r) => !cached[r]?.name)
+
+  if (skipIfCached && !missingCached.length) {
+    console.log(
+      `[fetch-repo-data] skip fetch (${repos.length} repos cached, updatedAt=${existing.updatedAt || 'unknown'}); run yarn repo:fetch to refresh`,
+    )
+    return
+  }
+
+  const toFetch = skipIfCached ? missingCached : repos
+  console.log(
+    `[fetch-repo-data] found ${repos.length} repos, fetching ${toFetch.length}${skipIfCached ? ' missing' : ''}`,
+  )
   const languageColors = await fetchLanguageColors()
   const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || ''
-  const existing = await loadExisting()
-  const next = { ...existing.repos }
+  const next = { ...cached }
 
   let failed = 0
-  for (const fullName of repos) {
+  for (const fullName of toFetch) {
     try {
       next[fullName] = await fetchRepo(fullName, languageColors, token)
       console.log(`  ✓ ${fullName}`)

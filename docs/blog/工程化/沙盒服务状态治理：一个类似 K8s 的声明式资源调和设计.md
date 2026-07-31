@@ -1,20 +1,15 @@
 ---
-title: BabyLovable：多个请求抢沙盒，为什么声明式调和比加锁靠谱
+title: 沙盒服务状态治理：一个类似 K8s 的声明式调度机制
 createTime: 2026/07/30 21:40:00
 permalink: /article/7b623071/
+sticky: 2
 ---
-
-做云端 Coding Agent 时，最麻烦的往往不是「能不能生成代码」，而是：多个请求会同时围绕同一个工作区做决策——后台预热、Agent 要沙盒、用户连点 Restart——而每个请求看到的状态都可能已经过期。
-
-[BabyLovable](https://github.com/1nFrastr/baby-lovable) 是一个跑在 Serverless 上的多用户 Coding Agent。用户在浏览器里提需求，Agent 在远程沙盒里改代码、起 Preview、甚至自动开浏览器验收。本文整理它在沙盒调度上的核心设计：把命令式「现在去做什么」改成声明式「最终要什么状态」，再用 Lease 和 CAS 兜住并发。
 
 > Github 仓库
 
 <CardGrid>
   <RepoCard repo="1nFrastr/baby-lovable" />
 </CardGrid>
-
-Demo：[baby-lovable.vercel.app](https://baby-lovable.vercel.app/)
 
 ## 核心洞察
 
