@@ -2,11 +2,19 @@
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { projectVideos, type ProjectVideo } from '../../client/projects'
 
+const props = withDefaults(defineProps<{
+  /** 列数：侧栏默认 1，关于页可用 2 */
+  columns?: number
+}>(), {
+  columns: 1,
+})
+
 const projects = projectVideos
 const hoveredId = ref<string | null>(null)
 const activeId = ref<string | null>(null)
 const tileRefs = ref<Record<string, HTMLVideoElement | null>>({})
 const cinemaVideo = ref<HTMLVideoElement | null>(null)
+const columnCount = computed(() => Math.max(1, Number(props.columns) || 1))
 
 const activeIndex = computed(() =>
   activeId.value ? projects.findIndex(p => p.id === activeId.value) : -1,
@@ -114,7 +122,12 @@ watch(activeId, (id) => {
 </script>
 
 <template>
-  <section v-if="projects.length" class="video-wall" aria-label="项目演示">
+  <section
+    v-if="projects.length"
+    class="video-wall"
+    :class="`cols-${columnCount}`"
+    aria-label="项目演示"
+  >
     <button
       v-for="project in projects"
       :key="project.id"
@@ -221,6 +234,18 @@ watch(activeId, (id) => {
   margin: 0 0 16px;
   padding: 0;
   text-align: left;
+}
+
+.video-wall.cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 24px;
+}
+
+.video-wall.cols-2 .vw-title {
+  padding: 10px 12px 12px;
+  font-size: 13px;
 }
 
 .vw-row {
@@ -394,6 +419,11 @@ watch(activeId, (id) => {
 }
 
 @media (max-width: 768px) {
+  .video-wall.cols-2 {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
   .vw-nav {
     display: none;
   }
