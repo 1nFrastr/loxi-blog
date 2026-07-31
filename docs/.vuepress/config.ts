@@ -2,7 +2,9 @@ import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 import { baiduAnalyticsPlugin } from '@vuepress/plugin-baidu-analytics'
+import { getDirname, path } from 'vuepress/utils'
 
+const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   base: '/',
@@ -12,6 +14,10 @@ export default defineUserConfig({
   dest: 'dist',
 
   bundler: viteBundler(),
+
+  alias: {
+    '@theme/Posts/VPPostsAside.vue': path.resolve(__dirname, './theme/components/VPPostsAside.vue'),
+  },
 
   plugins: [
     baiduAnalyticsPlugin({
