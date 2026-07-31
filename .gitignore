@@ -3,6 +3,7 @@
 docs/.vuepress/.cache
 docs/.vuepress/.temp
 docs/.vuepress/dist
+docs/.vuepress/client/repo-data.json
 
 .DS_Store
 *.log
