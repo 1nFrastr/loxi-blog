@@ -9,7 +9,7 @@ const __dirname = getDirname(import.meta.url)
 export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
-  title: '阿凯呵',
+  title: '阿凯 Freddy',
   description: '',
   dest: 'dist',
 

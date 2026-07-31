@@ -15,7 +15,7 @@ export default defineThemeConfig({
 
   profile: {
     avatar: '/logo.jpg',
-    name: '阿凯呵',
+    name: '阿凯 Freddy',
     description: '',
     circle: true,
     // location: '',
