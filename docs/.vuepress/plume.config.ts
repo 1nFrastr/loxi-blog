@@ -1,14 +1,12 @@
 import { defineThemeConfig } from 'vuepress-theme-plume'
 import { navbar } from './navbar'
-import { notes } from './notes'
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
  */
 export default defineThemeConfig({
   logo: '/logo.jpg',
-  // your git repo url
-  docsRepo: '',
+  docsRepo: 'https://github.com/1nFrastr/loxi-blog',
   docsDir: 'docs',
 
   appearance: true,
@@ -16,14 +14,10 @@ export default defineThemeConfig({
   profile: {
     avatar: '/logo.jpg',
     name: '阿凯 Freddy',
-    description: '',
     circle: true,
-    // location: '',
-    // organization: '',
   },
 
   navbar,
-  notes,
 
   // 博客集合：生成 /blog/、/blog/categories/、/blog/archives/、/blog/tags/
   collections: [
@@ -42,6 +36,13 @@ export default defineThemeConfig({
       tags: true,
       tagsLink: '/blog/tags/',
       tagsText: '标签',
+    },
+    {
+      type: 'doc',
+      dir: 'about',
+      title: '关于',
+      link: '/about/',
+      sidebar: false,
     },
   ],
 

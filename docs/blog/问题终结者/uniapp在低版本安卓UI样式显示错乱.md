@@ -6,6 +6,7 @@ tags:
   - uniapp
   - 安卓
   - css
+description: 排查并修复 Uniapp 在低版本安卓 POS 机上的 UI 样式错乱问题。
 ---
 某客户聚合支付系统，商户收银app是支付系统的一个子应用，使用uniapp实现，可以同一套代码编译到微信小程序和安卓app。
 

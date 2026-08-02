@@ -3,6 +3,7 @@ title: 服务端状态同步：由 Supabase Realtime 统一接管
 createTime: 2026/07/30 21:20:00
 permalink: /article/8703d140/
 sticky: 1
+description: 用 Supabase Realtime 统一接管会话内频繁变化的服务端状态同步。
 ---
 
 > Github 仓库

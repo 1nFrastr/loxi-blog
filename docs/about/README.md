@@ -2,6 +2,7 @@
 title: 关于
 createTime: 2024/10/10 05:16:02
 permalink: /article/9zuwfov4/
+description: 阿凯 Freddy：全栈与 Agent 开发者，开源项目与个人简介。
 ---
 
 你好呀 👋 我叫阿凯 Freddy

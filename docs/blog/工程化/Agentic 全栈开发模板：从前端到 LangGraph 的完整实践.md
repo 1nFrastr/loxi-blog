@@ -2,6 +2,7 @@
 title: Agentic 全栈开发模板：从前端到 LangGraph 的完整实践
 createTime: 2025/10/11 00:44:16
 permalink: /article/52779tqm/
+description: 从前端交互到 LangGraph Agent 的可复用 Agentic 全栈开发模板实践。
 ---
 
 最初的想法是实现一个通用的 **Agentic 全栈开发模板**，目标是复刻类似 **Genspark** 的交互体验，包含开箱即用的前端组件、后端 Agent 示例等。这个项目希望能成为一个可扩展的、可复用的智能体开发起点。

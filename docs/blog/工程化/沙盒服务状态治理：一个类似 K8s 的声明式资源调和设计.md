@@ -3,6 +3,7 @@ title: 沙盒服务状态治理：一个类似 K8s 的声明式调度机制
 createTime: 2026/07/30 21:40:00
 permalink: /article/7b623071/
 sticky: 2
+description: 类似 K8s 的声明式资源调和：沙盒服务期望态与实际态的持续对齐设计。
 ---
 
 > Github 仓库

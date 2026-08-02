@@ -2,6 +2,7 @@
 title: Roadmate 概念产品：三阶段流水线提取社媒兴趣标签
 createTime: 2026/07/30 21:00:00
 permalink: /article/8710aee9/
+description: 用三阶段流水线从社媒内容提取可归因、可加权的具体兴趣标签，支撑破冰话题推荐。
 ---
 
 <video src="/video/roadmate-show2_compressed.mp4" controls playsinline style="width: 100%; border-radius: 8px;"></video>

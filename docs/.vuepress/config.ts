@@ -10,7 +10,7 @@ export default defineUserConfig({
   base: '/',
   lang: 'zh-CN',
   title: '阿凯 Freddy',
-  description: '',
+  description: '阿凯 Freddy 的技术博客：全栈开发、工程化与产品设计实践',
   dest: 'dist',
 
   head: [
@@ -31,67 +31,25 @@ export default defineUserConfig({
   ],
 
   theme: plumeTheme({
-    // 添加您的部署域名
-    // hostname: 'https://your_site_url',
+    hostname: 'https://freddyx.pages.dev',
+
+    markdown: {
+      mermaid: true,
+      pdf: true,
+    },
+
+    // @see https://theme-plume.vuejs.press/guide/features/changelog/
+    changelog: {
+      maxCount: 10,
+      repoUrl: 'https://github.com/1nFrastr/loxi-blog',
+    },
+
+    llmstxt: true,
 
     plugins: {
-      /**
-       * Shiki 代码高亮
-       * @see https://theme-plume.vuejs.press/config/plugins/code-highlight/
-       */
       shiki: {
         languages: ['shell', 'bash', 'typescript', 'javascript', 'php', 'vue'],
       },
-
-      /**
-       * markdown enhance
-       * @see https://theme-plume.vuejs.press/config/plugins/markdown-enhance/
-       */
-      markdownEnhance: {
-        demo: true,
-      //   include: true,
-      //   chart: true,
-      //   echarts: true,
-        mermaid: true,
-      //   flowchart: true,
-      },
-
-      /**
-       *  markdown power
-       * @see https://theme-plume.vuejs.press/config/plugin/markdown-power/
-       */
-      // markdownPower: {
-      //   pdf: true,
-      //   caniuse: true,
-      //   plot: true,
-      //   bilibili: true,
-      //   youtube: true,
-      //   icons: true,
-      //   codepen: true,
-      //   replit: true,
-      //   codeSandbox: true,
-      //   jsfiddle: true,
-      //   repl: {
-      //     go: true,
-      //     rust: true,
-      //     kotlin: true,
-      //   },
-      // },
-
-      /**
-       * 评论 comments
-       * @see https://theme-plume.vuejs.press/guide/features/comments/
-       */
-      // comment: {
-      //   provider: '', // "Artalk" | "Giscus" | "Twikoo" | "Waline"
-      //   comment: true,
-      //   repo: '',
-      //   repoId: '',
-      //   categoryId: '',
-      //   mapping: 'pathname',
-      //   reactionsEnabled: true,
-      //   inputPosition: 'top',
-      // },
     },
   }),
 })

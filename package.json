@@ -7,7 +7,7 @@
   "author": "1nFrastr <960843127@qq.com>",
   "license": "MIT",
   "engines": {
-    "node": "^18.20.0 || >=20.0.0"
+    "node": ">=20.19.0"
   },
   "scripts": {
     "repo:fetch": "node scripts/fetch-repo-data.mjs",
@@ -18,13 +18,14 @@
     "vp-update": "yarn dlx vp-update"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.26",
-    "@vuepress/plugin-baidu-analytics": "^2.0.0-rc.74",
+    "@vuepress/bundler-vite": "2.0.0-rc.30",
+    "@vuepress/plugin-baidu-analytics": "2.0.0-rc.131",
     "http-server": "^14.1.1",
+    "mermaid": "^11.16.0",
     "sass-embedded": "^1.79.4",
     "typescript": "^5.6.2",
-    "vue": "^3.5.10",
-    "vuepress": "2.0.0-rc.26",
-    "vuepress-theme-plume": "1.0.0-rc.192"
+    "vue": "^3.5.34",
+    "vuepress": "2.0.0-rc.30",
+    "vuepress-theme-plume": "1.0.0-rc.204"
   }
 }
