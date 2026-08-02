@@ -37,13 +37,6 @@ export default defineThemeConfig({
       tagsLink: '/blog/tags/',
       tagsText: '标签',
     },
-    {
-      type: 'doc',
-      dir: 'about',
-      title: '关于',
-      link: '/about/',
-      sidebar: false,
-    },
   ],
 
   social: [

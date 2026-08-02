@@ -36,6 +36,7 @@ export default defineUserConfig({
     markdown: {
       mermaid: true,
       pdf: true,
+      plot: true,
     },
 
     // @see https://theme-plume.vuejs.press/guide/features/changelog/

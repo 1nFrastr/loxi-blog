@@ -155,8 +155,6 @@ flowchart LR
 
 设备侧不关心三阶段细节，只消费最终标签向量。拆开是为了让「谁值得靠近」和「靠近时如何反馈」可以分开迭代。
 
-设备交互见 [设备 Playground 设计](./device-playground.md)。
-
 ## 评测
 
 CLI 与 Web UI 共用同一条管线：
