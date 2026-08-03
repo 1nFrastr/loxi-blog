@@ -31,6 +31,13 @@ const props = defineProps<{
 const bodyEl = ref<HTMLElement | null>(null)
 const expanded = ref(false)
 const needsClamp = ref(false)
+/** 图片/视频加载失败的格子索引（国内访问外网 CDN 时常现） */
+const failedMedia = ref<Record<number, true>>({})
+
+function onMediaError(i: number) {
+  if (failedMedia.value[i]) return
+  failedMedia.value = { ...failedMedia.value, [i]: true }
+}
 
 const dateLabel = computed(() => {
   const d = new Date(props.post.created_at)
@@ -97,9 +104,19 @@ watch(
     <div v-if="hasMedia" class="x-post-media" :data-count="mediaCount">
       <template v-for="(m, i) in mediaList.slice(0, 4)" :key="`${post.id}-${i}`">
         <div class="x-post-media-cell" :style="mediaStyle(m)">
+          <div
+            v-if="failedMedia[i]"
+            class="x-post-media-fallback"
+            role="img"
+            aria-label="国内网络无法访问，请检查代理"
+          >
+            <span class="x-post-media-fallback-text">
+              国内网络无法访问<br>请检查代理
+            </span>
+          </div>
           <!-- 有可播放地址：页内 video；纯图：交给主题 PhotoSwipe（勿包在 a 里） -->
           <video
-            v-if="m.video_url"
+            v-else-if="m.video_url"
             class="x-post-video"
             :src="m.video_url"
             :poster="m.poster || m.url"
@@ -107,6 +124,7 @@ watch(
             playsinline
             preload="metadata"
             referrerpolicy="no-referrer"
+            @error="onMediaError(i)"
           />
           <template v-else>
             <img
@@ -116,6 +134,7 @@ watch(
               loading="lazy"
               decoding="async"
               referrerpolicy="no-referrer"
+              @error="onMediaError(i)"
             >
             <span v-if="m.type === 'video'" class="x-post-play" aria-hidden="true">
               <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
@@ -230,6 +249,32 @@ watch(
 
 .x-post-photo {
   cursor: zoom-in;
+}
+
+.x-post-media-fallback {
+  display: grid;
+  place-content: start;
+  justify-items: start;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  padding: 12px 14px;
+  text-align: left;
+  background:
+    radial-gradient(120% 80% at 50% 0%, color-mix(in srgb, var(--vp-c-brand-1) 8%, transparent), transparent 55%),
+    linear-gradient(
+      165deg,
+      color-mix(in srgb, var(--vp-c-bg-alt) 88%, transparent),
+      color-mix(in srgb, var(--vp-c-bg-alt) 55%, #888 12%)
+    );
+}
+
+.x-post-media-fallback-text {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--vp-c-text-3) 55%, transparent);
 }
 
 .x-post-play {
