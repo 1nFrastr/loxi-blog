@@ -20,6 +20,10 @@ export default defineUserConfig({
 
   bundler: viteBundler(),
 
+  // 想法墙 / 视频墙 / RepoCard 由首页 idle prefetch 按需预热，避免每个 HTML 都盲拉
+  shouldPrefetch: (file) =>
+    !/XPostWall|VideoWall|RepoCard/.test(file),
+
   alias: {
     '@theme/Posts/VPPostsAside.vue': path.resolve(__dirname, './theme/components/VPPostsAside.vue'),
   },
@@ -34,7 +38,6 @@ export default defineUserConfig({
     hostname: 'https://freddyx.pages.dev',
 
     markdown: {
-      mermaid: true,
       pdf: true,
     },
 

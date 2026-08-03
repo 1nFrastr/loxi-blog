@@ -1,9 +1,10 @@
 <script lang="ts" setup>
+import { defineAsyncComponent } from 'vue'
 import VPPostsNav from '@theme/Posts/VPPostsNav.vue'
 import VPPostsProfile from '@theme/Posts/VPPostsProfile.vue'
 import { useData } from 'vuepress-theme-plume/client'
-import VideoWall from './VideoWall.vue'
 
+const VideoWall = defineAsyncComponent(() => import('./VideoWall.vue'))
 const { theme } = useData()
 </script>
 
