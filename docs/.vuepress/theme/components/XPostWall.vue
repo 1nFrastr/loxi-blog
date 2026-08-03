@@ -137,7 +137,7 @@ onMounted(() => {
     <header class="x-post-wall-head">
       <p class="x-post-wall-kicker">From X · @{{ data.username }}</p>
       <div class="x-post-wall-title-row">
-        <h1 class="x-post-wall-title">想法碎片</h1>
+        <h1 class="x-post-wall-title">小想法</h1>
         <div class="x-post-filters" role="tablist" aria-label="浏览方式">
           <button
             type="button"
