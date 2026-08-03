@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, nextTick, onMounted, ref, watch } from 'vue'
 
 export interface XPostMedia {
   type: string
@@ -21,12 +21,16 @@ export interface XPost {
   thread_count?: number
 }
 
+/** 默认正文最大高度（约 10 行） */
+const BODY_MAX_HEIGHT = 260
+
 const props = defineProps<{
   post: XPost
 }>()
 
+const bodyEl = ref<HTMLElement | null>(null)
 const expanded = ref(false)
-const TEXT_LIMIT = 320
+const needsClamp = ref(false)
 
 const dateLabel = computed(() => {
   const d = new Date(props.post.created_at)
@@ -42,16 +46,9 @@ const mediaList = computed(() => props.post.media || [])
 const hasMedia = computed(() => mediaList.value.length > 0)
 const mediaCount = computed(() => Math.min(mediaList.value.length, 4))
 
-const needsClamp = computed(() => (props.post.text || '').length > TEXT_LIMIT)
-const displayText = computed(() => {
-  const text = props.post.text || ''
-  if (!needsClamp.value || expanded.value) return text
-  return `${text.slice(0, TEXT_LIMIT).trimEnd()}…`
-})
-
 /** 把 URL 变成可点链接，其余按段落保留 */
 const textHtml = computed(() => {
-  const escaped = displayText.value
+  const escaped = (props.post.text || '')
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -68,6 +65,31 @@ function mediaStyle(m: XPostMedia) {
   }
   return { aspectRatio: '16 / 10' }
 }
+
+function measureClamp() {
+  const el = bodyEl.value
+  if (!el) return
+  // overflow:hidden + max-height 时 scrollHeight 仍是全文高度，无需临时撑开
+  needsClamp.value = el.scrollHeight > BODY_MAX_HEIGHT + 8
+}
+
+function toggleExpand() {
+  expanded.value = !expanded.value
+}
+
+onMounted(async () => {
+  await nextTick()
+  measureClamp()
+})
+
+watch(
+  () => props.post.text,
+  async () => {
+    expanded.value = false
+    await nextTick()
+    measureClamp()
+  },
+)
 </script>
 
 <template>
@@ -121,13 +143,19 @@ function mediaStyle(m: XPostMedia) {
       </a>
     </header>
 
-    <div class="x-post-body" v-html="textHtml" />
+    <div
+      ref="bodyEl"
+      class="x-post-body"
+      :class="{ 'is-clamped': needsClamp && !expanded }"
+      :style="needsClamp && !expanded ? { maxHeight: `${BODY_MAX_HEIGHT}px` } : undefined"
+      v-html="textHtml"
+    />
 
     <button
       v-if="needsClamp"
       type="button"
       class="x-post-expand"
-      @click="expanded = !expanded"
+      @click="toggleExpand"
     >
       {{ expanded ? '收起' : '展开全文' }}
     </button>
@@ -254,6 +282,7 @@ function mediaStyle(m: XPostMedia) {
 }
 
 .x-post-body {
+  position: relative;
   padding: 10px 16px 14px;
   font-size: 14.5px;
   line-height: 1.7;
@@ -262,8 +291,14 @@ function mediaStyle(m: XPostMedia) {
   overflow-wrap: anywhere;
 }
 
+.x-post-body.is-clamped {
+  overflow: hidden;
+  padding-bottom: 8px;
+  mask-image: linear-gradient(180deg, #000 62%, transparent 100%);
+}
+
 .x-post-card:has(.x-post-expand) .x-post-body {
-  padding-bottom: 0;
+  padding-bottom: 4px;
 }
 
 .x-post-body :deep(.x-post-link) {
@@ -278,7 +313,7 @@ function mediaStyle(m: XPostMedia) {
 
 .x-post-expand {
   align-self: flex-start;
-  margin: 8px 16px 14px;
+  margin: 0 16px 14px;
   padding: 0;
   font-size: 13px;
   font-weight: 600;

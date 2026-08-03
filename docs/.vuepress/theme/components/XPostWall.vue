@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useMediaQuery } from '@vueuse/core'
-import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import data from '../../client/x-posts.json'
 import XPostCard, { type XPost } from './XPostCard.vue'
 
@@ -57,8 +57,6 @@ const filtered = computed(() => {
  */
 const columns = ref<XPost[][]>([[]])
 const masonryEl = ref<HTMLElement | null>(null)
-let ro: ResizeObserver | null = null
-let layoutTimer: ReturnType<typeof setTimeout> | null = null
 
 function estimateHeight(post: XPost) {
   const textLines = Math.ceil((post.text || '').length / 26)
@@ -119,18 +117,10 @@ function layout(precise = false) {
   )
 }
 
-function schedulePreciseLayout() {
-  if (layoutTimer) clearTimeout(layoutTimer)
-  layoutTimer = setTimeout(() => {
-    layout(true)
-  }, 80)
-}
-
 onMounted(() => {
   layout(false)
   void nextTick(() => {
     layout(true)
-    schedulePreciseLayout()
   })
 
   watch([filtered, colCount, mode], async () => {
@@ -138,19 +128,7 @@ onMounted(() => {
     layout(false)
     await nextTick()
     layout(true)
-    schedulePreciseLayout()
-    if (ro && masonryEl.value) ro.observe(masonryEl.value)
   })
-
-  if (typeof ResizeObserver !== 'undefined') {
-    ro = new ResizeObserver(() => schedulePreciseLayout())
-    if (masonryEl.value) ro.observe(masonryEl.value)
-  }
-})
-
-onBeforeUnmount(() => {
-  if (layoutTimer) clearTimeout(layoutTimer)
-  ro?.disconnect()
 })
 </script>
 
