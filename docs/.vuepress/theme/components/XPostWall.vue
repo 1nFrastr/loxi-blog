@@ -281,6 +281,7 @@ onMounted(() => {
   max-width: 1180px;
   margin: 0 auto;
   padding: 8px 0 48px;
+  overflow-x: clip;
 }
 
 .x-post-wall-head {
@@ -494,18 +495,18 @@ onMounted(() => {
 
   22%,
   58% {
-    translate: 48px -2px;
+    translate: 22px -2px;
     opacity: 1;
   }
 
   72% {
     opacity: 1;
-    translate: 86px 2px;
+    translate: 58px 2px;
   }
 
   86%,
   100% {
-    translate: 124px 5px;
+    translate: 96px 5px;
     opacity: 0;
   }
 }
@@ -829,6 +830,11 @@ onMounted(() => {
     flex: 0 0 auto;
   }
 
+  /* 小狗走动动画会 translate 出右缘，移动端直接隐藏避免整页横向滑动 */
+  .x-post-draw-guide {
+    display: none;
+  }
+
   .x-post-lucky {
     padding: 22px 12px 28px;
   }
@@ -863,9 +869,11 @@ onMounted(() => {
 <style>
 .vp-page:has(.x-post-wall) .vp-doc.plume-content,
 .vp-doc.plume-content:has(.x-post-wall) {
+  box-sizing: border-box;
   width: 100%;
   max-width: 1180px !important;
   margin-inline: auto;
   padding-inline: 20px;
+  overflow-x: clip;
 }
 </style>
