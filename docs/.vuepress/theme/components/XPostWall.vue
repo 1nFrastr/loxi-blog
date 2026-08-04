@@ -298,7 +298,7 @@ onMounted(() => {
       <div class="x-post-lucky-bg" aria-hidden="true" />
       <div class="x-post-lucky-actions">
         <button type="button" class="x-post-lucky-reroll" @click="rollLucky">
-          再来一次
+          换一批
         </button>
       </div>
 
