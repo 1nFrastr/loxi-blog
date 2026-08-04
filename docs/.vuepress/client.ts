@@ -31,6 +31,10 @@ export default defineClientConfig({
       'XPostWall',
       defineAsyncComponent(() => import('./theme/components/XPostWall.vue')),
     )
+    app.component(
+      'XPostSolo',
+      defineAsyncComponent(() => import('./theme/components/XPostSolo.vue')),
+    )
   },
 
   setup() {

@@ -3,6 +3,7 @@ import { defineUserConfig } from 'vuepress'
 import { plumeTheme } from 'vuepress-theme-plume'
 import { baiduAnalyticsPlugin } from '@vuepress/plugin-baidu-analytics'
 import { getDirname, path } from 'vuepress/utils'
+import { xPostsSearchPlugin } from './plugins/xPostsSearch'
 
 const __dirname = getDirname(import.meta.url)
 
@@ -22,7 +23,7 @@ export default defineUserConfig({
 
   // 想法墙 / 视频墙 / RepoCard 由首页 idle prefetch 按需预热，避免每个 HTML 都盲拉
   shouldPrefetch: (file) =>
-    !/XPostWall|VideoWall|RepoCard/.test(file),
+    !/XPostWall|XPostSolo|XPostShowcase|VideoWall|RepoCard/.test(file),
 
   alias: {
     '@theme/Posts/VPPostsAside.vue': path.resolve(__dirname, './theme/components/VPPostsAside.vue'),
@@ -32,6 +33,8 @@ export default defineUserConfig({
     baiduAnalyticsPlugin({
       id: '19bfdea461908cd747594faa21540509'
     }),
+    // 为 X 推文生成独立卡片页，接入主题 Ctrl+K 本地搜索
+    xPostsSearchPlugin(),
   ],
 
   theme: plumeTheme({

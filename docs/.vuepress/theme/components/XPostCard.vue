@@ -14,7 +14,6 @@ export interface XPost {
   id: string
   url: string
   created_at: string
-  category: string
   text: string
   urls?: string[]
   media?: XPostMedia[]
@@ -26,10 +25,12 @@ const BODY_MAX_HEIGHT = 260
 
 const props = defineProps<{
   post: XPost
+  /** 独立详情页：不截断正文 */
+  full?: boolean
 }>()
 
 const bodyEl = ref<HTMLElement | null>(null)
-const expanded = ref(false)
+const expanded = ref(!!props.full)
 const needsClamp = ref(false)
 /** 图片/视频加载失败的格子索引（国内访问外网 CDN 时常现） */
 const failedMedia = ref<Record<number, true>>({})
@@ -74,6 +75,10 @@ function mediaStyle(m: XPostMedia) {
 }
 
 function measureClamp() {
+  if (props.full) {
+    needsClamp.value = false
+    return
+  }
   const el = bodyEl.value
   if (!el) return
   // overflow:hidden + max-height 时 scrollHeight 仍是全文高度，无需临时撑开
@@ -100,7 +105,7 @@ watch(
 </script>
 
 <template>
-  <article class="x-post-card" :data-category="post.category">
+  <article class="x-post-card">
     <div v-if="hasMedia" class="x-post-media" :data-count="mediaCount">
       <template v-for="(m, i) in mediaList.slice(0, 4)" :key="`${post.id}-${i}`">
         <div class="x-post-media-cell" :style="mediaStyle(m)">
@@ -130,7 +135,7 @@ watch(
             <img
               class="x-post-photo"
               :src="m.url"
-              :alt="`${post.category} 配图`"
+              alt="想法配图"
               loading="lazy"
               decoding="async"
               referrerpolicy="no-referrer"

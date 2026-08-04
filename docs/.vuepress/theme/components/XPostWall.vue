@@ -1,17 +1,31 @@
 <script setup lang="ts">
 import { useMediaQuery } from '@vueuse/core'
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
+import { useRouter } from 'vuepress/client'
 import data from '../../client/x-posts.json'
 import XPostCard, { type XPost } from './XPostCard.vue'
+import XPostShowcase from './XPostShowcase.vue'
+
+const LUCKY_FLAG = 'x-post-open-lucky'
+
+const props = defineProps<{
+  /** 搜索详情：在抽卡舞台展示单卡，并点亮「详情」页签 */
+  focusId?: string
+}>()
 
 const GAP = 20
 const RANDOM_COUNT = 3
 const posts = (data.posts || []) as XPost[]
+const router = useRouter()
 
-type Mode = 'all' | 'lucky'
-const mode = ref<Mode>('all')
+type Mode = 'all' | 'lucky' | 'focus'
+const mode = ref<Mode>(props.focusId ? 'focus' : 'all')
 const luckyPosts = ref<XPost[]>([])
 const luckyRound = ref(0)
+
+const focusPost = computed(() =>
+  props.focusId ? posts.find(p => p.id === props.focusId) : undefined,
+)
 
 const isMd = useMediaQuery('(min-width: 640px)')
 const isLg = useMediaQuery('(min-width: 960px)')
@@ -21,11 +35,30 @@ const colCount = computed(() => {
   return 1
 })
 
+function goThoughts(next?: 'lucky') {
+  if (next === 'lucky') {
+    try {
+      sessionStorage.setItem(LUCKY_FLAG, '1')
+    }
+    catch { /* ignore */ }
+  }
+  if (props.focusId) {
+    void router.push('/thoughts/')
+    return
+  }
+  if (next === 'lucky') rollLucky()
+  else mode.value = 'all'
+}
+
 function showAll() {
-  mode.value = 'all'
+  goThoughts()
 }
 
 function showLucky() {
+  if (props.focusId) {
+    goThoughts('lucky')
+    return
+  }
   if (mode.value !== 'lucky' || !luckyPosts.value.length) {
     rollLucky()
     return
@@ -48,6 +81,7 @@ function rollLucky() {
 
 const filtered = computed(() => {
   if (mode.value === 'lucky') return luckyPosts.value
+  if (mode.value === 'focus') return focusPost.value ? [focusPost.value] : []
   return posts
 })
 
@@ -118,6 +152,16 @@ function layout(precise = false) {
 }
 
 onMounted(() => {
+  if (!props.focusId) {
+    try {
+      if (sessionStorage.getItem(LUCKY_FLAG) === '1') {
+        sessionStorage.removeItem(LUCKY_FLAG)
+        rollLucky()
+      }
+    }
+    catch { /* ignore */ }
+  }
+
   layout(false)
   void nextTick(() => {
     layout(true)
@@ -133,7 +177,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="x-post-wall">
+  <div class="x-post-wall" :class="{ 'is-focus': mode === 'focus' }">
     <header class="x-post-wall-head">
       <p class="x-post-wall-kicker">From X · @{{ data.username }}</p>
       <div class="x-post-wall-title-row">
@@ -209,6 +253,17 @@ onMounted(() => {
               随机抽卡
             </button>
           </div>
+          <button
+            v-if="focusId"
+            type="button"
+            class="x-post-draw"
+            role="tab"
+            :aria-selected="mode === 'focus'"
+            :class="{ active: mode === 'focus' }"
+            @click="mode = 'focus'"
+          >
+            详情
+          </button>
         </div>
       </div>
     </header>
@@ -236,7 +291,7 @@ onMounted(() => {
     </div>
 
     <section
-      v-else
+      v-else-if="mode === 'lucky'"
       class="x-post-lucky"
       aria-label="随机抽卡"
     >
@@ -257,19 +312,26 @@ onMounted(() => {
           class="x-post-lucky-slot"
           :style="{ '--i': i }"
         >
-          <div class="x-post-lucky-boost">
-            <div class="x-post-lucky-motion">
-              <div class="x-post-lucky-card">
-                <XPostCard :post="post" />
-              </div>
-            </div>
-          </div>
+          <XPostShowcase :post="post" :index="i" />
         </article>
       </div>
     </section>
 
-    <p v-if="!filtered.length" class="x-post-empty">
-      暂无内容
+    <section
+      v-else-if="focusPost"
+      class="x-post-lucky x-post-focus"
+      aria-label="想法详情"
+    >
+      <div class="x-post-lucky-bg" aria-hidden="true" />
+      <div class="x-post-lucky-stage x-post-focus-stage">
+        <article class="x-post-lucky-slot x-post-focus-slot" style="--i: 0">
+          <XPostShowcase :post="focusPost" full />
+        </article>
+      </div>
+    </section>
+
+    <p v-else class="x-post-empty">
+      {{ mode === 'focus' ? '未找到这条想法' : '暂无内容' }}
     </p>
   </div>
 </template>
@@ -682,69 +744,42 @@ onMounted(() => {
   z-index: 6;
 }
 
-/* hover 抬升/放大：停掉浮动，落到固定姿态，避免边抖边放大 */
-.x-post-lucky-boost {
-  transform-origin: 50% 60%;
-  transition: transform 0.32s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform;
-}
-
-.x-post-lucky-slot:hover .x-post-lucky-boost {
-  transform: translateY(-8px) scale(1.05);
-}
-
-/* 持续轻柔浮动 */
-.x-post-lucky-motion {
-  --float-y: -8px;
-  --float-r: 0.7deg;
-  transform-origin: 50% 60%;
-  animation: x-lucky-float 3.4s ease-in-out infinite;
-  animation-delay: calc(var(--i) * -0.7s);
-}
-
-.x-post-lucky-slot:nth-child(1) .x-post-lucky-motion {
+.x-post-lucky-slot:nth-child(1) :deep(.x-post-showcase-motion) {
   --float-y: -7px;
   --float-r: -1.1deg;
   animation-duration: 3.2s;
 }
 
-.x-post-lucky-slot:nth-child(2) .x-post-lucky-motion {
+.x-post-lucky-slot:nth-child(2) :deep(.x-post-showcase-motion) {
   --float-y: -11px;
   --float-r: 0.9deg;
   animation-duration: 3.9s;
 }
 
-.x-post-lucky-slot:nth-child(3) .x-post-lucky-motion {
+.x-post-lucky-slot:nth-child(3) :deep(.x-post-showcase-motion) {
   --float-y: -6px;
   --float-r: 1.2deg;
   animation-duration: 3s;
 }
 
-.x-post-lucky-slot:hover .x-post-lucky-motion {
-  animation-play-state: paused;
+/* 搜索详情：同一舞台只放一张卡，居中略放大 */
+.x-post-focus-stage {
+  min-height: 420px;
+  align-items: center;
+  padding: 28px 0 24px;
 }
 
-.x-post-lucky-card {
-  transition: filter 0.3s ease;
-  filter: drop-shadow(0 14px 22px color-mix(in srgb, var(--vp-c-text-1) 14%, transparent));
+.x-post-focus-slot {
+  z-index: 3;
+  width: min(360px, 86vw);
+  margin: 0;
+  transform: rotate(-1.5deg) translateY(0);
 }
 
-.x-post-lucky-slot:hover .x-post-lucky-card {
-  filter: drop-shadow(0 24px 36px color-mix(in srgb, var(--vp-c-brand-1) 24%, transparent));
-}
-
-.x-post-lucky-slot :deep(.x-post-card) {
-  transition:
-    border-color 0.22s ease,
-    box-shadow 0.22s ease;
-}
-
-.x-post-lucky-slot :deep(.x-post-card:hover) {
-  transform: none;
-}
-
-.x-post-lucky-slot:hover :deep(.x-post-card) {
-  border-color: color-mix(in srgb, var(--vp-c-brand-1) 45%, var(--vp-c-divider));
+.x-post-focus-slot :deep(.x-post-showcase-motion) {
+  --float-y: -10px;
+  --float-r: 0.8deg;
+  animation-duration: 3.6s;
 }
 
 .x-post-lucky-actions {
@@ -782,26 +817,12 @@ onMounted(() => {
   }
 }
 
-@keyframes x-lucky-float {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) rotate(0deg);
-  }
-
-  50% {
-    transform: translate3d(0, var(--float-y, -8px), 0) rotate(var(--float-r, 0.7deg));
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .x-post-lucky-slot,
-  .x-post-lucky-motion {
+  .x-post-lucky-slot {
     animation: none !important;
   }
 
-  .x-post-lucky-boost,
-  .x-post-lucky-reroll,
-  .x-post-lucky-card {
+  .x-post-lucky-reroll {
     transition: none !important;
   }
 }
@@ -863,6 +884,11 @@ onMounted(() => {
   .x-post-lucky-slot:nth-child(3) {
     transform: rotate(-1deg);
   }
+
+  .x-post-focus-slot {
+    width: min(360px, 100%);
+    transform: none;
+  }
 }
 </style>
 
@@ -875,5 +901,13 @@ onMounted(() => {
   margin-inline: auto;
   padding-inline: 20px;
   overflow-x: clip;
+}
+
+/* 搜索详情页：隐藏主题默认标题与供索引用的 h2 */
+.vp-page:has(.x-post-wall.is-focus) .page-title,
+.vp-page:has(.x-post-wall.is-focus) .vp-page-title,
+.vp-page:has(.x-post-wall.is-focus) .vp-doc > h2:first-of-type,
+.vp-doc.plume-content:has(.x-post-wall.is-focus) > h2:first-of-type {
+  display: none;
 }
 </style>
