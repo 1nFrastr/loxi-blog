@@ -7,7 +7,7 @@
   "author": "1nFrastr <960843127@qq.com>",
   "license": "MIT",
   "engines": {
-    "node": ">=20.19.0"
+    "node": ">=24"
   },
   "scripts": {
     "repo:fetch": "node scripts/fetch-repo-data.mjs",
