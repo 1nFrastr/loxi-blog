@@ -51,5 +51,5 @@
 
 /** GitHub 图标轮廓留白较多，适度放大以平衡社媒图标的视觉尺寸 */
 .vp-social-link[aria-label="github"] .vp-icon {
-  transform: scale(1.1);
+  transform: scale(1.22);
 }

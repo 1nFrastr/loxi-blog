@@ -1,6 +1,7 @@
 import { defineAsyncComponent, onMounted } from 'vue'
 // @ts-ignore
 import { defineClientConfig, resolveRoute, useRoutePath } from 'vuepress/client'
+import './theme/styles/custom.css'
 
 /** 首页最可能点击的路径：想法 / 博客 / 关于 */
 const PREFETCH_PATHS = ['/thoughts/', '/blog/', '/article/9zuwfov4/'] as const
