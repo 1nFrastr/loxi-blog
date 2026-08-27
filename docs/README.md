@@ -9,7 +9,7 @@ config:
     type: custom
 ---
 
-<h2 style="text-align: center;margin: 48px 0 32px">开源项目</h2>
+<h2 style="text-align: center;margin: 48px 0 32px">Open Source</h2>
 
 <CardGrid>
   <RepoCard repo="1nFrastr/baby-lovable" />
