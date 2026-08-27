@@ -6,6 +6,7 @@ docs/.vuepress/dist
 docs/.vuepress/client/repo-data.json
 # 由 xPostsSearch 插件从 x-posts.json 生成的独立卡片页
 docs/thoughts/x/
+docs/zh/thoughts/x/
 
 .DS_Store
 *.log
