@@ -1,5 +1,13 @@
 import { defineThemeConfig } from 'vuepress-theme-plume'
+import { CATEGORY_NAME_EN } from './client/localeOverrides'
 import { navbarEn, navbarZh } from './navbar'
+
+function mapCategoriesEn<T extends { name: string }>(categories: T[]): T[] {
+  return categories.map(item => ({
+    ...item,
+    name: CATEGORY_NAME_EN[item.name] ?? item.name,
+  }))
+}
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
@@ -38,6 +46,8 @@ export default defineThemeConfig({
     '/': {
       selectLanguageName: 'English',
       selectLanguageText: 'Languages',
+      changelogText: 'Changelog',
+      changelogButtonText: 'View All Changelog',
       navbar: navbarEn,
       profile: {
         avatar: '/logo.jpg',
@@ -54,6 +64,8 @@ export default defineThemeConfig({
           categories: true,
           categoriesLink: '/blog/categories/',
           categoriesText: 'Categories',
+          // Folder names stay Chinese for EN/ZH path parity; map labels for English UI
+          categoriesTransform: mapCategoriesEn,
           archives: true,
           archivesLink: '/blog/archives/',
           archivesText: 'Archives',
@@ -66,6 +78,8 @@ export default defineThemeConfig({
     '/zh/': {
       selectLanguageName: '简体中文',
       selectLanguageText: '选择语言',
+      changelogText: '变更历史',
+      changelogButtonText: '查看全部变更历史',
       navbar: navbarZh,
       profile: {
         avatar: '/logo.jpg',
