@@ -3,9 +3,16 @@ import { defineAsyncComponent, onMounted, watch } from 'vue'
 import { defineClientConfig, resolveRoute, useRoutePath } from 'vuepress/client'
 import './theme/styles/custom.css'
 
-/** 首页最可能点击的路径：想法 / 博客 / 关于 */
-const PREFETCH_PATHS = ['/thoughts/', '/blog/', '/article/9zuwfov4/'] as const
-const X_POST_DETAIL_RE = /^\/thoughts\/x\/[^/]+\/?$/
+/** 首页最可能点击的路径：想法 / 博客 / 关于（含中英 locale） */
+const PREFETCH_PATHS = [
+  '/thoughts/',
+  '/blog/',
+  '/article/9zuwfov4/',
+  '/zh/thoughts/',
+  '/zh/blog/',
+  '/zh/article/9zuwfov4/',
+] as const
+const X_POST_DETAIL_RE = /^\/(?:zh\/)?thoughts\/x\/[^/]+\/?$/
 
 function syncXPostDetailRouteClass(path: string): void {
   if (typeof document === 'undefined') return

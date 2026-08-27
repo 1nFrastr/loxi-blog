@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
+import { useAppLocale } from '../../client/i18n'
 
 export interface XPostMedia {
   type: string
@@ -15,6 +16,7 @@ export interface XPost {
   url: string
   created_at: string
   text: string
+  text_en?: string
   urls?: string[]
   media?: XPostMedia[]
   thread_count?: number
@@ -29,6 +31,7 @@ const props = defineProps<{
   full?: boolean
 }>()
 
+const locale = useAppLocale()
 const bodyEl = ref<HTMLElement | null>(null)
 const expanded = ref(!!props.full)
 const needsClamp = ref(false)
@@ -40,10 +43,36 @@ function onMediaError(i: number) {
   failedMedia.value = { ...failedMedia.value, [i]: true }
 }
 
+const displayText = computed(() => {
+  if (locale.value === 'en')
+    return (props.post.text_en || props.post.text || '').trim()
+  return (props.post.text || '').trim()
+})
+
+const ui = computed(() => locale.value === 'zh'
+  ? {
+      mediaFallback: '国内网络无法访问，请检查代理',
+      mediaFallbackHtml: '国内网络无法访问<br>请检查代理',
+      mediaAlt: '想法配图',
+      viewOriginal: '查看原帖',
+      collapse: '收起',
+      expand: '展开全文',
+      dateLocale: 'zh-CN',
+    }
+  : {
+      mediaFallback: 'Image unavailable — check your network or proxy',
+      mediaFallbackHtml: 'Image unavailable<br>Check network / proxy',
+      mediaAlt: 'Thought media',
+      viewOriginal: 'View on X',
+      collapse: 'Collapse',
+      expand: 'Read more',
+      dateLocale: 'en-US',
+    })
+
 const dateLabel = computed(() => {
   const d = new Date(props.post.created_at)
   if (Number.isNaN(d.getTime())) return ''
-  return d.toLocaleDateString('zh-CN', {
+  return d.toLocaleDateString(ui.value.dateLocale, {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
@@ -56,7 +85,7 @@ const mediaCount = computed(() => Math.min(mediaList.value.length, 4))
 
 /** 把 URL 变成可点链接，其余按段落保留 */
 const textHtml = computed(() => {
-  const escaped = (props.post.text || '')
+  const escaped = displayText.value
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -95,7 +124,7 @@ onMounted(async () => {
 })
 
 watch(
-  () => props.post.text,
+  [() => props.post.text, () => props.post.text_en, locale],
   async () => {
     expanded.value = false
     await nextTick()
@@ -113,11 +142,9 @@ watch(
             v-if="failedMedia[i]"
             class="x-post-media-fallback"
             role="img"
-            aria-label="国内网络无法访问，请检查代理"
+            :aria-label="ui.mediaFallback"
           >
-            <span class="x-post-media-fallback-text">
-              国内网络无法访问<br>请检查代理
-            </span>
+            <span class="x-post-media-fallback-text" v-html="ui.mediaFallbackHtml" />
           </div>
           <!-- 有可播放地址：页内 video；纯图：交给主题 PhotoSwipe（勿包在 a 里） -->
           <video
@@ -135,7 +162,7 @@ watch(
             <img
               class="x-post-photo"
               :src="m.url"
-              alt="想法配图"
+              :alt="ui.mediaAlt"
               loading="lazy"
               decoding="async"
               referrerpolicy="no-referrer"
@@ -163,7 +190,7 @@ watch(
         target="_blank"
         rel="noopener noreferrer"
       >
-        查看原帖
+        {{ ui.viewOriginal }}
       </a>
     </header>
 
@@ -181,7 +208,7 @@ watch(
       class="x-post-expand"
       @click="toggleExpand"
     >
-      {{ expanded ? '收起' : '展开全文' }}
+      {{ expanded ? ui.collapse : ui.expand }}
     </button>
   </article>
 </template>

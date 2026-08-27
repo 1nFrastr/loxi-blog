@@ -1,5 +1,5 @@
 import { defineThemeConfig } from 'vuepress-theme-plume'
-import { navbar } from './navbar'
+import { navbarEn, navbarZh } from './navbar'
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
@@ -13,31 +13,9 @@ export default defineThemeConfig({
 
   profile: {
     avatar: '/logo.jpg',
-    name: '阿凯 Freddy',
+    name: 'Freddy',
     circle: true,
   },
-
-  navbar,
-
-  // 博客集合：生成 /blog/、/blog/categories/、/blog/archives/、/blog/tags/
-  collections: [
-    {
-      type: 'post',
-      dir: 'blog',
-      title: '博客',
-      postList: true,
-      link: '/blog/',
-      categories: true,
-      categoriesLink: '/blog/categories/',
-      categoriesText: '分类',
-      archives: true,
-      archivesLink: '/blog/archives/',
-      archivesText: '归档',
-      tags: true,
-      tagsLink: '/blog/tags/',
-      tagsText: '标签',
-    },
-  ],
 
   social: [
     { icon: 'github', link: 'https://github.com/1nFrastr' },
@@ -52,7 +30,66 @@ export default defineThemeConfig({
   ],
   navbarSocialInclude: ['github', 'x', 'cursor'],
   footer: {
-    message: 'Power by <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
+    message: 'Powered by <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
     copyright: '© 2024-present 1nFrastr',
-  }
+  },
+
+  locales: {
+    '/': {
+      selectLanguageName: 'English',
+      selectLanguageText: 'Languages',
+      navbar: navbarEn,
+      profile: {
+        avatar: '/logo.jpg',
+        name: 'Freddy',
+        circle: true,
+      },
+      collections: [
+        {
+          type: 'post',
+          dir: 'blog',
+          title: 'Blog',
+          postList: true,
+          link: '/blog/',
+          categories: true,
+          categoriesLink: '/blog/categories/',
+          categoriesText: 'Categories',
+          archives: true,
+          archivesLink: '/blog/archives/',
+          archivesText: 'Archives',
+          tags: true,
+          tagsLink: '/blog/tags/',
+          tagsText: 'Tags',
+        },
+      ],
+    },
+    '/zh/': {
+      selectLanguageName: '简体中文',
+      selectLanguageText: '选择语言',
+      navbar: navbarZh,
+      profile: {
+        avatar: '/logo.jpg',
+        name: '阿凯 Freddy',
+        circle: true,
+      },
+      collections: [
+        {
+          type: 'post',
+          dir: 'blog',
+          title: '博客',
+          postList: true,
+          link: '/zh/blog/',
+          categories: true,
+          categoriesLink: '/zh/blog/categories/',
+          categoriesText: '分类',
+          archives: true,
+          archivesLink: '/zh/blog/archives/',
+          archivesText: '归档',
+          tags: true,
+          tagsLink: '/zh/blog/tags/',
+          tagsText: '标签',
+        },
+      ],
+    },
+  },
 })

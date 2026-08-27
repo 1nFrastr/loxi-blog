@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { useAppLocale, useLocalePath } from '../../client/i18n'
 import { projectVideos, type ProjectVideo } from '../../client/projects'
 
 const props = withDefaults(defineProps<{
@@ -9,6 +10,8 @@ const props = withDefaults(defineProps<{
   columns: 1,
 })
 
+const locale = useAppLocale()
+const localePath = useLocalePath()
 const projects = projectVideos
 const hoveredId = ref<string | null>(null)
 const activeId = ref<string | null>(null)
@@ -16,12 +19,44 @@ const tileRefs = ref<Record<string, HTMLVideoElement | null>>({})
 const cinemaVideo = ref<HTMLVideoElement | null>(null)
 const columnCount = computed(() => Math.max(1, Number(props.columns) || 1))
 
+const ui = computed(() => locale.value === 'zh'
+  ? {
+      wallLabel: '项目演示',
+      close: '关闭',
+      prev: '上一个',
+      next: '下一个',
+      readArticle: '阅读文章',
+    }
+  : {
+      wallLabel: 'Project demos',
+      close: 'Close',
+      prev: 'Previous',
+      next: 'Next',
+      readArticle: 'Read article',
+    })
+
+function localizedProject(project: ProjectVideo) {
+  const isZh = locale.value === 'zh'
+  return {
+    ...project,
+    title: isZh && project.titleZh ? project.titleZh : project.title,
+    description: isZh && project.descriptionZh ? project.descriptionZh : project.description,
+    tags: isZh && project.tagsZh ? project.tagsZh : project.tags,
+    article: project.article ? localePath.value(project.article) : undefined,
+  }
+}
+
 const activeIndex = computed(() =>
   activeId.value ? projects.findIndex(p => p.id === activeId.value) : -1,
 )
-const activeProject = computed(() =>
-  activeIndex.value >= 0 ? projects[activeIndex.value] : null,
-)
+const activeProject = computed(() => {
+  if (activeIndex.value < 0) return null
+  return localizedProject(projects[activeIndex.value])
+})
+
+function displayTitle(project: ProjectVideo) {
+  return localizedProject(project).title
+}
 
 function setTileRef(id: string, el: unknown) {
   tileRefs.value[id] = (el as HTMLVideoElement | null) ?? null
