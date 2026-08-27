@@ -14,7 +14,7 @@
     "docs:dev": "yarn repo:fetch --skip-if-cached && vuepress dev docs",
     "docs:dev-clean": "yarn repo:fetch --skip-if-cached && vuepress dev docs --clean-cache --clean-temp",
     "docs:build": "yarn repo:fetch && vuepress build docs --clean-cache --clean-temp",
-    "docs:preview": "http-server docs/.vuepress/dist",
+    "docs:preview": "http-server dist",
     "vp-update": "yarn dlx vp-update"
   },
   "devDependencies": {
