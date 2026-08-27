@@ -3,7 +3,7 @@ title: "Sandbox Service State Governance: A K8s-Like Declarative Scheduling Mech
 createTime: 2026/07/30 21:40:00
 permalink: /article/7b623071/
 sticky: 2
-description: K8s-like declarative resource reconciliation: continuously aligning desired and observed state for sandbox services.
+description: "K8s-like declarative resource reconciliation: continuously aligning desired and observed state for sandbox services."
 ---
 
 > GitHub repo

@@ -1,7 +1,7 @@
 ---
 title: About
 permalink: /article/9zuwfov4/
-description: Freddy (阿凯): full-stack and Agent developer — open-source projects and a short bio.
+description: "Freddy (阿凯): full-stack and Agent developer — open-source projects and a short bio."
 readingTime: false
 createTime: false
 ---
