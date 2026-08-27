@@ -24,6 +24,61 @@
   --vp-c-text-2: rgba(60, 60, 67, 0.78);
   --vp-c-text-3: rgba(60, 60, 67, 0.56);
   */
+
+  /**
+   * Default (English): Source Sans 3 for chrome / lists.
+   * Avoid bare Inter — it was declared but never loaded, so reading fell to
+   * generic system UI fonts.
+   */
+  --vp-font-family-base:
+    "Source Sans 3",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
+
+  --vp-font-family-doc:
+    "Source Serif 4",
+    "Iowan Old Style",
+    "Apple Garamond",
+    "Palatino Linotype",
+    Palatino,
+    "Noto Serif",
+    "Songti SC",
+    serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+/** 中文 locale：优先系统 CJK，拉丁回落到 Source Sans 3 */
+:root:where(:lang(zh)),
+:root:where(:lang(zh-CN)) {
+  --vp-font-family-base:
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    "Noto Sans SC",
+    "Source Sans 3",
+    "Segoe UI",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
+
+  --vp-font-family-doc:
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    "Noto Serif SC",
+    "Source Serif 4",
+    serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
 }
 
 /** 深色模式 */
@@ -47,6 +102,36 @@
   --vp-c-text-2: rgba(235, 235, 245, 0.6);
   --vp-c-text-3: rgba(235, 235, 245, 0.38);
   */
+}
+
+/**
+ * Long-form article body: serif + slightly roomier measure for English.
+ * Chinese pages keep the CJK-first stack via --vp-font-family-doc.
+ */
+.vp-doc.plume-content {
+  font-family: var(--vp-font-family-doc);
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  letter-spacing: 0.005em;
+  text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
+}
+
+:root:where(:lang(en)) .vp-doc.plume-content,
+:root:where(:lang(en-US)) .vp-doc.plume-content {
+  font-size: 1.125rem;
+  line-height: 1.85;
+}
+
+.vp-doc.plume-content :is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--vp-font-family-base);
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+}
+
+.vp-doc.plume-content :is(code, kbd, samp, pre, .vp-code) {
+  font-family: var(--vp-font-family-mono);
+  letter-spacing: 0;
 }
 
 /** GitHub 图标轮廓留白较多，适度放大以平衡社媒图标的视觉尺寸 */

@@ -18,6 +18,8 @@
     "vp-update": "yarn dlx vp-update"
   },
   "devDependencies": {
+    "@fontsource/source-sans-3": "^5.3.0",
+    "@fontsource/source-serif-4": "^5.3.0",
     "@vuepress/bundler-vite": "2.0.0-rc.30",
     "@vuepress/plugin-baidu-analytics": "2.0.0-rc.131",
     "http-server": "^14.1.1",

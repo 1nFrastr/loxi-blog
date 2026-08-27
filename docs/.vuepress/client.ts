@@ -1,6 +1,17 @@
 import { defineAsyncComponent, onMounted, watch } from 'vue'
 // @ts-ignore
 import { defineClientConfig, resolveRoute, useRoutePath } from 'vuepress/client'
+
+// English reading stack: Source Sans 3 (UI) + Source Serif 4 (article body)
+import '@fontsource/source-sans-3/latin-400.css'
+import '@fontsource/source-sans-3/latin-500.css'
+import '@fontsource/source-sans-3/latin-600.css'
+import '@fontsource/source-sans-3/latin-700.css'
+import '@fontsource/source-serif-4/latin-400.css'
+import '@fontsource/source-serif-4/latin-400-italic.css'
+import '@fontsource/source-serif-4/latin-600.css'
+import '@fontsource/source-serif-4/latin-700.css'
+
 import './theme/styles/custom.css'
 
 /** 首页最可能点击的路径：想法 / 博客 / 关于（含中英 locale） */
