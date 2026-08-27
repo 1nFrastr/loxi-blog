@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { useAppLocale, useLocalePath } from '../../client/i18n'
 import { projectVideos, type ProjectVideo } from '../../client/projects'
 
 const props = withDefaults(defineProps<{
@@ -9,6 +10,8 @@ const props = withDefaults(defineProps<{
   columns: 1,
 })
 
+const locale = useAppLocale()
+const localePath = useLocalePath()
 const projects = projectVideos
 const hoveredId = ref<string | null>(null)
 const activeId = ref<string | null>(null)
@@ -16,12 +19,44 @@ const tileRefs = ref<Record<string, HTMLVideoElement | null>>({})
 const cinemaVideo = ref<HTMLVideoElement | null>(null)
 const columnCount = computed(() => Math.max(1, Number(props.columns) || 1))
 
+const ui = computed(() => locale.value === 'zh'
+  ? {
+      wallLabel: '项目演示',
+      close: '关闭',
+      prev: '上一个',
+      next: '下一个',
+      readArticle: '阅读文章',
+    }
+  : {
+      wallLabel: 'Project demos',
+      close: 'Close',
+      prev: 'Previous',
+      next: 'Next',
+      readArticle: 'Read article',
+    })
+
+function localizedProject(project: ProjectVideo) {
+  const isZh = locale.value === 'zh'
+  return {
+    ...project,
+    title: isZh && project.titleZh ? project.titleZh : project.title,
+    description: isZh && project.descriptionZh ? project.descriptionZh : project.description,
+    tags: isZh && project.tagsZh ? project.tagsZh : project.tags,
+    article: project.article ? localePath.value(project.article) : undefined,
+  }
+}
+
 const activeIndex = computed(() =>
   activeId.value ? projects.findIndex(p => p.id === activeId.value) : -1,
 )
-const activeProject = computed(() =>
-  activeIndex.value >= 0 ? projects[activeIndex.value] : null,
-)
+const activeProject = computed(() => {
+  if (activeIndex.value < 0) return null
+  return localizedProject(projects[activeIndex.value])
+})
+
+function displayTitle(project: ProjectVideo) {
+  return localizedProject(project).title
+}
 
 function setTileRef(id: string, el: unknown) {
   tileRefs.value[id] = (el as HTMLVideoElement | null) ?? null
@@ -126,7 +161,7 @@ watch(activeId, (id) => {
     v-if="projects.length"
     class="video-wall"
     :class="`cols-${columnCount}`"
-    aria-label="项目演示"
+    :aria-label="ui.wallLabel"
   >
     <button
       v-for="project in projects"
@@ -137,7 +172,7 @@ watch(activeId, (id) => {
         focused: isFocused(project.id),
         dimmed: isDimmed(project.id),
       }"
-      :aria-label="project.title"
+      :aria-label="displayTitle(project)"
       @mouseenter="onEnter(project.id)"
       @mouseleave="onLeave(project.id)"
       @focus="onEnter(project.id)"
@@ -156,7 +191,7 @@ watch(activeId, (id) => {
           preload="metadata"
         />
       </span>
-      <span class="vw-title">{{ project.title }}</span>
+      <span class="vw-title">{{ displayTitle(project) }}</span>
     </button>
 
     <Teleport to="body">
@@ -168,7 +203,7 @@ watch(activeId, (id) => {
         :aria-label="activeProject.title"
         @click.self="closeCinema"
       >
-        <button type="button" class="vw-cinema-close" aria-label="关闭" @click="closeCinema">
+        <button type="button" class="vw-cinema-close" :aria-label="ui.close" @click="closeCinema">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8">
             <path d="M6 6l12 12M18 6L6 18" />
           </svg>
@@ -178,7 +213,7 @@ watch(activeId, (id) => {
           v-if="projects.length > 1"
           type="button"
           class="vw-nav prev"
-          aria-label="上一个"
+          :aria-label="ui.prev"
           @click="goCinema(-1)"
         >
           ‹
@@ -187,7 +222,7 @@ watch(activeId, (id) => {
           v-if="projects.length > 1"
           type="button"
           class="vw-nav next"
-          aria-label="下一个"
+          :aria-label="ui.next"
           @click="goCinema(1)"
         >
           ›
@@ -216,7 +251,7 @@ watch(activeId, (id) => {
               <a
                 v-if="activeProject.article"
                 :href="activeProject.article"
-              >阅读文章</a>
+              >{{ ui.readArticle }}</a>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 import { useMediaQuery } from '@vueuse/core'
 import { computed, nextTick, onMounted, ref, watch } from 'vue'
 import { useRouter } from 'vuepress/client'
+import { useAppLocale, useLocalePath } from '../../client/i18n'
 import data from '../../client/x-posts.json'
 import XPostCard, { type XPost } from './XPostCard.vue'
 import XPostShowcase from './XPostShowcase.vue'
@@ -17,6 +18,34 @@ const GAP = 20
 const RANDOM_COUNT = 3
 const posts = (data.posts || []) as XPost[]
 const router = useRouter()
+const locale = useAppLocale()
+const localePath = useLocalePath()
+
+const wallUi = computed(() => locale.value === 'zh'
+  ? {
+      title: '小想法',
+      browseLabel: '浏览方式',
+      all: '全部',
+      lucky: '随机抽卡',
+      detail: '详情',
+      reroll: '换一批',
+      luckyLabel: '随机抽卡',
+      focusLabel: '想法详情',
+      emptyFocus: '未找到这条想法',
+      empty: '暂无内容',
+    }
+  : {
+      title: 'Thoughts',
+      browseLabel: 'Browse mode',
+      all: 'All',
+      lucky: 'Lucky draw',
+      detail: 'Detail',
+      reroll: 'Shuffle',
+      luckyLabel: 'Lucky draw',
+      focusLabel: 'Thought detail',
+      emptyFocus: 'Thought not found',
+      empty: 'Nothing here yet',
+    })
 
 type Mode = 'all' | 'lucky' | 'focus'
 const mode = ref<Mode>(props.focusId ? 'focus' : 'all')
@@ -43,7 +72,7 @@ function goThoughts(next?: 'lucky') {
     catch { /* ignore */ }
   }
   if (props.focusId) {
-    void router.push('/thoughts/')
+    void router.push(localePath.value('/thoughts/'))
     return
   }
   if (next === 'lucky') rollLucky()
@@ -181,8 +210,8 @@ onMounted(() => {
     <header class="x-post-wall-head">
       <p class="x-post-wall-kicker">From X · @{{ data.username }}</p>
       <div class="x-post-wall-title-row">
-        <h1 class="x-post-wall-title">小想法</h1>
-        <div class="x-post-filters" role="tablist" aria-label="浏览方式">
+        <h1 class="x-post-wall-title">{{ wallUi.title }}</h1>
+        <div class="x-post-filters" role="tablist" :aria-label="wallUi.browseLabel">
           <button
             type="button"
             class="x-post-filter"
@@ -191,7 +220,7 @@ onMounted(() => {
             :class="{ active: mode === 'all' }"
             @click="showAll"
           >
-            <span>全部</span>
+            <span>{{ wallUi.all }}</span>
             <span class="x-post-filter-count">{{ posts.length }}</span>
           </button>
           <div class="x-post-draw-wrap">
@@ -250,7 +279,7 @@ onMounted(() => {
               :class="{ active: mode === 'lucky' }"
               @click="showLucky"
             >
-              随机抽卡
+              {{ wallUi.lucky }}
             </button>
           </div>
           <button
@@ -262,7 +291,7 @@ onMounted(() => {
             :class="{ active: mode === 'focus' }"
             @click="mode = 'focus'"
           >
-            详情
+            {{ wallUi.detail }}
           </button>
         </div>
       </div>
@@ -293,12 +322,12 @@ onMounted(() => {
     <section
       v-else-if="mode === 'lucky'"
       class="x-post-lucky"
-      aria-label="随机抽卡"
+      :aria-label="wallUi.luckyLabel"
     >
       <div class="x-post-lucky-bg" aria-hidden="true" />
       <div class="x-post-lucky-actions">
         <button type="button" class="x-post-lucky-reroll" @click="rollLucky">
-          换一批
+          {{ wallUi.reroll }}
         </button>
       </div>
 
@@ -320,7 +349,7 @@ onMounted(() => {
     <section
       v-else-if="focusPost"
       class="x-post-lucky x-post-focus"
-      aria-label="想法详情"
+      :aria-label="wallUi.focusLabel"
     >
       <div class="x-post-lucky-bg" aria-hidden="true" />
       <div class="x-post-lucky-stage x-post-focus-stage">
@@ -331,7 +360,7 @@ onMounted(() => {
     </section>
 
     <p v-else class="x-post-empty">
-      {{ mode === 'focus' ? '未找到这条想法' : '暂无内容' }}
+      {{ mode === 'focus' ? wallUi.emptyFocus : wallUi.empty }}
     </p>
   </div>
 </template>

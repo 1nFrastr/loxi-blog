@@ -1,22 +1,15 @@
 ---
-title: About
-permalink: /article/9zuwfov4/
-description: "Freddy (阿凯): full-stack and Agent developer — open-source projects and a short bio."
-readingTime: false
-createTime: false
+pageLayout: home
+
+config:
+  -
+    type: posts
+    collection: blog
+  -
+    type: custom
 ---
 
-Hi 👋 I'm ==阿凯 Freddy==
-
-Guangdong University of Technology ｜ AWS Certified Architect ｜ IELTS 6.5
-
-Cross-disciplinary path: Mechatronics → Electronics → Software Engineering
-
-Full-stack background: 2 years backend → 4 years full-stack → 1 year Agent development
-
-Former digital nomad with years of remote/hybrid work; now based in Shenzhen
-
-## Open Source
+<h2 style="text-align: center;margin: 48px 0 32px">开源项目</h2>
 
 <CardGrid>
   <RepoCard repo="1nFrastr/baby-lovable" />
@@ -32,7 +25,3 @@ Former digital nomad with years of remote/hybrid work; now based in Shenzhen
   <RepoCard repo="loxi-opensource/luna-lite-server" />
   <RepoCard repo="1nFrastr/likeadmin_laravel" />
 </CardGrid>
-
-## Project Demos
-
-<VideoWall :columns="2" />

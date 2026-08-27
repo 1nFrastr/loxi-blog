@@ -1,6 +1,6 @@
 ---
-title: 小想法
-description: 从 X 归档整理的技术选型、AI 工程、产品与学习思考，瀑布流浏览。
+title: Thoughts
+description: Technical choices, AI engineering, product, and learning notes curated from an X archive — browse as a waterfall feed.
 pageLayout: page
 permalink: /thoughts/
 readingTime: false

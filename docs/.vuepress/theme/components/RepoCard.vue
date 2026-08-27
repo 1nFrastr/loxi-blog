@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { useAppLocale } from '../../client/i18n'
 import repoData from '../../client/repo-data.json'
 
 defineOptions({
@@ -12,6 +13,8 @@ const props = withDefaults(defineProps<{
   provider?: 'github' | 'gitee'
 }>(), { fullname: undefined, provider: 'github' })
 
+const locale = useAppLocale()
+
 const data = computed(() => {
   if (props.provider !== 'github') return null
   return (repoData.repos as Record<string, any>)[props.repo] ?? null
@@ -21,6 +24,12 @@ const showFullname = computed(() => {
   if (typeof props.fullname === 'boolean') return props.fullname
   return data.value?.ownerType === 'Organization'
 })
+
+const fallbackDesc = computed(() =>
+  locale.value === 'zh'
+    ? '仓库信息暂未同步，可点击名称打开 GitHub。'
+    : 'Repo metadata is not synced yet — click the name to open GitHub.',
+)
 </script>
 
 <template>
@@ -78,7 +87,7 @@ const showFullname = computed(() => {
         </a>
       </span>
     </p>
-    <p class="repo-desc">仓库信息暂未同步，可点击名称打开 GitHub。</p>
+    <p class="repo-desc">{{ fallbackDesc }}</p>
   </div>
 </template>
 

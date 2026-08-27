@@ -9,10 +9,23 @@ const __dirname = getDirname(import.meta.url)
 
 export default defineUserConfig({
   base: '/',
-  lang: 'zh-CN',
-  title: '阿凯 Freddy',
-  description: '阿凯 Freddy 的技术博客：全栈开发、工程化与产品设计实践',
+  lang: 'en-US',
+  title: 'Freddy',
+  description: 'Freddy\'s tech blog: full-stack development, engineering, and product design',
   dest: 'dist',
+
+  locales: {
+    '/': {
+      lang: 'en-US',
+      title: 'Freddy',
+      description: 'Freddy\'s tech blog: full-stack development, engineering, and product design',
+    },
+    '/zh/': {
+      lang: 'zh-CN',
+      title: '阿凯 Freddy',
+      description: '阿凯 Freddy 的技术博客：全栈开发、工程化与产品设计实践',
+    },
+  },
 
   head: [
     ['link', { rel: 'icon', type: 'image/png', href: '/favicon.png' }],

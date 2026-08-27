@@ -6,15 +6,21 @@ import { path } from 'vuepress/utils'
 interface XPost {
   id: string
   text?: string
+  text_en?: string
 }
 
 interface XPostsData {
   posts?: XPost[]
 }
 
+type Locale = 'en' | 'zh'
+
 const ROOT = path.resolve(fileURLToPath(new URL('../../..', import.meta.url)))
 const POSTS_JSON = path.resolve(ROOT, 'docs/.vuepress/client/x-posts.json')
-const OUT_DIR = path.resolve(ROOT, 'docs/thoughts/x')
+const OUT_DIRS: Record<Locale, string> = {
+  en: path.resolve(ROOT, 'docs/thoughts/x'),
+  zh: path.resolve(ROOT, 'docs/zh/thoughts/x'),
+}
 
 function escapeHtml(s: string): string {
   return s
@@ -23,20 +29,29 @@ function escapeHtml(s: string): string {
     .replace(/>/g, '&gt;')
 }
 
-/** 正文首行，供搜索结果标题使用 */
-function postHeading(post: XPost): string {
-  const firstLine = (post.text || '')
+function postText(post: XPost, locale: Locale): string {
+  if (locale === 'en')
+    return (post.text_en || post.text || '').trim()
+  return (post.text || '').trim()
+}
+
+/** First line of body — used as the search result title */
+function postHeading(post: XPost, locale: Locale): string {
+  const fallback = locale === 'en'
+    ? `Thought ${post.id.slice(-6)}`
+    : `想法 ${post.id.slice(-6)}`
+  const firstLine = postText(post, locale)
     .split('\n')
     .map(l => l.trim())
-    // 跳过纯符号分隔行，避免空锚点与页面 permalink 冲突
-    .find(l => l && !/^[\s\-_=*.~]+$/.test(l)) || `想法 ${post.id.slice(-6)}`
+    // skip pure separator lines so we don't create empty anchors that clash with permalinks
+    .find(l => l && !/^[\s\-_=*.~]+$/.test(l)) || fallback
   return firstLine.length > 48 ? `${firstLine.slice(0, 48)}…` : firstLine
 }
 
 function loadPosts(): XPost[] {
   try {
     const data = JSON.parse(readFileSync(POSTS_JSON, 'utf8')) as XPostsData
-    return (data.posts || []).filter(p => p.id && (p.text || '').trim())
+    return (data.posts || []).filter(p => p.id && (p.text || p.text_en || '').trim())
   }
   catch (err) {
     console.warn('[x-posts-search] failed to load x-posts.json:', err)
@@ -44,18 +59,23 @@ function loadPosts(): XPost[] {
   }
 }
 
-function buildMarkdown(post: XPost): string {
-  const heading = postHeading(post)
-  const description = (post.text || '').replace(/\s+/g, ' ').slice(0, 120)
-  const body = escapeHtml((post.text || '').trim()).replace(/\n/g, '<br>\n')
+function buildMarkdown(post: XPost, locale: Locale): string {
+  const text = postText(post, locale)
+  const heading = postHeading(post, locale)
+  const description = text.replace(/\s+/g, ' ').slice(0, 120)
+  const body = escapeHtml(text).replace(/\n/g, '<br>\n')
+  const title = locale === 'en' ? 'Thoughts' : '小想法'
+  const permalink = locale === 'en'
+    ? `/thoughts/x/${post.id}/`
+    : `/zh/thoughts/x/${post.id}/`
 
-  // title=小想法 → 搜索面包屑父级；## heading → 搜索主标题 → 「小想法 > xxx」
-  // 索引正文用单行 HTML，避免 markdown 把 --- 解析成 setext 标题
+  // title → search breadcrumb parent; ## heading → search primary title
+  // index body is single-line HTML so markdown does not parse --- as a setext heading
   return [
     '---',
-    'title: 小想法',
+    `title: ${title}`,
     `description: ${JSON.stringify(description)}`,
-    `permalink: /thoughts/x/${post.id}/`,
+    `permalink: ${permalink}`,
     'pageLayout: page',
     'readingTime: false',
     'createTime: false',
@@ -67,36 +87,41 @@ function buildMarkdown(post: XPost): string {
     '',
     '<XPostSolo />',
     '',
-    '<!-- 以下隐藏正文仅供 Ctrl+K 本地搜索建索引 -->',
+    '<!-- hidden body for Ctrl+K local search indexing only -->',
     `<div class="x-post-search-index" hidden aria-hidden="true">${body}</div>`,
     '',
   ].join('\n')
 }
 
 /**
- * 把每条推文落成真实 markdown 页，供路由与本地搜索使用。
- * 在配置加载时同步写入，确保早于 VuePress 扫描 pages。
+ * Materialize each tweet as a real markdown page for routing + local search.
+ * Sync write on config load so pages exist before VuePress scans.
  */
 function syncPostPages(): void {
   const posts = loadPosts()
-  mkdirSync(OUT_DIR, { recursive: true })
 
-  const keep = new Set(posts.map(p => `${p.id}.md`))
-  for (const name of readdirSync(OUT_DIR)) {
-    if (!name.endsWith('.md')) continue
-    if (!keep.has(name)) unlinkSync(path.join(OUT_DIR, name))
-  }
+  for (const locale of ['en', 'zh'] as Locale[]) {
+    const outDir = OUT_DIRS[locale]
+    mkdirSync(outDir, { recursive: true })
 
-  for (const post of posts) {
-    const file = path.join(OUT_DIR, `${post.id}.md`)
-    const next = buildMarkdown(post)
-    if (existsSync(file) && readFileSync(file, 'utf8') === next) continue
-    writeFileSync(file, next, 'utf8')
+    const keep = new Set(posts.map(p => `${p.id}.md`))
+    for (const name of readdirSync(outDir)) {
+      if (!name.endsWith('.md')) continue
+      if (!keep.has(name)) unlinkSync(path.join(outDir, name))
+    }
+
+    for (const post of posts) {
+      const file = path.join(outDir, `${post.id}.md`)
+      const next = buildMarkdown(post, locale)
+      if (existsSync(file) && readFileSync(file, 'utf8') === next) continue
+      writeFileSync(file, next, 'utf8')
+    }
   }
 }
 
 /**
- * 小想法接入主题 Ctrl+K：搜索命中后进入独立卡片页 `/thoughts/x/{id}/`。
+ * Thoughts ↔ theme Ctrl+K: hits open standalone card pages at
+ * `/thoughts/x/{id}/` (EN) and `/zh/thoughts/x/{id}/` (ZH).
  */
 export function xPostsSearchPlugin(): Plugin {
   syncPostPages()

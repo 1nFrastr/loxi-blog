@@ -417,6 +417,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fontsource/source-sans-3@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/source-sans-3@npm:5.3.0"
+  checksum: 10c0/71c72a8f83622c669ecaa6ab757e946b2bf60024753a7736a393875664d33c3cc7ff3d4ca945fdd973448c93c426635b82e9998355a34b72eab88c62861446d9
+  languageName: node
+  linkType: hard
+
+"@fontsource/source-serif-4@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@fontsource/source-serif-4@npm:5.3.0"
+  checksum: 10c0/186d5bdb8bfd81dd2a532abd8b24a6f534c23493905d0dad084b3c375156491923ccc9ef5df4db2869f705d7a5e7ece8f5ce7c7196e767e36bc9b91783a6b421
+  languageName: node
+  linkType: hard
+
 "@iconify/types@npm:^2.0.0":
   version: 2.0.0
   resolution: "@iconify/types@npm:2.0.0"
@@ -5558,6 +5572,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "my-vuepress-site@workspace:."
   dependencies:
+    "@fontsource/source-sans-3": "npm:^5.3.0"
+    "@fontsource/source-serif-4": "npm:^5.3.0"
     "@vuepress/bundler-vite": "npm:2.0.0-rc.30"
     "@vuepress/plugin-baidu-analytics": "npm:2.0.0-rc.131"
     http-server: "npm:^14.1.1"
