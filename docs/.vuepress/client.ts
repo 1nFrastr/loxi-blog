@@ -64,8 +64,8 @@ export default defineClientConfig({
     }, { immediate: true })
 
     onMounted(() => {
-      // 仅首屏落在首页时静默预取；SPA 内后续导航不再重复
-      if (routePath.value !== '/') return
+      // 仅首屏落在首页（EN/ZH）时静默预取；SPA 内后续导航不再重复
+      if (routePath.value !== '/' && routePath.value !== '/zh/') return
 
       // Ctrl+K 搜索常直达想法详情，勿等 idle 再拉 chunk
       prefetchXPostChunks()

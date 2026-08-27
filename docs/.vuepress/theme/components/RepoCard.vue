@@ -87,7 +87,7 @@ const fallbackDesc = computed(() =>
         </a>
       </span>
     </p>
-    <p class="repo-desc">仓库信息暂未同步，可点击名称打开 GitHub。</p>
+    <p class="repo-desc">{{ fallbackDesc }}</p>
   </div>
 </template>
 

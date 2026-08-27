@@ -161,7 +161,7 @@ watch(activeId, (id) => {
     v-if="projects.length"
     class="video-wall"
     :class="`cols-${columnCount}`"
-    aria-label="项目演示"
+    :aria-label="ui.wallLabel"
   >
     <button
       v-for="project in projects"
@@ -172,7 +172,7 @@ watch(activeId, (id) => {
         focused: isFocused(project.id),
         dimmed: isDimmed(project.id),
       }"
-      :aria-label="project.title"
+      :aria-label="displayTitle(project)"
       @mouseenter="onEnter(project.id)"
       @mouseleave="onLeave(project.id)"
       @focus="onEnter(project.id)"
@@ -191,7 +191,7 @@ watch(activeId, (id) => {
           preload="metadata"
         />
       </span>
-      <span class="vw-title">{{ project.title }}</span>
+      <span class="vw-title">{{ displayTitle(project) }}</span>
     </button>
 
     <Teleport to="body">
@@ -203,7 +203,7 @@ watch(activeId, (id) => {
         :aria-label="activeProject.title"
         @click.self="closeCinema"
       >
-        <button type="button" class="vw-cinema-close" aria-label="关闭" @click="closeCinema">
+        <button type="button" class="vw-cinema-close" :aria-label="ui.close" @click="closeCinema">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8">
             <path d="M6 6l12 12M18 6L6 18" />
           </svg>
@@ -213,7 +213,7 @@ watch(activeId, (id) => {
           v-if="projects.length > 1"
           type="button"
           class="vw-nav prev"
-          aria-label="上一个"
+          :aria-label="ui.prev"
           @click="goCinema(-1)"
         >
           ‹
@@ -222,7 +222,7 @@ watch(activeId, (id) => {
           v-if="projects.length > 1"
           type="button"
           class="vw-nav next"
-          aria-label="下一个"
+          :aria-label="ui.next"
           @click="goCinema(1)"
         >
           ›
@@ -251,7 +251,7 @@ watch(activeId, (id) => {
               <a
                 v-if="activeProject.article"
                 :href="activeProject.article"
-              >阅读文章</a>
+              >{{ ui.readArticle }}</a>
             </div>
           </div>
         </div>
