@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useAppLocale } from '../../client/i18n'
-import { REPO_DESCRIPTION_EN } from '../../client/localeOverrides'
 import repoData from '../../client/repo-data.json'
 
 defineOptions({
@@ -24,12 +23,6 @@ const data = computed(() => {
 const showFullname = computed(() => {
   if (typeof props.fullname === 'boolean') return props.fullname
   return data.value?.ownerType === 'Organization'
-})
-
-const displayDescription = computed(() => {
-  const raw = (data.value?.description as string | undefined) || ''
-  if (locale.value === 'zh') return raw
-  return REPO_DESCRIPTION_EN[props.repo] || raw
 })
 
 const fallbackDesc = computed(() =>
@@ -59,7 +52,7 @@ const fallbackDesc = computed(() =>
       </span>
     </p>
     <p class="repo-desc">
-      {{ displayDescription }}
+      {{ data.description }}
     </p>
     <div class="repo-info">
       <p v-if="data.language">
