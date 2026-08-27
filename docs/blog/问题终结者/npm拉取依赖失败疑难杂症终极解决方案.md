@@ -1,30 +1,29 @@
 ---
-title: NPM依赖拉取失败？用一台香港云服务器彻底解决
+title: "npm Install Failing? Fix It Completely with a Hong Kong Cloud Server"
 createTime: 2024/10/09 01:07:45
 permalink: /article/5dj9mzh0/
 tags:
   - npm
   - yarn
   - RemoteDev
-description: 在国内网络环境下用香港云服务器彻底解决 npm 依赖拉取失败问题。
+description: Under mainland China network conditions, use a Hong Kong cloud server to fully solve npm dependency install failures.
 ---
-诡异的是，我的电脑配合梯子是能正常使用yarn来拉取依赖的，然而无论我尝试什么办法，都不能让npm正常工作。排除了配置问题，更换到国内镜像源也解决不了。
+Oddly enough, my laptop with a VPN could pull dependencies with yarn just fine, yet nothing I tried made npm work. Config issues ruled out; switching to domestic mirrors did not help either.
 
-天朝的特殊国情，加上npm包管理器的臃肿设计双重debuff（不然也不会出现pnpm/yarn/bun等替代方案了），
-笔者实在难以忍受不想浸淫在此恶心的泥淖中，最终想出来一个快刀斩乱麻的方案：
+Between China’s network constraints and npm’s bulky design (hence pnpm / yarn / bun), I was done wading through that mess and chose a cut-the-knot approach:
 
-> **使用一台香港云服务器，配合IDE的远程开发能力做到：本地编辑代码，而程序运行环境在云服务器。**
+> **Use a Hong Kong cloud server plus the IDE’s remote development: edit locally, run the environment in the cloud.**
 
-这样的好处不言而喻，香港服务器替我肉身翻墙了，而国内连接香港地区服务器速度又很快，属实是一国两制的切实好处了。Whatever反正网络问题是解决了。
+The benefits are obvious: the Hong Kong server sits outside the firewall for me, and mainland-to-Hong Kong latency is still fast. Network problem solved.
 
-第二个好处是使用单独的Linux环境能和我电脑环境隔离，因为我电脑上node版本就有14/16/18/20/22五个版本，包管理器又有npm/yarn/pnpm花里胡哨的，php也有至少3个版本，开发维护前后端项目超过100个。属实是过于复杂了。Linux环境相比Windows，更加适合开发，因系统引起的软件问题也会少很多。
+A second benefit is isolating a dedicated Linux environment from my machine. I already had Node 14/16/18/20/22, npm/yarn/pnpm, at least three PHP versions, and 100+ frontend/backend projects — too complex. Linux is a better fit for development than Windows, with fewer OS-induced software issues.
 
-当然，这个方案的缺点可能在于成本。
+The downside may be cost.
 
-Jetbrain家的IDE如PHPStorm，远程开发模式下，需要一台4C8G的云服务器来运行，因为是相当于把一个同款IDE内核装到了远程服务器上，对配置是有一定要求的。
+JetBrains IDEs such as PhpStorm in remote mode need roughly a 4C8G cloud box, because a full IDE backend runs remotely and wants decent specs.
 
-因此需要找到一家便宜的4C8G的香港服务器云厂商。主流云就不用考虑了，即使是轻量服务器也要3位数一个月，成本高昂。
+So I needed a cheap 4C8G Hong Kong VPS. Mainstream clouds were out — even lightweight instances run triple-digit RMB per month.
 
-后来我找到一个香港老牌的VPS云主机品牌，一个月59人民币。同时周年活动是299一年。属实很香了。
+I found a long-standing Hong Kong VPS brand at 59 RMB/month, with an anniversary deal at 299 RMB/year. Attractive.
 
-因为我是第一次使用他家，同时网上对他的风评是不太稳定偶尔会重启。但作为开发机器，这个毛病也能接受。所以就只买了一个月，先试试看吧。
+It was my first time with them, and online reviews said the host can be unstable and occasionally reboot. For a development machine that is acceptable, so I started with one month to try it out.

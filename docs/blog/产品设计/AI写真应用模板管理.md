@@ -1,119 +1,120 @@
 ---
-title: 产品设计：AI写真应用 - 自定义模板管理
+title: "Product Design: AI Portrait Apps — Custom Template Management"
 tags:
-  - AI换脸
-  - 开源项目
-  - 系统设计
+  - AI Face Swap
+  - Open Source
+  - System Design
 createTime: 2024/10/08 17:38:41
 permalink: /article/jxj0mwlt/
-description: 结合竞品与运营痛点，设计可自定义模板的 AI 写真系统，并开源企业级换脸方案。
+description: Combining competitor research and ops pain points, design a customizable-template AI portrait system and open-source an enterprise face-swap solution.
 ---
-大家可能听说过妙鸭相机和欧美市场的EPIK年鉴，这些都是基于AI换脸技术生成艺术写真照的应用。
+You may have heard of Miaoya Camera and EPIK yearbooks in Western markets — apps that generate artistic portraits via AI face swap.
 
-我们的客户于2023年5月立项开发AI换脸应用，最初在国内小程序平台上线，随后扩展到国际版App Store，但在C端运营上未能取得成功。
+Our client kicked off an AI face-swap product in May 2023, first on domestic mini programs, then an international App Store build, but consumer-side ops did not take off.
 
-针对这一挑战，我结合多个竞品分析与客户的实际运营痛点，重新设计了一套可自定义模板的系统，以适应快速变化的市场需求。同时，我们还开源了业内首个[AI换脸写真企业级解决方案](https://github.com/loxi-opensource/luna-swapping)
-## 模型定义
+Facing that challenge, I combined competitor analysis with the client’s real ops pain points and redesigned a customizable template system for fast-changing market needs. We also open-sourced what we believe is the industry’s first [enterprise AI face-swap portrait solution](https://github.com/loxi-opensource/luna-swapping).
 
-用户图：用户上传的图片
+## Model definitions
 
-目标图：用户希望把脸换上去的目标图片
+User image: the photo the user uploads
 
-结果图：1张用户图 + 1张目标图 = 1张换脸效果图
+Target image: the image onto which the user’s face should be swapped
 
-模板：用户作图目标的最小选择粒度
+Result image: 1 user image + 1 target image = 1 face-swap result
 
-> 有两种类型：
-> 1. 单张模板：1张目标图
-> 2. 合辑模板：
-> - 多张目标图组成子模板库
-> - 用户不能自行指定目标图，而是系统从子模版库随机选择n张目标图
+Template: the smallest selectable unit of a generation goal
 
-模板组：多张模板的组合
-> 一般用于风格区分，比如古风剑客、男士证件照、女士高管照
+> Two types:
+> 1. Single template: 1 target image
+> 2. Collection template:
+> - Multiple target images form a sub-template library
+> - Users cannot pick a specific target; the system randomly chooses n targets from the sub-library
 
-玩法策略：多个模板组的组合
-> 可用于自定义玩法比如AI盲盒写真、一对一换脸、多人合照等
+Template group: a combination of multiple templates
+> Usually for style separation — e.g. classic swordsman, men’s ID photo, women’s executive portrait
 
-**模型抽象示意图**
-![模型抽象示意图](/image/jxj0mwlt/model-abstract.png)
+Play strategy: a combination of multiple template groups
+> For custom plays such as AI blind-box portraits, one-to-one face swap, group photos, etc.
 
-## 原型图
-![原型图1](/image/jxj0mwlt/proto-1.png)
+**Model abstraction diagram**
+![Model abstraction diagram](/image/jxj0mwlt/model-abstract.png)
 
-![原型图2](/image/jxj0mwlt/proto-2.png)
+## Prototypes
+![Prototype 1](/image/jxj0mwlt/proto-1.png)
 
-## 交付效果
+![Prototype 2](/image/jxj0mwlt/proto-2.png)
 
-### 管理后台
+## Delivered results
+
+### Admin console
 <table>
 <tbody>
 	<tr>
-        <td width="20%">换脸测试</td>
+        <td width="20%">Face-swap test</td>
         <td><img src="/image/jxj0mwlt/swap-test.png"/></td>
     </tr>
 	<tr>
-        <td>模板管理</td>
+        <td>Template management</td>
         <td><img src="/image/jxj0mwlt/swap-template.png"/></td>
     </tr>
 	<tr>
-        <td>模板组</td>
+        <td>Template groups</td>
         <td><img src="/image/jxj0mwlt/template-group.png"/></td>
     </tr>
 	<tr>
-        <td>作图任务</td>
+        <td>Generation tasks</td>
         <td><img src="/image/jxj0mwlt/swap-task.png"/></td>
     </tr>
 </tbody>
 </table>
 
-### 小程序
+### Mini program
 <table>
 <tbody>
     <tr>
         <td><img src="/image/jxj0mwlt/show-1.jpg"/>
-<p align="center">AI写真盲盒</p>
+<p align="center">AI portrait blind box</p>
 </td>
         <td>
 <img src="/image/jxj0mwlt/show-7.jpg"/>
-<p align="center">数字分身</p>
+<p align="center">Digital twin</p>
 </td>
         <td>
 <img src="/image/jxj0mwlt/show-3.jpg"/>
-<p align="center">作图等待页</p>
+<p align="center">Generation waiting page</p>
 </td>
     </tr>
 	<tr>
         <td>
 <img src="/image/jxj0mwlt/show-4.jpg"/>
-<p align="center">AI换脸</p>
+<p align="center">AI face swap</p>
 </td>
         <td>
 <img src="/image/jxj0mwlt/show-5.jpg"/>
-<p align="center">换脸效果-年画娃娃</p>
+<p align="center">Face-swap result — New Year doll</p>
 </td>
         <td>
 <img src="/image/jxj0mwlt/show-6.jpg"/>
-<p align="center">电影定妆照</p>
+<p align="center">Movie still portrait</p>
 </td>
     </tr>
 </tbody>
 </table>
 
-## 体验入口
+## Try it
 
 <table>
 <tbody>
     <tr>
         <td width="30%">
-            <img src="/image/jxj0mwlt/qrcode.jpg" alt="小程序演示"/>
+            <img src="/image/jxj0mwlt/qrcode.jpg" alt="Mini program demo"/>
         </td>
         <td>
             <p>
-                内置10w+高清写真模板：<a href="https://luna-admin.sodair.top/admin" target="_blank">管理后台演示环境</a>
+                100k+ HD portrait templates built in: <a href="https://luna-admin.sodair.top/admin" target="_blank">Admin demo</a>
             </p>
             <p>
-                AI换脸企业级解决方案：<a href="https://luna.iartai.com" target="_blank">了解更多</a>
+                Enterprise AI face-swap solution: <a href="https://luna.iartai.com" target="_blank">Learn more</a>
             </p>
         </td>
     </tr>

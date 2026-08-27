@@ -1,41 +1,41 @@
 ---
-title: Uniapp在低版本安卓下的样式混乱：如何修复？
+title: "UniApp Style Chaos on Old Android: How to Fix It"
 createTime: 2024/10/09 02:01:14
 permalink: /article/r932ez77/
 tags:
   - uniapp
-  - 安卓
+  - Android
   - css
-description: 排查并修复 Uniapp 在低版本安卓 POS 机上的 UI 样式错乱问题。
+description: Diagnose and fix UniApp UI layout breakage on low-version Android POS devices.
 ---
-某客户聚合支付系统，商户收银app是支付系统的一个子应用，使用uniapp实现，可以同一套代码编译到微信小程序和安卓app。
+A customer’s aggregated payment system includes a merchant cashier app — a sub-app of the payment system — built with UniApp so one codebase can compile to WeChat mini program and Android app.
 
-问题在于应用运行在安卓真机和微信小程序上都很正常，然而安装在汇来米POS机上是会出现样式错乱。
+The app ran fine on real Android devices and in the WeChat mini program, but on a Huilaimei POS device the styles broke.
 
-客户说这一款POS机品牌是行业内市场覆盖非常广的，同行也在用，他们家研发的app可以正常运行。
+The customer said this POS brand covers a large share of the market, peers use it too, and their own apps run normally on it.
 
-收集到这个信息后，笔者**认为这个问题是有解的**。既然别人没问题，我们也可以。
+With that information, I **believed the problem was solvable**. If others worked, so could we.
 
-看了下POS机的安卓版本是上古时期的5.0版本。**怀疑是对CSS新样式的兼容度不够。**
+The POS Android version was ancient 5.0. **I suspected poor support for newer CSS.**
 
-Google之后了解到5.0版本的发布时间2014年11月4日，因为uniapp编译出来的app实际上运行在webview里面的，之后确认了安卓5版本的确不支持flex布局。
+A quick search showed Android 5.0 shipped on November 4, 2014. UniApp apps actually run in a WebView; Android 5 indeed does not support flex layout.
 
-为了方便开发调试，我们需要**先在开发环境复现**这个bug。然而POS机硬件并不支持连接到电脑进行USB调试。
+For easier debugging we needed to **reproduce the bug in a development environment**. The POS hardware did not support USB debugging to a PC.
 
-调研之后，发现安卓模拟器中的头部品牌，雷电模拟器竟然还提供5.0版本内核的模拟器软件，便从官网下载安装。然后再去uniapp编辑器运行到雷电模拟器，成功运行并复现！
+After some research, I found that LDPlayer — a leading Android emulator — still offered a 5.0 kernel. I installed it from the official site, ran the UniApp editor against LDPlayer, and successfully reproduced the issue.
 
-接下来就是实时调试修复方案了。
+Then came live debugging and fixes.
 
-一开始我选择替代flex布局的方案**是grid布局**，后者的诞生日期更早，兼容性更好，然而真机运行后并没有解决问题。
+At first I tried **grid layout** as a flex alternative — grid is older and often more compatible — but it still failed on the real device.
 
-我只好使用最原始的布局方案，**使用css的float浮动布局**，相当于纯手工打造了。
+I fell back to the most primitive approach: **CSS float layout**, essentially hand-crafted.
 
-把原始flex布局的css丢给chatgpt之后，稍微修改下，大功告成安卓5样式正常了！
+I fed the original flex CSS to ChatGPT, tweaked a bit, and Android 5 styles were fixed.
 
-当然，因为uniapp是一套代码多平台编译的，安卓5的样式是修好了，也需要不影响原有正常使用的环境。这就是所谓的**回归测试**。新功能代码的引入不能影响已有功能的正常运行。
+Because UniApp is one codebase for many platforms, fixing Android 5 must not break environments that already work — classic **regression testing**. New code must not break existing behavior.
 
-于是我测试了安卓真机、以及微信小程序都能完美适配，至此算完美fix这个bug。
+I verified real Android devices and the WeChat mini program both looked correct. Bug fixed.
 
-另外，uniapp也提供一个不同于安卓原生webview的浏览器内核，是基于腾讯QQ浏览器内核，据说能抹平低版本安卓webview内核的差异，开发者无需关心兼容问题，以flex布局去写代码，这个内核会帮忙改写成对应环境兼容的方案。听起来很不错，有机会试试这个方案。
+UniApp also offers a browser kernel different from the native Android WebView, based on Tencent’s QQ Browser (X5). It is said to smooth over low-version WebView differences so developers can keep writing flex and the kernel rewrites for the target. Sounds promising — worth trying when the chance comes.
 
-[uni-app文档 | Andriod X5 Webview](https://zh.uniapp.dcloud.io/tutorial/app-android-x5.html)
+[uni-app docs | Android X5 Webview](https://zh.uniapp.dcloud.io/tutorial/app-android-x5.html)
