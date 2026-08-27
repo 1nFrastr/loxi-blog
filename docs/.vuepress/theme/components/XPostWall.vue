@@ -774,6 +774,8 @@ onMounted(() => {
   width: min(360px, 86vw);
   margin: 0;
   transform: rotate(-1.5deg) translateY(0);
+  /* 详情页不走抽卡入场淡入，避免首屏闪一下 */
+  animation: none;
 }
 
 .x-post-focus-slot :deep(.x-post-showcase-motion) {

@@ -53,3 +53,18 @@
 .vp-social-link[aria-label="github"] .vp-icon {
   transform: scale(1.22);
 }
+
+/**
+ * 想法搜索详情（/thoughts/x/{id}/）：
+ * 路由一切换就隐藏 markdown h2，避免等 XPostSolo 异步挂载后再闪一下。
+ * class 由 client.ts 的 syncXPostDetailRouteClass 同步。
+ */
+html.x-post-detail-route .page-title,
+html.x-post-detail-route .vp-page-title,
+html.x-post-detail-route .vp-doc.plume-content > h2:first-of-type {
+  display: none;
+}
+
+html.x-post-detail-route .vp-doc.plume-content:not(:has(.x-post-wall)) {
+  min-height: 52vh;
+}

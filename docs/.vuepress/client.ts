@@ -1,10 +1,21 @@
-import { defineAsyncComponent, onMounted } from 'vue'
+import { defineAsyncComponent, onMounted, watch } from 'vue'
 // @ts-ignore
 import { defineClientConfig, resolveRoute, useRoutePath } from 'vuepress/client'
 import './theme/styles/custom.css'
 
 /** 首页最可能点击的路径：想法 / 博客 / 关于 */
 const PREFETCH_PATHS = ['/thoughts/', '/blog/', '/article/9zuwfov4/'] as const
+const X_POST_DETAIL_RE = /^\/thoughts\/x\/[^/]+\/?$/
+
+function syncXPostDetailRouteClass(path: string): void {
+  if (typeof document === 'undefined') return
+  document.documentElement.classList.toggle('x-post-detail-route', X_POST_DETAIL_RE.test(path))
+}
+
+function prefetchXPostChunks(): void {
+  void import('./theme/components/XPostSolo.vue')
+  void import('./theme/components/XPostWall.vue')
+}
 
 function runWhenIdle(task: () => void): void {
   if (typeof window === 'undefined') return
@@ -41,17 +52,27 @@ export default defineClientConfig({
   setup() {
     const routePath = useRoutePath()
 
+    watch(routePath, (path) => {
+      syncXPostDetailRouteClass(path)
+    }, { immediate: true })
+
     onMounted(() => {
       // 仅首屏落在首页时静默预取；SPA 内后续导航不再重复
       if (routePath.value !== '/') return
+
+      // Ctrl+K 搜索常直达想法详情，勿等 idle 再拉 chunk
+      prefetchXPostChunks()
+
+      const onSearchHotkey = (e: KeyboardEvent) => {
+        if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') prefetchXPostChunks()
+      }
+      window.addEventListener('keydown', onSearchHotkey, { passive: true })
 
       runWhenIdle(() => {
         for (const path of PREFETCH_PATHS) {
           const route = resolveRoute(path)
           if (!route.notFound) void route.loader()
         }
-        // 想法页 chunk 很小，重数据在 XPostWall；关于页依赖 VideoWall
-        void import('./theme/components/XPostWall.vue')
         void import('./theme/components/VideoWall.vue')
       })
     })
