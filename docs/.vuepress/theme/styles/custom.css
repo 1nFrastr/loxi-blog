@@ -105,7 +105,7 @@
 }
 
 /**
- * Long-form article body: serif + slightly roomier measure for English.
+ * Long-form article body: serif stack; 17px keeps EN/ZH density similar on screen.
  * Chinese pages keep the CJK-first stack via --vp-font-family-doc.
  */
 .vp-doc.plume-content {
@@ -115,12 +115,6 @@
   letter-spacing: 0.005em;
   text-rendering: optimizeLegibility;
   font-optical-sizing: auto;
-}
-
-:root:where(:lang(en)) .vp-doc.plume-content,
-:root:where(:lang(en-US)) .vp-doc.plume-content {
-  font-size: 1.125rem;
-  line-height: 1.85;
 }
 
 .vp-doc.plume-content :is(h1, h2, h3, h4, h5, h6) {
