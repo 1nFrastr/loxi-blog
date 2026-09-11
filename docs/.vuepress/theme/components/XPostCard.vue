@@ -303,6 +303,11 @@ watch(
   cursor: zoom-in;
 }
 
+/* 暗色卡片预览压暗浅色截图；滤镜在 img 上，不挡住 PhotoSwipe 点击。大图用原 src，不受影响 */
+:global(html[data-theme='dark']) .x-post-photo {
+  filter: brightness(0.58) contrast(0.96);
+}
+
 .x-post-media-fallback {
   display: grid;
   place-content: start;
@@ -330,6 +335,7 @@ watch(
 .x-post-play {
   position: absolute;
   inset: 0;
+  z-index: 2;
   display: grid;
   place-items: center;
   color: #fff;
@@ -346,6 +352,7 @@ watch(
 
 .x-post-more-media {
   position: absolute;
+  z-index: 2;
   right: 10px;
   bottom: 10px;
   padding: 2px 8px;
