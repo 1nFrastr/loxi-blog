@@ -303,8 +303,8 @@ watch(
   cursor: zoom-in;
 }
 
-/* 暗色卡片预览压暗浅色截图；滤镜在 img 上，不挡住 PhotoSwipe 点击。大图用原 src，不受影响 */
-:global(html[data-theme='dark']) .x-post-photo {
+/* 只压暗卡片预览图。不要用 :global(html…) —— Vue scoped 会把滤镜编到 html 上 */
+html[data-theme='dark'] .x-post-photo {
   filter: brightness(0.58) contrast(0.96);
 }
 
