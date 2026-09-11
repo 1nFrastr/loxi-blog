@@ -96,7 +96,9 @@ const textHtml = computed(() => {
   return linked.replace(/\n/g, '<br>')
 })
 
+/** 1–2 张沿用原图比例；3 张以上由 CSS 统一成正方形居中裁切 */
 function mediaStyle(m: XPostMedia) {
+  if (mediaCount.value >= 3) return undefined
   if (m.width && m.height) {
     return { aspectRatio: `${m.width} / ${m.height}` }
   }
@@ -254,7 +256,10 @@ watch(
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.x-post-media[data-count='3'],
+.x-post-media[data-count='3'] {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .x-post-media[data-count='4'] {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -271,12 +276,27 @@ watch(
   max-height: 360px;
 }
 
+.x-post-media[data-count='3'] .x-post-media-cell,
+.x-post-media[data-count='4'] .x-post-media-cell {
+  aspect-ratio: 1 / 1;
+  min-height: 0;
+  max-height: none;
+}
+
+.x-post-video,
+.x-post-photo,
+.x-post-media-fallback {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .x-post-video,
 .x-post-photo {
   display: block;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .x-post-photo {
@@ -288,9 +308,7 @@ watch(
   place-content: start;
   justify-items: start;
   box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  min-height: 120px;
+  min-height: 0;
   padding: 12px 14px;
   text-align: left;
   background:

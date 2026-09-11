@@ -1,7 +1,732 @@
 {
   "username": "therealfreddyx",
-  "curated_at": "2026-08-03",
+  "curated_at": "2026-09-11",
   "posts": [
+    {
+      "id": "2097041655748813120",
+      "url": "https://x.com/therealfreddyx/status/2097041655748813120",
+      "created_at": "2026-09-07T19:17:46.000Z",
+      "text": "Agent 很擅长 ls、grep、cat、修改文件以及通过目录理解世界。所以，从交互上来说，File 有时候比 Database 更适合 Agent。\n但同时，Agent 又需要数据库的能力：检索、索引、Transaction、Version、Branch、Rollback 和 Query。所以我们开始思考：能不能让 Agent 看到的是 File，背后拥有的却是 Database 的能力？这其实就是我们做 Filesystem/drive9 这类产品背后的一个核心思路。\n\n在做baby lovable的时候也考虑过类似问题，代码真相源放在github总感觉四处受限，但传统db又不能解决",
+      "text_en": "Agents are great at ls, grep, cat, editing files, and understanding the world through directories. So from an interaction standpoint, File sometimes fits an Agent better than Database.\nBut Agents also need database capabilities: search, indexing, Transaction, Version, Branch, Rollback, and Query. So we started asking: can an Agent see a File, while what's behind it is actually Database power? That's a core idea behind products like Filesystem / drive9.\n\nI ran into the same question building baby lovable — putting the code source of truth on GitHub always felt constrained, but a traditional DB doesn't solve it either",
+      "urls": [
+        "https://x.com/siddontang/status/2096482775893475425"
+      ],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2096244159455920527",
+      "url": "https://x.com/therealfreddyx/status/2096244159455920527",
+      "created_at": "2026-09-05T14:28:48.000Z",
+      "text": "做一些小众没人竞争的生意\n通过 SEO 自然流获客\n想到一个 idea\n做 k8s 认证相关的练习+考试集成模拟环境\n多租户订阅付费\n提供在线的云端电脑和Teminal还原真实考场\n提供原生 AI 助教能力帮助用户在练习时问答\n提供最新的 CKA/CKAD/CKAS 题库和更新\n打磨用户体验做成行业一流水平\n先占坑",
+      "text_en": "Do a niche business nobody's competing in\nAcquire customers through SEO organic traffic\nAn idea:\nA k8s-cert practice + exam integrated simulator\nMulti-tenant subscription billing\nOnline cloud PCs and a Terminal that recreates the real exam room\nNative AI tutoring so users can ask questions while practicing\nUp-to-date CKA/CKAD/CKAS question banks\nPolish the UX to first-in-class\nStake the claim first",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2095531977021755533",
+      "url": "https://x.com/therealfreddyx/status/2095531977021755533",
+      "created_at": "2026-09-03T15:18:51.000Z",
+      "text": "为什么不加班\n\n一是有这个自信能在8小时内做好事情\n加班是约束那些偷奸耍滑摸鱼的老油条\n这不是我的做事风格\n管理者不能通过无脑延长上班时间来\n逃避掩盖无能的选拔和管理工作\n这是懒惰和愚蠢的行为\n\n二是加班就让我效率很低\n会影响到我精神状态本末倒置\n原本8小时高效工作会被蚕食\n甚至都不如不加班的效率产出",
+      "text_en": "Why I don't work overtime\n\nFirst, I trust I can get the work done in eight hours\nOvertime is for constraining slackers who game the system\nThat's not how I work\nManagers shouldn't paper over weak hiring and weak management\nby mindlessly stretching the workday\nThat's lazy and stupid\n\nSecond, overtime makes me inefficient\nIt wrecks my mental state and puts the cart before the horse\nThose eight high-output hours get eaten away\nUntil you produce even less than if you hadn't stayed late",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2095222220155220233",
+      "url": "https://x.com/therealfreddyx/status/2095222220155220233",
+      "created_at": "2026-09-02T18:47:59.000Z",
+      "text": "最适合我的团队是这样\n老板对业务极其了解\n深耕其中是最懂业务的人\n能随时随地思考每一个环节每一个变量\n讲起每个细节来洋洋洒洒\n定量和定性分析\n全局观如行业认知同行现状\n细节如自己在同行里面的特殊竞争力\n这个老板最好是创始人\n可以宽泛到我的业务直属leader\n而那种只会拉投资\n只会研究技术\n幻想砸钱招聘员工就能马上赚钱\n而自己身居高位喝茶看戏不深入一线业务把手弄脏身先士卒带着团队冲锋陷阵\n寄希望于员工自己把全链路跑通\n而自己高枕无忧做梦躺着数钱\n那是不可能做成事情的\n另外一点\n要无条件信任技术团队\n给予十分支持和认可\n不厌其烦的讲述业务细节\n将团队前后端的认知上下文拉到统一战线\n才可能发挥真正精英小团队作用\n我见过太多\n虽然每天都呆在一起比任何人时间都长的团队\n然而信息透明度和步调一致性相处十万八千里\n好像各自为营都活在自己的想象中\n根本无法像一处发力\n因为大家认知完全不统一",
+      "text_en": "The team that fits me looks like this\nThe boss knows the business inside out\nThe person who has gone deepest and understands it best\nCan think through every step and every variable on the fly\nTalks through every detail at length\nQuantitative and qualitative\nThe big picture: industry knowledge, what peers are doing\nThe details: our specific edge versus competitors\nIdeally that boss is a founder\nOr at least my direct business lead\nNot the type who only raises money\nOr only studies technology\nFantasizing that throwing cash at hires will print revenue tomorrow\nWhile they sit high up sipping tea, never getting their hands dirty on the front line\nor leading the charge themselves\nHoping employees will run the whole chain on their own\nWhile they sleep easy and count money in their dreams\nThat never ships anything\nAnother thing\nUnconditionally trust the engineering team\nGive them full support and recognition\nPatiently explain business details over and over\nPull frontend and backend onto the same cognitive context\nThat's how a small elite team actually works\nI've seen too many teams\nwho spend more hours together than with anyone else\nand yet information transparency and cadence are miles apart\nEach camp living in its own imagination\nUnable to push in one direction\nbecause the shared picture isn't shared at all",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2094057081305477384",
+      "url": "https://x.com/therealfreddyx/status/2094057081305477384",
+      "created_at": "2026-08-30T13:38:08.000Z",
+      "text": "把 babylovable 项目的 supabase project 和 db 迁移到和 vercel workflow 同一区域后\n速度提升了十倍\n之前过的都是什么苦日子\n之前以为是 supabase 本身就慢或我的网络慢\n甚至优化过整套k8s-like的协调引擎\n还是提高不了preview server的启动速度\n这两天想起来要有一套本地 supabase开发环境和线上隔离 db\n才发现原来速度可以这么快\n继而才优化这个问题\n是因为我在项目刚开始立项时\n脑子一热选了 supbase 东京区域而其他服务都是在美国\n网络往返时间巨长\n效果就是创建沙盒到预览可用时间-从 1 分钟左右降低到 10 秒\n\n顺便也发现了k8s-like reconciler 的一些低效空转行为\n难以理解ai 居然给我写出这样 junior 的代码比如\n1. 某个频繁查询的 db 语句在读取全量的 session history然而实际上只用了一个 field\n2. 上面说的频繁查询也是低效的，简单搞一个常量复用就行了，结果搞了一大堆使用时才从 db 查，而这个 field 就是userid在该会话中永远不变！\nps. 这不是 sota 模型写的，是我大量用的 cursor auto 模型",
+      "text_en": "After moving the babylovable Supabase project and DB into the same region as the Vercel workflow\nspeed jumped about 10x\nWhat kind of hard days were we living before\nI thought Supabase itself was slow, or my network was\nI even optimized a whole k8s-like reconciliation engine\nand still couldn't get preview-server startup any faster\nThese past two days I remembered we needed a local Supabase dev env and an isolated prod DB\nand only then saw how fast it could be\nThen I fixed the real issue\nAt project kickoff, on a whim, I picked the Supabase Tokyo region while everything else was in the US\nRound-trip latency was huge\nResult: sandbox create → preview ready went from ~1 minute to ~10 seconds\n\nAlong the way I also found some idle spinning in the k8s-like reconciler\nHard to believe AI wrote such junior code, for example\n1. A hot DB query loading the entire session history when only one field was used\n2. That hot query was unnecessary anyway — a reused constant would do; instead it hit the DB every time, and the field is userid, which never changes in that session!\nps. This wasn't a SOTA model. It was Cursor Auto, which I use a lot",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2094021216155935033",
+      "url": "https://x.com/therealfreddyx/status/2094021216155935033",
+      "created_at": "2026-08-30T11:15:37.000Z",
+      "text": "练习的足够多\n足够深入行业就会发现痛点\n就能用你的天赋帮助解决问题\n以此带来成就价值感\n假以时日\n我会写出被广泛使用的软件依赖库\n如 npm package 之类\n也属于解决方案中的一环\n用更优雅/更高效/更简洁的方法\n来解决人们经常碰到的问题\n这绝对能证明你在软件工程上的造诣\n软件工程追求通用性、优雅性、普遍性、易用性\n而算法工程并不追求优雅和标准化\n两种工程师的思维也就不同\n后者为了造轮子各种骚操作能出效果就行\n并不考虑后续可拓展性和维护性",
+      "text_en": "Practice enough\nGo deep enough into an industry and you'll find the pain\nThen you can use your talent to help solve it\nThat's where achievement and a sense of value come from\nGiven time\nI'll write software libraries people actually use\nlike an npm package\nOne piece of a larger solution\nMore elegant / more efficient / simpler ways\nto solve problems people hit all the time\nThat's real proof of software-engineering craft\nSoftware engineering chases generality, elegance, universality, ease of use\nAlgorithm engineering doesn't chase elegance or standardization\nThe two mindsets diverge\nThe latter will invent any wild wheel that works\nwithout much thought for later extensibility or maintenance",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2093740202070323666",
+      "url": "https://x.com/therealfreddyx/status/2093740202070323666",
+      "created_at": "2026-08-29T16:38:58.000Z",
+      "text": "人是社会关系的总成\n今晚大冰老师直播有个女听众\n交际圈极小活在自己世界的人\n会活得越来越拧巴\n从中看到我自己的影子\n亲密关系、朋友、熟人都是需要接触的\n长期不与人打交道\n会慢慢丢失基础的社会化生存能力\n导致跟人交流时做不到真实\n因为与人链接的机会太少\n用尽废退的法则会显示\n最后变成逃避冲突和回避真实情绪来保护自己\n离群索居会偏移你想要的活人感、生命力和有趣有观众缘等状态呢\n就在我写这些的时候\n大冰说艺术家都是\n很会生活很愿意生活的人\n沉静在自己世界里\n但又没有家财万贯\n参与生产劳动获得报酬必然要与人接触\n终身躲不开的课题\n到人群中去吧\n这样我会觉得下一份工作\n应该是与人接触更多的非技术岗位啊\n这是人之根本比高薪更重要的",
+      "text_en": "A person is the sum of their social relations\nOn Da Bing's livestream tonight a woman in the audience\nlives in a tiny circle, inside her own world\nPeople like that get more and more twisted\nI saw myself in her\nIntimate relationships, friends, acquaintances all need contact\nGo too long without dealing with people\nand you slowly lose basic social survival skills\nYou can't even be real when you talk to someone\nbecause there are too few chances to connect\nUse it or lose it shows up\nYou end up avoiding conflict and real emotion to protect yourself\nLiving apart from the herd drifts you away from the aliveness, vitality, and likability you actually want\nWhile I was writing this\nDa Bing said artists are people\nwho know how to live and want to live\nQuiet in their own world\nbut not sitting on a fortune\nEarning a living through production always means contact with others\nA lifelong subject you can't hide from\nGo into the crowd\nWhich makes me think the next job\nshould be a non-technical role with more human contact\nThat's more fundamental than a high salary",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2093370668348027294",
+      "url": "https://x.com/therealfreddyx/status/2093370668348027294",
+      "created_at": "2026-08-28T16:10:34.000Z",
+      "text": "实践越多就越谦卑\n更意识到自己的无知无能\nAI 把所有人强行拉到同一起跑线\n即使是多年行业经验的工程师\n在新的业务场景和技术挑战下\n所有人都经验被压缩成薄薄的一层\n按比例压缩结果绝对值差异无几\n继续努力做事吧\n并没有比新人厉害多少呢\n你是否愿意重新到基层干起呢？\n标的就是薪资同应届生",
+      "text_en": "The more you practice, the humbler you get\nThe more you see your own ignorance and incompetence\nAI yanks everyone onto the same starting line\nEven engineers with years of industry experience\nunder new business scenes and new technical challenges\nhave their experience compressed into a thin layer\nScale it down and the absolute gap is tiny\nKeep doing the work\nYou're not that much stronger than a newcomer\nWould you start again from the ground floor?\nThe benchmark being: same pay as a fresh grad",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2093183744106741873",
+      "url": "https://x.com/therealfreddyx/status/2093183744106741873",
+      "created_at": "2026-08-28T03:47:48.000Z",
+      "text": "面临两个问题\n1- 机会成本。经济下行期现金流和存款更加重要，没有人能预测未来社会发展，应该活在当下，未来也许会更糟糕。消耗存款和每月有进账是不同概念，机会成本折算成就是真实丢失的金钱。\n2- 对无约束条件下做成事情存疑。经验直觉告诉我不要太相信和高估自己。\n\n所以是否存在一个折中解法\n- 彻底降低预期，无论是金钱还是虚名\n- 选择轻易能够得着的工作和面试机会\n- 保护自己的注意力和心智健康\n- 从人生规划上重新设计，与变化共舞\n- 没有稳定且高回报的环境，舍二取一，向内求稳\n\n结论：\n找低门槛的工作机会\n降低预期也降低投入\n保护自己羽毛",
+      "text_en": "Two problems\n1- Opportunity cost. In a downturn, cash flow and savings matter more. Nobody can predict how society develops. Live in the present; the future may be worse. Burning savings and having monthly income are not the same thing. Converted, opportunity cost is real money lost.\n2- Doubt about getting things done with no constraints. Experience and instinct tell me not to trust or overrate myself.\n\nSo is there a middle path\n- Cut expectations entirely, money and vanity alike\n- Take jobs and interviews that are easy to reach\n- Protect attention and mental health\n- Redesign the life plan and dance with change\n- Without a stable high-return environment, pick one of two, seek stability inward\n\nConclusion:\nLook for low-barrier work\nLower expectations and lower investment\nProtect your own feathers",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2092861645962072220",
+      "url": "https://x.com/therealfreddyx/status/2092861645962072220",
+      "created_at": "2026-08-27T06:27:54.000Z",
+      "text": "解决方案架构师为目标\n以人为本为原则\n\n学习 实践 开源 networking 等动作\n都围绕人来进行\n都围绕最终愿景来\n如何提供更好的infra 工程架构 基础设施来\n让业务更好更快落地\n\n广泛发挥networking 套瓷能力\n向更聪明更有经验更有认知的人指导\n和他们合作共事\n解决生存和发展问题是必然的\n潜在机会和复利效应会自然出现\n\n不要闭门造车\n要与人交流共同进步\n技术服务业务\n业务服务于人\n\n先找100个Github仓库来套瓷\n帮他们维护社区解决bug等dirty work\n可以优先找华人工程师\n目的是认识人进入圈子\n而不是当核心pr贡献者",
+      "text_en": "Goal: solutions architect\nPrinciple: people first\n\nLearning, practice, open source, networking\nall orbit people\nall orbit the end vision\nHow to provide better infra, engineering architecture, foundations\nso the business can land better and faster\n\nLean hard into networking and reaching out\nGet guidance from people who are smarter, more experienced, more lucid\nWork with them\nSolving survival and growth is inevitable\nLatent opportunities and compounding will show up on their own\n\nDon't build in a closed room\nTalk to people and progress together\nTech serves the business\nBusiness serves people\n\nStart by reaching out to 100 GitHub repos\nHelp them maintain the community, fix bugs, do the dirty work\nPrefer Chinese engineers first\nThe point is to meet people and enter the circle\nnot to be the core PR contributor",
+      "urls": [],
+      "media": [],
+      "thread_count": 2
+    },
+    {
+      "id": "2092286533311312176",
+      "url": "https://x.com/therealfreddyx/status/2092286533311312176",
+      "created_at": "2026-08-25T16:22:37.000Z",
+      "text": "折腾了大半年\n还是回到香港水硕这个方案\n重返校园是最适合当下的我了\n这也是我从 3 月底离开公司后\n对未来路线规划的最初构想\n为什么最适合？\n- 需要稳定的环境沉淀\n- 对人际圈子的链接需求\n- 对国际化路线发展的需求\n- 物理地理带来诸多便利不需要漂洋过海\n- 离家近，离深圳近\n- 给未来人生增添许多可能性：香港身份给婚姻与下一代带来的附加价值\n- 重启职业路径的机会：应届生身份、硕士学历、留学\n- 语言学习实践机会：英语、粤语\n- 接触国际教育视野\n\n考虑最快也是年底申请\n明年秋季入学\n到后年毕业\n一共 2 年时间的沉淀期\n\n第一年规划是预科，补基础能力\n1. 语言能力：粤语口语、英语口语\n2. 专业能力：操作系统/数据库/分布式系统（国外顶尖大学公开课）\n嗯，我觉得这两项够了\n然后就是钱的问题\n多攒点钱准没错的\n\n第二年正式入学，目的性很强就是要有产出为赚钱铺路\n1. 人脉 networking\n2. 实习和工作机会\n\n总之就是缩减开支、学好语言、养好身体\n韬光养晦 2 年时光\n为以后的几十年人生来一次华丽转向！\n这也是人生第一次\n最大的时间尺度上\n最大的思考广度和深度上\n给自己设计和规划的路线\n而不是依赖他人给你预设的！",
+      "text_en": "After half a year of thrashing\nI'm back to the Hong Kong taught-master's plan\nReturning to campus fits me best right now\nIt's also the original idea I had after leaving the company at the end of March\nWhy does it fit?\n- Need a stable environment to settle\n- Need to reconnect a social circle\n- Need an international path\n- Geography is convenient; no need to cross an ocean\n- Close to home, close to Shenzhen\n- Opens possibilities: Hong Kong status has extra value for marriage and the next generation\n- A chance to restart the career path: fresh-grad status, a master's, studying abroad\n- Language practice: English, Cantonese\n- Exposure to an international education view\n\nEarliest: apply by year-end\nEnroll next fall\nGraduate the year after\nA two-year settling period in total\n\nYear one is foundation / prep\n1. Language: spoken Cantonese, spoken English\n2. Technical: OS / databases / distributed systems (top university open courses)\nYeah, those two are enough\nThen it's money\nSaving more is never wrong\n\nYear two is formal enrollment, very output-driven, paving the way to earn\n1. Networking\n2. Internships and job opportunities\n\nIn short: cut spending, learn the languages, take care of the body\nLie low for two years\nThen a sharp turn for the decades ahead\nThis is also the first time in my life\nat the largest time scale\nwith the widest and deepest thinking\nthat I've designed a path for myself\ninstead of depending on a path others preset for you",
+      "urls": [],
+      "media": [],
+      "thread_count": 2
+    },
+    {
+      "id": "2091926222276374841",
+      "url": "https://x.com/therealfreddyx/status/2091926222276374841",
+      "created_at": "2026-08-24T16:30:52.000Z",
+      "text": "当你发现 AI 怎么都修复不好一个错误时\n应该停止不断打补丁的无效尝试了\n很可能是底层设计出问题了\n包括：模型设计、数据流、状态管理、并发资源控制等\n所以验证的目的不是为了发现简单独立的交互性 BUG\n而是为了迭代出一套稳定的可解释的系统性架构",
+      "text_en": "When you find AI still can't fix a bug no matter what\nstop the endless patching\nThe underlying design is probably wrong\nIncluding: model design, data flow, state management, concurrency and resource control\nSo the point of verification isn't to catch simple isolated interaction bugs\nIt's to iterate toward a stable, explainable system architecture",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2091922580345348427",
+      "url": "https://x.com/therealfreddyx/status/2091922580345348427",
+      "created_at": "2026-08-24T16:16:23.000Z",
+      "text": "想通了释怀了\n关于面试过程极其影响心态和平静生活的原因\n是因为常规的面试流程体现不了我的优势能力\n我的岗位层级定位是高级岗\n趋向于创业公司项目合伙人的角色\n传统面试流程希望通过平均两个小时的语言沟通过程\n来概括一个不被规则框架定义的候选人\n在信息论上就存在不可能的极限\n试图把大量的实践经验、思考模型、认知形成路径压缩成极短的精简上下文\n势必会失真以及损失大量 insight\n在这套机制下面试官也无法判断候选人的优势\n固化成只能凭借过往的 title 和数字来冷冰冰定义\n最后演变成盲目相信品牌背书招来一堆PPT 汇报高手\n\n我认为\n最合适我的面试方式\n应该由我来定义和主导一次 presentation\n从一维的口头表达换成二维的白板演示\n手写思维模型、推导架构设计全局观图例\n对行业的思考拆解成结构化思维导图\n如：\n- 公司购买高级岗位是买什么？经验与认知。然后细拆\n- 学习是解决信息如何进入大脑的过程，提高这个认知路径转化率和速度的方式？dropbrain 项目，recall->费曼->苏格拉底\n- 解决方案选型为什么比代码更重要在 AI Coding 时代？\n- 说说我如何在借鉴 LLM 和 Agent 工作方式重塑自我大脑的过程，大部分人类脑袋的工作方式应该参考 LLM\n\n目前没看到一家公司在使用这个方式 （必然是特例）\n但我最近靠熟人内推的公司明显有这个隐藏机会\n我有一张底牌就是\n如果公司正常面试流程还无法确定给我 Offer\n那么\n我要求安排一次自定义面试我来设计\n我会选择做一次presentation\n现场拆解思维模型\n展示我对问题的定义、思考、取舍、实现、迭代过程\n一致性、完整性、全面性的闭环\n这是我的核心竞争力\n\n因此没必要殚心竭虑的\n既然是熟人推荐公司\n你身上没有明显的硬伤\n提这个加试要求公司没有理由拒绝\n毕竟成本几乎为 0\n这是最后底牌\n用完还是赢不了的话\n那就真的不要怪自己了\n\n高级岗位的候选人是不会被几个小时面试\n以及一张几页纸的简历概括清晰的\n无法被简单压缩来描述定义\n在没有大规模 AI 匹配面试机制成熟前\n完全有理由要求公司配合候选人来面试\n而不是完全由候选人被动听从标准化筛选流程\n我的目标公司和团队文化内核决定\n和我匹配的公司必然支持我这个诉求\n不支持就是不匹配\n非常简单高效也不内耗\n\n把这次当成这几月求职的象征性意义结束哨声\n所以即使没有拿到结果\n也不应该内耗\n是这个机制不适合你\n那就好事多磨\n继续武装自己和提高透明度\n让筛选行为发生在当面沟通之前\n而面试退居二位成为基础信息确认的辅助手段罢了\n真正的意向筛选发生在面试前\n当然公司应该思考如何提高组织透明度\n这个更应该由公司发起如何提供一个面试官 agent\n我的个人数字分身 agent 去和面试官 agent 聊几次就知道匹配度了\n这才是真正适合我不影响心态的无痛版面试机制",
+      "text_en": "I figured it out and let it go\nWhy interviews wreck my mood and quiet life so badly\nBecause the standard interview process doesn't show my strengths\nMy level is senior\nCloser to a project-partner role at a startup\nTraditional interviews try to summarize, in about two hours of talk,\na candidate who doesn't fit the usual frames\nInformation-theoretically there's an impossible limit\nTrying to compress a mass of practice, thinking models, and how the cognition formed into a tiny context\nwill distort and lose a lot of insight\nUnder that mechanism interviewers also can't see the candidate's edge\nIt hardens into cold titles and numbers\nAnd eventually into blind brand-trust, hiring a pile of PPT presenters\n\nI think\nthe interview that fits me\nshould be a presentation I define and lead\nFrom 1D verbal answers to a 2D whiteboard demo\nHand-drawn thinking models, architecture diagrams, the whole-picture view\nIndustry thinking broken into structured maps\nFor example:\n- What is a company buying in a senior role? Experience and judgment. Then break that down\n- Learning is how information enters the brain. How do you raise the conversion rate and speed of that path? The dropbrain project: recall → Feynman → Socrates\n- Why does solution selection matter more than code in the AI coding era?\n- How I reshape my own brain by borrowing how LLMs and agents work — most human heads should take cues from LLMs\n\nI haven't seen a company use this (it would be an exception)\nBut a recent referral clearly has a hidden opening for it\nMy hole card:\nif the normal process still can't decide on an offer\nI request a custom interview I design\nI'll do a presentation\nDissect thinking models live\nShow how I define, think, trade off, implement, and iterate a problem\nA closed loop of consistency, completeness, coverage\nThat's my core competitiveness\n\nSo no need to agonize\nIt's a referral\nYou have no obvious hard flaws\nThere's little reason for them to refuse this extra round\nThe cost is almost zero\nThis is the last card\nIf you still don't win after playing it\nthen really don't blame yourself\n\nA senior candidate cannot be clearly summarized\nby a few hours of interview and a few pages of resume\nYou can't compress them into a simple definition\nUntil large-scale AI matching interviews mature\nit's reasonable to ask the company to meet the candidate halfway\ninstead of the candidate passively obeying a standardized filter\nThe culture of the companies and teams I want\nmeans a match will support this ask\nIf they don't, it's not a match\nSimple, efficient, no inner grinding\n\nTreat this as the symbolic closing whistle of these months of job hunting\nSo even without a result\ndon't grind yourself down\nThe mechanism doesn't fit you\nGood things take work\nKeep arming yourself and raising transparency\nso screening happens before you sit down\nand the interview becomes a backup for confirming basics\nReal intent screening happens before the interview\nCompanies should think about raising organizational transparency\nBetter still if they offered an interviewer agent\nMy personal digital-twin agent chatting with their interviewer agent a few times would already show the match\nThat's the painless interview mechanism that actually fits me and doesn't wreck my head",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2091728705307676854",
+      "url": "https://x.com/therealfreddyx/status/2091728705307676854",
+      "created_at": "2026-08-24T03:26:00.000Z",
+      "text": "生活系统缺少多支点\n全凭自己一人是单点系统\n发现时常困在没有价值反馈的状态\n难以感受到幸福\n无论内推机会容易门槛的\n还是自己react out信息更不对称的\n面试时间之前都会非常煎熬\n无法专心做自己的事\n面试后等待结果也会难熬\n把自己放进他人评价体系\n但又没有稳定机制托底\n如有个人support着你\n或有另外的价值体系给你底气和反馈\n无法专注思考\n我感觉只能做机械化的重复活动来消磨等待时间\n比如学习考证\n强行给自己一个固定的反馈机制\n学习考试是不会辜负你的东西",
+      "text_en": "The life system is missing extra fulcrums\nIt's a single-point system that runs on me alone\nI often get stuck with no value feedback\nHard to feel happy\nWhether it's an easy referral\nor reaching out myself into worse information asymmetry\nthe hours before an interview are agony\nI can't focus on my own work\nWaiting after the interview is hard too\nYou put yourself into someone else's evaluation system\nwith no stable mechanism underneath\nlike a person supporting you\nor another value system giving you backing and feedback\nCan't think clearly\nI feel I can only do mechanical repetition to kill waiting time\nlike studying for a cert\nForcing a fixed feedback loop on myself\nLearning and exams are things that won't betray you",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2091541857419604028",
+      "url": "https://x.com/therealfreddyx/status/2091541857419604028",
+      "created_at": "2026-08-23T15:03:32.000Z",
+      "text": "脑雾状态下\n无法进行理性思考\n可以转而去观看感性内容\n如女性 up 主+温柔声线+舒缓话题\n去听她的故事\n和其他人类社会学心理学话题\n了解自己和这个世界\n了解藏在日常不起眼细节中\n无法被具象看到的隐秘常识\n当然不要带目的去看\n沉浸体验即可\n让自己平静下来\n用心感受无需费脑\n脑雾只是脑子累了\n别忘了我们还有一颗感性的心\nhttps://www.bilibili.com/video/BV1YfbR6pEhE",
+      "text_en": "In brain fog\nyou can't do rational thinking\nSwitch to something sensory\nlike a woman creator + a gentle voice + a slow topic\nListen to her story\nand other human / sociology / psychology talk\nLearn yourself and this world\nLearn the hidden common sense in ordinary details\nthat you can't see as a concrete object\nDon't watch with an agenda\nJust immerse\nCalm down\nFeel it; don't spend the brain\nBrain fog is just a tired mind\nDon't forget we also have a sensing heart\nhttps://www.bilibili.com/video/BV1YfbR6pEhE",
+      "urls": [
+        "https://www.bilibili.com/video/BV1YfbR6pEhE",
+        "https://www.bilibili.com/video/BV1pS4y1f78i"
+      ],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2090313107696755192",
+      "url": "https://x.com/therealfreddyx/status/2090313107696755192",
+      "created_at": "2026-08-20T05:40:55.000Z",
+      "text": "意外发现 Dropbrain 在 Vibe Coding 等待过程很有用\n碎片化时间非常适合做选择题\n会有游戏化闯关的感觉\n页面反馈和评分奖励多巴胺\n上下文切换是轻量的\n大脑几乎感觉不到疲惫\n过程是持久化的\n可以随时开启结束没有紧迫感\n按照自己节奏怎么舒服怎么来",
+      "text_en": "Accidentally found Dropbrain is useful while waiting on Vibe Coding\nFragmented time is perfect for multiple-choice\nIt feels like a game with stages\nPage feedback and scores drip dopamine\nContext switching is light\nThe brain barely feels tired\nProgress is persistent\nStart and stop anytime, no urgency\nGo at whatever pace feels comfortable",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HQJHcV_aUAAM7Y5.jpg",
+          "width": 1700,
+          "height": 1354
+        }
+      ],
+      "thread_count": 1
+    },
+    {
+      "id": "2089997216773751117",
+      "url": "https://x.com/therealfreddyx/status/2089997216773751117",
+      "created_at": "2026-08-19T08:45:41.000Z",
+      "text": "#dropbrain 方案选型记录\n\n1. 网页内容抓取现在改用 Firecrawl\n之前 Cloudflare BrowserRun方案的问题是\n只会原封不动抓取网页数据\n不会剔除多余的outline header 非主要正文信息\n导致丢给 AI 之前就触发长文截断\n换成 Firecrawl 后速度飞快，无需 API KEY 也可使用\n专业的事情交给专业团队\n海外技术生态商业模式鼓励良性竞争\n而不是像国内大厂通吃\n\n2. AI 出题模型从  CF WorkerAI 改成 Deepseek Flash\n原因是前者是开源小模型部署在边缘节点上\n性能和参数太一般所以模型在出题任务上就 cover 不住了\n不太适合需要高准确性的出题任务\n误人子弟不可原谅啊\n我在一开始用 worker ai 生成了大量模棱两可的答案\n于是意识到了问题\n\n目前不做登录，任何人都可以打开使用 https://dropbrain.freddyx.workers.dev/\n\n为避免可能出现恶意刷量风险\n也基于 Cloudflare RateLimiter 做了简单的 IP 限流机制",
+      "text_en": "#dropbrain notes on the stack\n\n1. Page scraping now uses Firecrawl\nThe old Cloudflare Browser Rendering approach\nwould dump the page as-is\nwithout stripping outline / header / non-body junk\nso the text already overflowed before it even reached the AI\nFirecrawl is fast, and works without an API key\nLeave professional work to professional teams\nOverseas tech ecosystems reward healthy competition\ninstead of one domestic giant eating everything\n\n2. Question-generation model moved from CF Workers AI to DeepSeek Flash\nThe former is a small open model on the edge\nPerformance and size weren't enough for the task\nNot suitable when accuracy matters\nMisleading learners is unforgivable\nI generated a lot of ambiguous answers with Workers AI at first\nand that's when I noticed\n\nNo login for now; anyone can open it https://dropbrain.freddyx.workers.dev/\n\nTo limit possible abuse\nthere's a simple IP rate limit on Cloudflare Rate Limiting",
+      "urls": [
+        "https://dropbrain.freddyx.workers.dev/"
+      ],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2089760701749551131",
+      "url": "https://x.com/therealfreddyx/status/2089760701749551131",
+      "created_at": "2026-08-18T17:05:51.000Z",
+      "text": "《生活大爆炸》的第一季不适合英语口语学习\n为了表达 Nerd 感在台词上用了太多生僻字\n以及科研专业术语、复杂句式和不通用的俚语\n不过我是从第 12 季开始看的\n给我的初印象有点出乎意料\n句式用词表达很简单也很日常\n所以建议如果想学习英语推荐从后面的开始看\n这也难怪我学生时期无法喜欢上这部剧的原因\n是太晦涩难懂不太新手友好\n\n还有一点感受是\n第一季从 2007 年开始所呈现出来的技术宅男文化\n那时我还没小学毕业\n到如今20 年过去了依然映照出自己身上相似的行为模式\n特别是和女生相处的各种插曲\n啼笑皆非又黯然神伤\n经典作品描述真实人性和人类模式\n所谓太阳底下没有新鲜事如是也",
+      "text_en": "The Big Bang Theory season 1 is a bad pick for spoken English\nTo sell the nerd vibe the lines pack in obscure words\nplus research jargon, complex sentences, and uncommon slang\nI actually started from season 12\nand the first impression surprised me\nThe sentences and wording are simple and everyday\nSo if you want to learn English, start later in the show\nThat also explains why I couldn't like it as a student\nToo opaque, not beginner-friendly\n\nAnother feeling:\nthe nerd culture season 1 showed starting in 2007\nI hadn't even finished elementary school then\nTwenty years later it still mirrors patterns in me\nespecially the episodes around women\nFunny and a little sad\nClassic work describes real human nature and human patterns\nNothing new under the sun, as they say",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2089577958042390790",
+      "url": "https://x.com/therealfreddyx/status/2089577958042390790",
+      "created_at": "2026-08-18T04:59:42.000Z",
+      "text": "挖个坑：\n完全用代码来制作动画视频\n用来制作自媒体知识类内容\n我对剪辑拍摄的繁杂工作太抵触了\n在代码近乎0 成本的红利下\n应该发挥自己的优势\n说到代码我就不困了哈哈\n\n参考：\n浙大猫学长的vibe-motion库\n3Bule1Brown的视频内容全代码生成",
+      "text_en": "New pit to dig:\nMake animation videos entirely with code\nfor knowledge-style content\nI really resist the mess of shooting and editing\nWhen code is almost zero-cost\nlean into the advantage\nTalk code and I'm not sleepy anymore haha\n\nRefs:\nZJU Cat-senpai's vibe-motion library\n3Blue1Brown's videos, all generated from code",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2089044341927055816",
+      "url": "https://x.com/therealfreddyx/status/2089044341927055816",
+      "created_at": "2026-08-16T17:39:18.000Z",
+      "text": "idea 阳光洗被服务\n\n上门收被套床单\n提供机洗和人工手洗服务\n消毒除螨阳光晾晒\n这还没结束\n之后送回来帮客户装好床单被套\n其实拆的时候就会帮用户装一套备用的\n换洗一次床上用品\n其实要做的活真不少\n这是一个很大痛点\n很多人懒的费力气去拆装\nadhd会耗尽很多元气干这个活\n完整的一次闭环会涉及两次拆装\n\n关键是\n要做成定时上门比如一周一次\n用互联网基因去优化整个服务体验\n提供完善的被子跟踪系统\n透明化展示被子当前清洁状态\n如正在人工清洗、已晾晒在露天环境大太阳的照片\n\n更有意思的是\n可以做衍生服务\n可以开辟全国各地的太阳晒被基地\n让你的被子吸收来自五湖四海的日月精气\n比如晒过大理阳光的被子\n比如吹过海南三亚海风的被子\n等等…\n\n大部分人都很喜欢被子晒后阳光的味道\n棉被吸满太阳的味道后睡觉时感觉非常安心\n用户收到晒后快递像农民秋收一样\n这是用户体验达到顶峰的时刻\n而且考虑到多雨季节\n如广东今年夏季几乎都在下雨被子都发霉了\n如果有人能把我的被子快递发走到艳阳高照的城市晾晒\n那太爽了\n即使深圳天天下雨\n也能每周抱着新鲜阳光被入睡！\n\n总之提供的核心服务就是：\n\n- 异地阳光晒被\n- 定期上门拆装一条龙服务\n- 可选人工手洗比机洗干净想起妈妈在家洗给你一样\n- 互联网原生的用户体验",
+      "text_en": "Idea: sunshine laundry for bedding\n\nPick up duvet covers and sheets at the door\nMachine wash and optional hand wash\nDisinfect, mite-clean, sun-dry\nThat's not the end\nBring them back and put the bedding on for the customer\nWhen you take the dirty set off you already install a spare\nOne bedding change\nis actually a lot of work\nIt's a real pain point\nLots of people are too lazy to strip and remake\nADHD burns a lot of energy on this chore\nA full loop involves two strip-and-make cycles\n\nThe key\nis scheduled visits, say once a week\nUse internet DNA to optimize the whole service\nA proper duvet tracking system\nTransparent photos of the current clean state\nlike being hand-washed, or already drying in open sun\n\nEven better\nderivative services\nSun-drying bases around the country\nLet your duvet drink light and air from everywhere\nA duvet that took Dali sun\nA duvet that took Sanya sea wind\nand so on…\n\nMost people love the smell of sun-dried bedding\nCotton full of sun makes sleep feel safe\nGetting the parcel back is like a farmer's harvest\nThat's peak UX\nAnd in rainy seasons\nlike Guangdong this summer, almost all rain, duvets going moldy\nif someone could ship my duvet to a sunny city to dry\nthat would be amazing\nEven if Shenzhen rains every day\nyou could still fall asleep with a fresh sun-dried duvet every week\n\nCore offering:\n\n- Sun-dry in another city\n- Recurring pickup, strip, and remake as a full service\n- Optional hand wash, cleaner than the machine, like mom washing it at home\n- Internet-native UX",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2089027561007485029",
+      "url": "https://x.com/therealfreddyx/status/2089027561007485029",
+      "created_at": "2026-08-16T16:32:37.000Z",
+      "text": "所以应该把这个目标从\n“找到真正可以一起走远的团队和事业”\n换成「找一个工作来托底人生，让幸福更好生长」\n\n更少的心智带宽投入\n更稳定的环境\n以此创造出幸福前提\n以人为本\n幸福将自然涌现\n在时间见证下来临\n也许财富也会惊喜出现呢\n当然没有也无所谓，那不过是锦上添花\n有没有都不应该影响幸福\n\n这意味着无意义的加班时间\n长时间在公司耗着\n消耗心智带宽存量\n导致丧失自由和意志\n\n如果新工作机会「影响了人生幸福」\n应一票否决",
+      "text_en": "So the goal should shift from\n\"find a team and a cause you can go the distance with\"\nto 「find a job that underwrites life, so happiness can grow」\n\nLess mental bandwidth spent\nA more stable environment\nThat creates the premise for happiness\nPeople first\nHappiness will show up on its own\nin time\nWealth might surprise you too\nAnd if it doesn't, that's fine — icing only\nEither way it shouldn't decide happiness\n\nThat means pointless overtime\nlong hours parked at the company\nburning the stock of mental bandwidth\nuntil you lose freedom and will\n\nIf a new job 「hurts life happiness」\nveto it in one vote",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2089023514343022981",
+      "url": "https://x.com/therealfreddyx/status/2089023514343022981",
+      "created_at": "2026-08-16T16:16:32.000Z",
+      "text": "下一份工作考虑的不是它本身\n更多是在工作之外\n是为了兼容人生新规划\n有新的人生议题要去探索\n回到人本身\n关注自己和周边人的幸福\n而非强行将自己放入他人定义的“市场价”\n冰冷的“什么时候该做什么事”的规训\n这不是在走自己的路\n\n自知是独一无二的你\n世界不会为你铺好完美契合的路线\n只能靠自己创造出来\n\n钱真的不是第一位\n而是：\n- 对做的事感兴趣（价值成就感）\n- 团队稳定（现金流、文化认同）\n- 节奏合理（每日工作不应超过脑力带宽的 50%）\n\n这三点好像分不出伯仲\n脑力带宽占比是一票否决权\n和开头提到工作是为了什么强关联\n脑子ALL in 在技术细节上\n会失去对周边真实人类的感知\n在 AI 时代最珍贵的是活人感\n而非机器与技术\n\n新的人生规划里\n必须保留足够的大脑带宽\n来感知周边人类的爱恨情仇\n来控制自己作为人本身的对外表现\n由内而外的心性控制\n完成对外展现的一致性\n即他人如何看待你是否表里如一\n\n因此\n这一份新工作\n定位是作为生存基础、价值感基础\n是朝着更幸福人生出发的前提\n而非消耗幸福\n去换取身外之物（钱并不会让你更幸福）\n的本末倒置",
+      "text_en": "The next job isn't mainly about the job itself\nIt's about what's outside the job\nIt's there to fit a new life plan\nThere are new life questions to explore\nBack to the person\nAttend to your happiness and the people around you\nDon't force yourself into someone else's \"market price\"\nor the cold discipline of \"what you should be doing by now\"\nThat's not walking your own path\n\nYou already know you're one of a kind\nThe world won't pave a perfectly fitted route\nYou have to make it\n\nMoney really isn't first\nInstead:\n- Interest in the work (a sense of value)\n- A stable team (cash flow, cultural fit)\n- A sane pace (daily work shouldn't take more than 50% of mental bandwidth)\n\nThose three are close\nMental-bandwidth share has veto power\nTightly tied to why you work at all\nIf the brain ALL-ins on technical detail\nyou lose perception of the real humans around you\nIn the AI era the scarce thing is aliveness\nnot machines and tech\n\nIn the new life plan\nyou must keep enough brain bandwidth\nto sense the love and hate of people nearby\nto control how you show up as a person\nInner temperament, outer consistency\ni.e. whether others see you as the same inside and out\n\nSo\nthis new job\nis positioned as a survival base and a value base\na premise for a happier life\nnot a way to spend happiness\nin exchange for things outside you (money won't make you happier)\nThat's getting it backwards",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2088978582949462406",
+      "url": "https://x.com/therealfreddyx/status/2088978582949462406",
+      "created_at": "2026-08-16T13:18:00.000Z",
+      "text": "就按照市场标准来衡量工作报酬即可\n\n福利假期\n社保公积金\n节奏强度\n能力匹配度\n大脑带宽占比\n文化氛围\n团队的人\n\n硬性条件如薪资 加班时间 强度\n如果不理想\n就要求软性条件要补偿\n如团队成员 文化 大脑带宽占比\n总不能拿打螺丝的钱干造火箭的活吧\n这扰乱市场秩序啊\n会被同行痛骂的",
+      "text_en": "Just measure compensation by market standard\n\nBenefits and time off\nSocial insurance and housing fund\nPace and intensity\nSkill match\nShare of brain bandwidth\nCulture\nThe people on the team\n\nHard conditions like pay, overtime, intensity\nif they're not ideal\nsoft conditions have to compensate\nlike teammates, culture, brain-bandwidth share\nYou can't take assembly-line pay to build rockets\nThat messes up the market\nPeers would roast you",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2088976861863031254",
+      "url": "https://x.com/therealfreddyx/status/2088976861863031254",
+      "created_at": "2026-08-16T13:11:09.000Z",
+      "text": "这确实变成了和老板死心塌地创业了\n已经越过打工人本分的边界\n过去已经证明过\n这种看似 All in\n对双方都不一定是好事情\n这变成了合伙人的职责\n人家为啥找你呢\n而不给你分任何蛋糕\n这演变成了一厢情愿\n你跟老板是生死之交吗？\n人家为啥放心把后背交给你\n自认为的all in在别人心中可不一定是\n只会让自己预期过高感觉被错付\n\n这不符合人性\n不要高估自己\n也不要去挑战人性\n之前说过对待人性就比如大自然\n要有敬畏之心\n\n除非是那种\n你能清晰看到所做的事情\n能给世界带来正向影响\n拥有能改变人类文明意义的潜力\n这太理想化\n\n所以这些乌托邦理想\n不要轻易示人\n留在自己心中亲自守护才是合适的\n不要给工作给予太多厚望\n出卖脑力劳动赚取报酬\n就这么简单\n符合社会契约和规训\n就可以了",
+      "text_en": "This really did turn into going all-in founding with the boss\nPast the boundary of an employee's duty\nThe past already proved\nthis seeming All-in\nisn't necessarily good for either side\nIt becomes a partner's job\nWhy would they bring you in\nand not give you any of the cake\nIt turns into one-sided wishful thinking\nAre you and the boss sworn in blood?\nWhy would they trust you with their back\nWhat you call all-in may not look that way to them\nIt only inflates your expectations until you feel unpaid\n\nThat doesn't fit human nature\nDon't overrate yourself\nDon't challenge human nature either\nI've said treat human nature like nature itself\nwith reverence\n\nUnless it's the kind of work\nwhere you can clearly see\nit will leave a positive mark on the world\nwith the potential to shift civilization\nThat's too idealized\n\nSo don't casually show those utopian ideals\nKeep them and guard them yourself\nDon't put too much hope on a job\nSell mental labor for pay\nThat simple\nFits the social contract and the rules\nThat's enough",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2088837073105256491",
+      "url": "https://x.com/therealfreddyx/status/2088837073105256491",
+      "created_at": "2026-08-16T03:55:41.000Z",
+      "text": "codex等通用agent生态的插件能力\n将会是下一个微信超级App\n尝试上架一些应用看看\n是个人开发者的机会",
+      "text_en": "Plugin capability in general agent ecosystems like Codex\nwill be the next WeChat super-app\nTry listing a few apps\nIt's an opening for indie developers",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2088637512969605357",
+      "url": "https://x.com/therealfreddyx/status/2088637512969605357",
+      "created_at": "2026-08-15T14:42:42.000Z",
+      "text": "要提高体育锻炼在生活的比重了\n一半是运动\n一半是工作\n这种状态在gap期间最好\n下一次租房首选免费体育场附近\n不工作就泡在运动场\n唯一可恶的是恶劣天气暴雨暴晒\n在广东夏季很不友好\n\n物理系统商增定律\n感受太深刻了\n居住环境\n形象管理\n身材锻炼\n心性打磨\n松懈下来只会越来越糟糕走样\n需要能量去维持秩序\n\n把运动科学形体管理\n作为长期基础设施\n多学习运动科学\n了解自己的身体\n去咨询营养科和运动科\n我相信会有更幸福的明天\n\n而这是意志力控制和心智管理的基础\n身体先行再到精神\n值得投资",
+      "text_en": "Need to raise the share of physical training in life\nHalf sport\nHalf work\nThat mix is best during a gap\nNext rental should be next to a free sports field\nWhen not working, live on the field\nThe only enemy is bad weather, storms and brutal sun\nGuangdong summers are unfriendly\n\nThe entropy law of physical systems\nI feel it viscerally\nLiving space\nHow you look\nTraining the body\nTempering the mind\nSlack off and it only gets worse\nOrder takes energy to maintain\n\nTreat sports science and physique as long-term infrastructure\nStudy the science more\nKnow your body\nTalk to nutrition and sports medicine\nI believe tomorrow can be happier\n\nAnd that's the base of willpower and mind management\nBody first, then spirit\nWorth investing in",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2088617586812719107",
+      "url": "https://x.com/therealfreddyx/status/2088617586812719107",
+      "created_at": "2026-08-15T13:23:31.000Z",
+      "text": "休闲时间都在看连续剧\n生活大爆炸和铁齿铜牙纪晓岚\n不过完全不是放松的状态去看\n要么想借此练习英语\n要么是想学习人际交往和表达方式\n时刻都在对号入座\n用自己代入剧中角色\n如果我是他我会怎么做\n但似乎永远没他们真实勇敢表达情绪\n以至于看个剧都想太多\n好累并非达到休息目的\n而适得其反",
+      "text_en": "Leisure time is all TV series\nThe Big Bang Theory and Iron-Tooth Ji Xiaolan\nBut I'm not watching to relax at all\nEither to practice English\nor to study how people talk and relate\nAlways mapping myself onto it\nPutting myself in the character\nWhat would I do if I were him\nI never seem as real or as brave with emotion as they are\nSo even a show becomes overthinking\nExhausting, not rest\nThe opposite of the point",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2088446111451337146",
+      "url": "https://x.com/therealfreddyx/status/2088446111451337146",
+      "created_at": "2026-08-15T02:02:09.000Z",
+      "text": "需要花更多时间\n在团队沟通磨合\n与人连接能力\n也就是职场一些话术\n迎合人性之类的技巧\n不能成天闷头干活\n而沟通过于直白枯燥和缺少活人感\n即使发心是好的\n也很难不被误解\n以及人与人之间的信息传递GAP影响\n人们更喜欢相处融洽的同事\n不是吗",
+      "text_en": "Need more time\non team communication and fit\non connecting with people\ni.e. some workplace language\nand skills that work with human nature\nYou can't just bury your head in the work\nwhile talking too blunt, dry, and lifeless\nEven with good intent\nit's hard not to be misunderstood\nplus the GAP in how people pass information\nPeople prefer colleagues they get along with\ndon't they",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2088292921510695095",
+      "url": "https://x.com/therealfreddyx/status/2088292921510695095",
+      "created_at": "2026-08-14T15:53:25.000Z",
+      "text": "不去关注钱\n不去关注工资\n不去关注回报\n维持低成本的基础质量生活\n找到真正可以一起走远的团队和事业\n沉淀、打磨、练习…\n要考虑清楚面对以下场景\n是否真的能下定决心\n不为所动呢\n\n1- 因你的贡献产品取得商业成功但老板不按照你的预期分蛋糕\n2- 团队新加入小伙伴能力不如你但薪资比你高\n3- 团队其他成员贡献不如你但薪资比你高\n4- 其他公司抛出超级高薪Offer聘请你跳槽\n5- 家人或对象有意无意吐槽你赚不到钱且和同辈对比\n6- 和同行朋友谈论薪资待遇而你的薪资不在市场水平线\n7- 非常有难度挑战的工作交给你但心里会觉得钱少事多然后默默计算投入产出比\n\n逐一对比\n如果有丝毫的权衡利弊之心理\n说明你在犹豫仍然没有下定决心\n如果在未来遇到以上情形\n不假思索不带一丝迟疑的毫不在意\n那就成了",
+      "text_en": "Don't watch the money\nDon't watch the salary\nDon't watch the return\nKeep a low-cost, decent baseline of life\nFind a team and a cause you can actually go far with\nSettle, sharpen, practice…\nThink clearly whether you could really decide\nand not be moved when facing these scenes\n\n1- The product succeeds commercially because of you, but the boss doesn't split the cake as you expected\n2- A new teammate is less capable than you but paid more\n3- Other teammates contribute less than you but are paid more\n4- Another company throws a huge offer to poach you\n5- Family or a partner, casually or not, needles you for not making money and compares you with peers\n6- Friends in the industry talk comp and yours isn't on the market line\n7- Hard, challenging work lands on you and you quietly compute ROI, feeling underpaid for the load\n\nCheck them one by one\nIf there's even a hint of weighing the tradeoff\nyou're still hesitating, not decided\nIf in the future those scenes happen\nand you don't think twice, not a shred of care\nthen you've arrived",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2088286943817912434",
+      "url": "https://x.com/therealfreddyx/status/2088286943817912434",
+      "created_at": "2026-08-14T15:29:40.000Z",
+      "text": "关注行业新趋势会让我生活变得不幸福\n本质是害怕失去心理在作祟\ncursor被收购\ndeepseek harness发布\n这些其实跟我的方向几乎无关\n早看晚看没区别\n这种模式是被动接受信息\n而不是基于实际问题出发\n采取寻找解决方案\n\n我需要稳定平和的环境状态来沉淀\n至少需要这几年的时间\n不为钱去做事\n应该立几个行动准则\n遇到类似场景\n不需要思考直接执行\n避免陷入无休止的内耗\n\n1- 不关注行业新动向\n2- 不关注同行薪资收入\n3- 不要相信最佳路径一劳永逸\n\n1- 生命本身没有意义不存在浪费机会成本\n2- 自己幸福开心为第一要义\n3- 回归人际本身关注真实的生命个体",
+      "text_en": "Watching industry news makes my life less happy\nAt bottom it's fear of loss\nCursor getting acquired\nDeepSeek harness shipping\nThese have almost nothing to do with my direction\nSeeing them early or late doesn't change anything\nThat mode is passively taking information\nnot starting from a real problem\nand then looking for a solution\n\nI need a stable, calm environment to settle\nAt least a few years\nNot working for money\nI should set a few action rules\nWhen similar scenes show up\ndon't think, just execute\navoid endless inner grinding\n\n1- Don't watch industry news\n2- Don't watch peers' pay\n3- Don't believe in one best path that lasts forever\n\n1- Life itself has no meaning; there's no such thing as wasting opportunity cost\n2- Your own happiness comes first\n3- Return to people; attend to real living individuals",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2088230813339107738",
+      "url": "https://x.com/therealfreddyx/status/2088230813339107738",
+      "created_at": "2026-08-14T11:46:38.000Z",
+      "text": "Cloudflare WorkerAI的模型也太烂了\nDropbrain产品内测中\n拿了几套题目去问Genspark\n有的模棱两可\n有的完全矛盾\n简直误人子弟\n还是得上高级模型",
+      "text_en": "Cloudflare Workers AI models are really bad\nDropbrain is in closed beta\nI took a few question sets to Genspark\nSome answers were mushy\nSome outright contradicted themselves\nThat's misleading people\nHave to step up to a better model",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPri2inbAAAlGa9.jpg",
+          "width": 947,
+          "height": 2048
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPri2iqa8AAM6pe.jpg",
+          "width": 947,
+          "height": 2048
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPri2ijbUAAA_NL.jpg",
+          "width": 947,
+          "height": 2048
+        }
+      ],
+      "thread_count": 1
+    },
+    {
+      "id": "2088173225268109555",
+      "url": "https://x.com/therealfreddyx/status/2088173225268109555",
+      "created_at": "2026-08-14T07:57:47.000Z",
+      "text": "不用工作、有存款\n和家人住在一起\n大把时间自由支配\n有热爱的研究方向\n有一直在做事\n也是自己的天赋所在\n为何还是常常感到不幸福不开心？\n\n有几点可能\n1- 对虚无缥缈的事情寄予希望又落空。面试反馈不错但迟迟不发 Offer 感觉被耍，又不愿意相信真相。\n\n2- 缺少深度关系。没有活人感，都是浅层关系，缺少与其他人类的链接，包括不限于亲密关系\n\n3- 对自身认知了解和期望大于现实。想要好的形象，好的精力，强大的内心，知道自己缺什么，但无法一蹴而就，看不到改进反馈\n\n痛苦的来源似乎都归结\n为自我和世界的关系\n痛苦和幸福的来源似乎皆是来源于为人本身\n\n心性如何控制\n不为他人好坏评价绑架\n不为金钱名誉多少禁锢\n回归到生命本身\n好好活着\n好好做事",
+      "text_en": "No job, savings in the bank\nliving with family\nlots of free time\na research direction I love\nstill doing the work\nand it's where my talent sits\nWhy do I still often feel unhappy?\n\nA few possibilities\n1- Pinning hope on something vaporous and watching it fall through. Interview feedback was good but the offer never comes; you feel jerked around and still don't want to believe it.\n\n2- Missing deep relationships. No aliveness, all shallow ties, little connection with other humans, including but not limited to intimacy\n\n3- Self-knowledge and expectation ahead of reality. Want a good image, good energy, a strong inner life; you know what's missing but it can't happen overnight, and you can't see improvement feedback\n\nThe source of the pain seems to collapse into\nthe relation between self and world\nPain and happiness both seem to come from being a person\n\nHow to govern the temperament\nNot kidnapped by others' good or bad opinions\nNot caged by how much money or fame\nReturn to life itself\nLive well\nDo the work well",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2087864933228703800",
+      "url": "https://x.com/therealfreddyx/status/2087864933228703800",
+      "created_at": "2026-08-13T11:32:45.000Z",
+      "text": "Cursor 的用量统计这两天延迟也太久了吧\n以前近乎是实时\n今天昨天用了差不多1 亿 Token 吧\n竟然进度条一个都没更新\n强迫症患者难受啊\n时不时点进去 check 有没有消耗完\n结果都是不过 50%\n这还有几天就重置月额度了\n不用完感觉亏死啊\n\n开奖了\n天下没有免费的午餐哈哈哈\nGPT Sol 使用体感差异不大\n一下子把 Other Model 用量干完了\n还是乖乖跑回去用 Auto 模型吧",
+      "text_en": "Cursor's usage stats have been lagging way too long these two days\nUsed to be almost realtime\nYesterday and today I burned something like 100M tokens\nand the progress bar hasn't moved at all\nTough for the OCD\nI keep opening it to check if it's used up\nstill under 50%\nThe monthly quota resets in a few days\nFeels like a crime not to finish it\n\nResults are in\nNo free lunch haha\nGPT Sol didn't feel that different\nand it instantly drained Other Model usage\nBack to Auto it is",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPmVQi_XwAArnSv.jpg",
+          "width": 1646,
+          "height": 998
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPmVhOTXMAAE-3Z.jpg",
+          "width": 1580,
+          "height": 1620
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPp5b-cWYAE8tWF.jpg",
+          "width": 1740,
+          "height": 1008
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPp5fa0XsAAQmIB.jpg",
+          "width": 1672,
+          "height": 1658
+        }
+      ],
+      "thread_count": 2
+    },
+    {
+      "id": "2087793845626982629",
+      "url": "https://x.com/therealfreddyx/status/2087793845626982629",
+      "created_at": "2026-08-13T06:50:16.000Z",
+      "text": "解决方案寻宝记\nNango：用于管理多个集成外部服务的统一平台\n\n起源于我要给 BabyLovable 项目接入 Github 仓库双向同步\n目前使用的是 FreestyleGit 的内置 Github 同步能力\n除了不能代替用户创建空仓库外\n其他功能都非常完美\n为了提升用户体验\n不能要求用户手动创建一个 repo 再回到我的应用手动关联\n我希望集成度更高用户体验更加seamless\n\n于是只好手动接入 Github Oauth授权机制\n让用户授权给我替代他创建 Repo\n这带来了不容忽视的维护工作负担\n比如我要手动处理user access token存储和生命周期管理\n要使用 refresh token 去刷新凭证\n要处理失败重试、并发、限流等问题\n\n想象一下\n我后面还需要接入 Notion / Slack / Google Doc 等外部系统\n每个系统都要独立对接和精心维护一套授权状态机制\n而每一家 provider 的对接方式和实现风格迥异\n按照笔者多年的行业经验\n大部分外部系统的对接工作和维护体验完全谈不上轻松\n想想就是地狱\n\n于是我想寻找一个解决方案\n是否有一个专业的服务能接管这些基础设施\n我可以专注于核心产品能力的构建\n果然在 Genspark 帮助下找到 Nango 这个产品\nCodingAgent 行业标杆 Replit 也是他的客户！\n\nhttps://nango.dev/blog/the-hidden-costs-of-building-product-integrations-in-house\nhttps://nango.dev/blog/why-product-integration-infrastructure-is-harder-than-you-think#introduction\nhttps://nango.dev/case-studies/replit",
+      "text_en": "Treasure hunt for a solution\nNango: a unified platform for managing lots of external integrations\n\nIt started because I needed two-way GitHub sync for BabyLovable\nRight now we use Freestyle Git's built-in GitHub sync\nExcept it can't create an empty repo for the user\neverything else is excellent\nTo raise the UX\nI can't ask the user to make a repo by hand and then come back to bind it\nI want a tighter, more seamless integration\n\nSo I had to wire GitHub OAuth myself\nand let the user authorize me to create the repo for them\nThat brings a maintenance burden you can't ignore\nI have to store user access tokens and manage their lifecycle\nrefresh with refresh tokens\nhandle retries, concurrency, rate limits\n\nNow imagine\nlater I also need Notion / Slack / Google Docs\neach one its own integration and a carefully kept auth-state machine\nand every provider's style is different\nFrom years in the industry\nmost external integrations are not a pleasant maintenance story\nJust thinking about it is hell\n\nSo I looked for a solution\nIs there a professional service that can take over this infrastructure\nso I can stay on core product\nWith Genspark's help I found Nango\nReplit, a flagship in coding agents, is a customer too\n\nhttps://nango.dev/blog/the-hidden-costs-of-building-product-integrations-in-house\nhttps://nango.dev/blog/why-product-integration-infrastructure-is-harder-than-you-think#introduction\nhttps://nango.dev/case-studies/replit",
+      "urls": [
+        "https://nango.dev/blog/the-hidden-costs-of-building-product-integrations-in-house",
+        "https://nango.dev/blog/why-product-integration-infrastructure-is-harder-than-you-think#introduction",
+        "https://nango.dev/case-studies/replit",
+        "https://www.genspark.ai/agents?id=564251f0-1cb9-46b2-856b-0066cf0277c2"
+      ],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2087775543290691615",
+      "url": "https://x.com/therealfreddyx/status/2087775543290691615",
+      "created_at": "2026-08-13T05:37:33.000Z",
+      "text": "个人博客站 Todo\n引入：\n网易云歌单\n豆瓣电影记录\nYoutube 视频观看历史\n...\n等等数字化生活轨迹\n\n补充：\n我正在付费订阅的产品们\n（金额、时间、账单等）",
+      "text_en": "Personal blog todos\nBring in:\nNetEase Cloud playlists\nDouban movie logs\nYouTube watch history\n...\nand other digital life traces\n\nAlso:\nproducts I'm paying for\n(amount, dates, invoices, etc.)",
+      "urls": [],
+      "media": [],
+      "thread_count": 2
+    },
+    {
+      "id": "2087522679783899582",
+      "url": "https://x.com/therealfreddyx/status/2087522679783899582",
+      "created_at": "2026-08-12T12:52:45.000Z",
+      "text": "0 成本用 Cloudflare 的 WorkerAI 搭了一套\n使用效果不错，已经学上瘾了\n\n阅读困难症患者的福音\n心智成本低，容易开始\n有盲盒抽卡的感觉\n带着问题去学习相比\n生啃原文枯燥的阅读理解简单多了\n原文的信息传递效率太低\n大多数作者的讲述问题能力有限\n而且不具备面向不同水平需求的读者\n用 AI 改成结构化问卷拆分成独立问题\n能大幅提高信息转换效率（从文字->大脑存在一个转化率）\nhttps://dropbrain.freddyx.workers.dev/\n\n才看到账单\n每个月要 5 刀订阅\n居然忘了这回事\n囧 感觉贵了呀",
+      "text_en": "Built a stack at zero cost on Cloudflare Workers AI\nIt works well; I'm already addicted to learning on it\n\nA gospel for people who struggle to read\nLow mental cost, easy to start\nFeels like a blind-box draw\nLearning with a question in hand\nbeats grinding dry source text\nRaw articles transfer information too slowly\nMost authors aren't great at explaining\nand they don't write for readers at different levels\nTurn it into a structured questionnaire of independent questions with AI\nand you raise the conversion rate a lot (text → brain has a conversion rate)\n\nhttps://dropbrain.freddyx.workers.dev/\n\nJust saw the bill\n$5 a month\nI'd forgotten about that\nAwkward — feels expensive",
+      "urls": [
+        "https://dropbrain.freddyx.workers.dev/"
+      ],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPhYAAIXYAA55Zo.jpg",
+          "width": 2048,
+          "height": 1177
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPhYDkMWgAAH3dR.jpg",
+          "width": 2048,
+          "height": 1177
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPmrbQnXEAEUOQD.jpg",
+          "width": 1256,
+          "height": 1028
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HPmrfJgWoAALA1y.jpg",
+          "width": 2048,
+          "height": 995
+        }
+      ],
+      "thread_count": 2
+    },
+    {
+      "id": "2087075916883042577",
+      "url": "https://x.com/therealfreddyx/status/2087075916883042577",
+      "created_at": "2026-08-11T07:17:29.000Z",
+      "text": "经验包括过往失败案例、错误实践等等总结出来的直觉\n直觉就是判断力\n判断力就是效率\n\n试错、实践、避坑都是经验加成\n这是大多数人类天然本性无法快速习得的\n无法通过只言片语或他人的教授\n而深刻体会内化成自己的经验心得\n这需要经历长时间的以身入局\n一次次的充满希望又被打破\n一次次跌倒又重新站起来\n一次次战胜看似不可能的困难\n尔后变成云淡风轻的一语带过\n这些才是内化的\n需要经年累月时光雕琢的\n是真正的血和泪经验",
+      "text_en": "Experience includes intuition distilled from past failures and wrong practice\nIntuition is judgment\nJudgment is efficiency\n\nTrial and error, practice, avoiding pits — that's experience compounding\nMost human nature can't pick this up quickly\nYou can't internalize it from a few words or someone else's teaching\nIt takes a long time of putting yourself in the game\nHope rising and breaking, again and again\nFalling and standing up, again and again\nBeating difficulties that looked impossible, again and again\nThen it becomes a light, almost casual sentence\nThat's what's internalized\nCarved by years\nReal blood-and-tear experience",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2086408307825312112",
+      "url": "https://x.com/therealfreddyx/status/2086408307825312112",
+      "created_at": "2026-08-09T11:04:38.000Z",
+      "text": "不再沉迷小红书/X/抖音等社媒内容的原因\n独立思考断舍离\n算法推送的内容只代表一部分人的话语权和价值观\n而真实世界的价值观维度之多和复杂程度\n远超乎在社媒上表现出来的\n网路流行价值观不再能左右我的心智\n是从底层看出来\n那些内容不过是人们欲望和想象的投射\n每个人对同一个内容的解读都不同\n和作者想表达的也不同\n我们都是生活在自己的想象中\n而流量效应又集中化放大刺激性话题\n让人误以为真实世界即如此\n思维懒惰导致真实判断失真\n反过来看作为这些内容的消费者\n更多是强化自己的想象世界\n不断讨好自己的固化价值观\n不利于真实了解这个世界\n也就是说过度使用这些内容\n已经失去原本的意义和初衷\n不会让人变得更好更接近真理\n还是那句话\n真实世界远比网络呈现出来的复杂多维\n不上网冲浪也不会错过什么的",
+      "text_en": "Why I stopped bingeing Xiaohongshu / X / Douyin\nIndependent thinking, a clean break\nAlgorithmic feeds only represent some people's discourse and values\nThe real world's values are far more dimensional and complex\nthan what social media shows\nTrending online values no longer steer my mind\nFrom the bottom you can see\nthat content is just projection of desire and imagination\nEveryone reads the same post differently\nand differently from what the author meant\nWe all live in our own imagination\nand traffic effects concentrate and amplify stimulating topics\nso you mistake that for the real world\nLazy thinking distorts real judgment\nLooked the other way, as a consumer of this content\nyou mostly reinforce your imagined world\nconstantly flattering a frozen set of values\nwhich doesn't help you actually know the world\nMeaning overusing this stuff\nhas already lost its original point\nIt doesn't make you better or closer to truth\nSame line as always\nthe real world is far more complex and multi-dimensional than the network\nYou won't miss much by not surfing",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2086313407888892349",
+      "url": "https://x.com/therealfreddyx/status/2086313407888892349",
+      "created_at": "2026-08-09T04:47:32.000Z",
+      "text": "最近的迷思似乎都可以用一个词来打破\n勇敢\n\n勇敢选择真正喜欢的路而非别人希望你走的\n拒绝他人和树立明确边界的勇气\n锻炼心智强度的意志力勇气\n管好脑子和嘴巴以及行为和身体\n真实表达情绪和不满的勇气\n敢于承担后果和当领导者的责任\n敢于追求理想和卓越成果\n敢于挑战自己和落实到每天重复枯燥的技艺练习",
+      "text_en": "Lately every puzzle seems to break with one word\ncourage\n\nCourage to choose the path you actually like, not the one others want\nCourage to refuse people and draw a clear boundary\nCourage as will, to train mental strength\nTo govern the mind and the mouth, and behavior and the body\nCourage to express emotion and dissatisfaction for real\nCourage to take consequences and lead\nCourage to chase an ideal and excellent results\nCourage to challenge yourself and show up for the dull daily craft",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2085910920228958448",
+      "url": "https://x.com/therealfreddyx/status/2085910920228958448",
+      "created_at": "2026-08-08T02:08:12.000Z",
+      "text": "年轻人错把自我实现需求当成了生存需求\n而自我实现是符合预想的成功是小概率事件\n人生不是剧本不能提前设计\n盲目追赶变化害怕落后\n好像不如此就不配活着\n忽视了细微的身体感受\n是一种本末倒置\n\n--- 总结自北大哲学教授程乐松\n\nhttps://www.xiaohongshu.com/explore/6a7406e20000000025001e99?xsec_token=ABBQEpPmpVr0A4Dagu9MgbDil5IHmI0BP1mNHSW6tQgbA=&xsec_source=pc_feed",
+      "text_en": "Young people mistake the need for self-actualization for a survival need\nAnd self-actualization as the success you pictured is a low-probability event\nLife isn't a script you can design in advance\nBlindly chasing change, afraid of falling behind\nas if you don't deserve to live otherwise\nIgnoring the body's small signals\nThat's getting it backwards\n\n--- distilled from Peking University philosophy professor Cheng Lesong\n\nhttps://www.xiaohongshu.com/explore/6a7406e20000000025001e99?xsec_token=ABBQEpPmpVr0A4Dagu9MgbDil5IHmI0BP1mNHSW6tQgbA=&xsec_source=pc_feed",
+      "urls": [
+        "https://www.xiaohongshu.com/explore/6a7406e20000000025001e99?xsec_token=ABBQEpPmpVr0A4Dagu9MgbDil5IHmI0BP1mNHSW6tQgbA=&xsec_source=pc_feed"
+      ],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2085770477155623028",
+      "url": "https://x.com/therealfreddyx/status/2085770477155623028",
+      "created_at": "2026-08-07T16:50:08.000Z",
+      "text": "关注自己的身体感受\n以人为本\n是以自身生理和心理舒适为本\n眼睛难受就不看屏幕了\n腰酸就不要久坐久躺了\n关注自身的秩序感\n好好维护保养躯壳\n而不是为了虚名努力奋斗\n当把真正属于自己的身体幸福作为成本牺牲掉了",
+      "text_en": "Attend to how the body feels\nPeople first\nmeans your own physical and mental comfort first\nEyes hurt, stop looking at the screen\nLower back aches, don't sit or lie too long\nAttend to a sense of order in yourself\nMaintain and care for the shell\ninstead of grinding for empty names\nWhen you sacrifice the body's happiness — the only one that's actually yours — as a cost",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2085748624731091135",
+      "url": "https://x.com/therealfreddyx/status/2085748624731091135",
+      "created_at": "2026-08-07T15:23:18.000Z",
+      "text": "这个美国小哥拥有我想要的状态：\n做自己真正想做的事\n不被金钱绑架而活在精神痛苦中\n有余力去帮助别人不受苦\n稳定的内在价值观不被周围左右\n谈一段已经维持 6 年的感情\n\nhttps://www.bilibili.com/video/BV1TZG36jEqn/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=7dd7574890799cb767775c76e1a8c3f2",
+      "text_en": "This American guy has the state I want:\nDoing what he actually wants to do\nNot kidnapped by money into mental pain\nSpare capacity to help others suffer less\nA stable inner value system that doesn't sway with the room\nA relationship that's already lasted 6 years\n\nhttps://www.bilibili.com/video/BV1TZG36jEqn/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=7dd7574890799cb767775c76e1a8c3f2",
+      "urls": [
+        "https://www.bilibili.com/video/BV1TZG36jEqn/?spm_id_from=333.1007.tianma.1-1-1.click&vd_source=7dd7574890799cb767775c76e1a8c3f2"
+      ],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2085589663490748803",
+      "url": "https://x.com/therealfreddyx/status/2085589663490748803",
+      "created_at": "2026-08-07T04:51:38.000Z",
+      "text": "一定要降低不必要的支出\n为了不受限于任何人\n过自给自足的生活\n不被无关人等影响平和心态\n不需要依赖外部认可来立足\n等待不确定性的过程太痛苦了\n严重干扰生活\n面试评价很好却拖着 Offer 不发的公司\n也太自私和傲慢了\n一点不考虑我的感受\n别陷入给自己画饼的境地\n别给自己脖子前吊着一块奶酪\n宁愿吃草皮度日维持基本生活\n也不要追逐“高级感”而严重依赖外部供养\n这只不过是伪装成彩色糖衣的陷阱",
+      "text_en": "Cut unnecessary spending\nso you're not limited by anyone\nlive as self-sufficient as you can\ndon't let irrelevant people disturb a calm mind\ndon't need outside approval to stand\nWaiting on uncertainty is too painful\nit wrecks daily life\nCompanies that praise you in interviews then sit on the offer\nare selfish and arrogant\nThey don't consider how that feels at all\nDon't bake yourself a pie\nDon't hang a piece of cheese in front of your own neck\nRather eat grass and keep a basic life\nthan chase a \"premium feel\" that depends on outside supply\nThat's just a trap in colored sugar coating",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2085537421769445519",
+      "url": "https://x.com/therealfreddyx/status/2085537421769445519",
+      "created_at": "2026-08-07T01:24:03.000Z",
+      "text": "高级岗位招聘\n购买的是认知和经验\n而非劳动者的时间",
+      "text_en": "When you hire for a senior role\nyou're buying judgment and experience\nnot the worker's time",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2085378946888319422",
+      "url": "https://x.com/therealfreddyx/status/2085378946888319422",
+      "created_at": "2026-08-06T14:54:20.000Z",
+      "text": "所谓话术口才就是 Paraphrase 同义替换\n同样的事实用不同的词语、句法、组织方式、情绪、表情、动作呈现出他人认为的不同理解\n选择性披露，说啥不说啥都要管住嘴\n更重要还是心智控制能力\n和意志力、勇气有关",
+      "text_en": "So-called eloquence is just paraphrase\nThe same facts, different words, syntax, structure, emotion, face, gesture — and others hear a different meaning\nSelective disclosure; manage what you say and what you don't\nMore important is control of the mind\nwillpower and courage",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2084547381991993586",
+      "url": "https://x.com/therealfreddyx/status/2084547381991993586",
+      "created_at": "2026-08-04T07:49:59.000Z",
+      "text": "个人博客站点迎来史诗级更新\nFeatures：\n1. 「小想法」内容来源于最近半年的推特随笔\n      1.1 瀑布流列表\n      1.2 随机抽卡\n2. 「作品视频墙」自动播放最近的作品集\n3. 「全局搜索」可搜索跳转打开想法卡片\n\n欢迎做客，更多彩蛋等你发现\nhttp://freddyx.pages.dev",
+      "text_en": "The personal site just got an epic update\nFeatures:\n1. 「Thoughts」 from the last half year of posts on X\n      1.1 waterfall feed\n      1.2 lucky draw\n2. 「Project video wall」 autoplays recent work\n3. 「Global search」 can jump open a thought card\n\nCome visit — more eggs to find\nhttp://freddyx.pages.dev",
+      "urls": [
+        "http://freddyx.pages.dev"
+      ],
+      "media": [
+        {
+          "type": "video",
+          "url": "https://pbs.twimg.com/amplify_video_thumb/2084543828133113856/img/cwkYIqQv35Zj_37K.jpg",
+          "width": 2048,
+          "height": 1178,
+          "poster": "https://pbs.twimg.com/amplify_video_thumb/2084543828133113856/img/cwkYIqQv35Zj_37K.jpg",
+          "video_url": "https://video.twimg.com/amplify_video/2084543828133113856/vid/avc1/626x360/AMYYY8yWVyZJoZqb.mp4"
+        }
+      ],
+      "thread_count": 1
+    },
+    {
+      "id": "2084497238131146974",
+      "url": "https://x.com/therealfreddyx/status/2084497238131146974",
+      "created_at": "2026-08-04T04:30:44.000Z",
+      "text": "今天在 B 站看了两个视频\n\n一个是邵艾伦说的关于人脉是最大的骗局\n提到了互联网时代可以非常轻易和你感兴趣的人取得链接\n即使是千万博主账号私信也没有想象那么多\n人们往往高估自己和“大 V”的距离感\n\n另一个是徐师傅采访靠专业培训月入 10 万的工程师\n被清华硕士大规模盗版出售非法获利巨额\n更令人气愤的他还恬不知耻承认你能把我怎么样\n死猪不怕开水烫的嘴脸\n高学历并不代表道德和人品，也不代表能力\n这也是人们常会陷入的迷思\n\n对自己不了解的东西加以想象妄加推断\n带着滤镜看东西是迎合大脑懒惰的本性\n独立思考需要有强大的意志力\n不被外表迷惑意味着要用力思考和控制本性\n用在真实社会经济生活的表现是\n人们常面对“高位”时表现自我贬低心理\n想象对方是比自己厉害或优秀太多\n故而做出让步和妥协\n\n即使我清楚有大量案例能证明\n也能从底层逻辑理解“不要美化自己未曾走过的道路”\n但实操起来还是会心里不安\n比如面试时遇到的名校光环面试官\n资金实力雄厚的创业公司\n还是会露怯几分\n很需要勇气和意志力来面对\n\n带来的直接启示就是\n不要低估自己也不要仰望他人\n看似头顶优秀光环的大人物只是在合适的机缘下\n做出幸运的选择罢了\n下次告诉自己\n如果对方是和你一样的出身背景环境限制\n他是否能达到你目前的高度？\n\n我们大可去尝试私信请教一些网络红人 KOL\n大可勇敢去展示自己的价值\n以及真诚寻求他人的帮助\n不要受限于自我想象的桎梏中\n\nhttps://www.bilibili.com/video/BV16Q3P6VETS",
+      "text_en": "Watched two Bilibili videos today\n\nOne is Shao Ailun saying connections are the biggest scam\nIn the internet age you can reach people you're interested in very easily\nEven a 10-million-follower account doesn't get as many DMs as you imagine\nPeople overestimate the distance to a \"big V\"\n\nThe other is Master Xu interviewing an engineer who makes 100k a month from professional training\nA Tsinghua master's student pirated and sold it at scale for huge illegal profit\nand shamelessly said what are you going to do about it\nThat thick-skinned look\nA high degree doesn't mean morals or character, or even ability\nThat's a myth people fall into a lot\n\nImagining and judging what you don't know\nLooking through a filter is the brain being lazy\nIndependent thinking takes strong will\nNot being fooled by surfaces means thinking hard and governing instinct\nIn real economic life that shows up as\npeople shrinking themselves in front of \"high status\"\nimagining the other person is far more capable or excellent\nand then conceding\n\nEven when I know plenty of cases that prove otherwise\nand can reason from first principles that you shouldn't romanticize a road you haven't walked\nin practice I still get uneasy\nlike facing a haloed interviewer from a brand-name school\nor a well-funded startup\nI still flinch a bit\nIt takes courage and will\n\nThe direct lesson\ndon't underestimate yourself and don't look up at others\nThe big names with excellent halos just made lucky choices at the right moment\nNext time tell yourself\nif they had your background and constraints\ncould they reach where you are now?\n\nWe can try DMing some KOLs\nWe can bravely show our value\nand sincerely ask for help\nDon't stay caged in your own imagination\n\nhttps://www.bilibili.com/video/BV16Q3P6VETS",
+      "urls": [
+        "https://www.bilibili.com/video/BV16Q3P6VETS",
+        "https://www.bilibili.com/video/BV1t6KE6JEJc"
+      ],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HO2Zak_aMAAEZA8.jpg",
+          "width": 2038,
+          "height": 1130
+        }
+      ],
+      "thread_count": 1
+    },
+    {
+      "id": "2084149531843997769",
+      "url": "https://x.com/therealfreddyx/status/2084149531843997769",
+      "created_at": "2026-08-03T05:29:04.000Z",
+      "text": "挖新坑来补齐热门生态认知\n\n【文字创作】\n技术博客文档的 ai 写手\n没有哪个模型写的满意，充满大量零碎的技术细节\n目标：给人类读者阅读，没有 ai 味\n\n【代码创作】\n产品克隆：\nvibe 一个云服务平台，实践 baas / paas 云计算服务平台\n如开源的 supabase 、开源的 sandbox 服务之类\n\n【媒体创作】\n调研 AI 媒体创作平台产品和技术架构\ntapnow libAI loveart\nai 创作生态、基础设施\ncomfyUI 、模型能力、画布、图工作流",
+      "text_en": "New pits to fill out popular-ecosystem knowledge\n\n【Writing】\nAn AI writer for technical blogs and docs\nNo model writes to my satisfaction — too many fragmented technical details\nGoal: for human readers, no AI smell\n\n【Code】\nProduct clones:\nvibe a cloud platform, practice BaaS / PaaS\nlike open-source Supabase, open-source sandbox services, and so on\n\n【Media】\nResearch AI media-creation products and architecture\ntapnow libAI loveart\nAI creation ecosystems and infrastructure\nComfyUI, model capability, canvas, graph workflows",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2083953150730641849",
+      "url": "https://x.com/therealfreddyx/status/2083953150730641849",
+      "created_at": "2026-08-02T16:28:43.000Z",
+      "text": "做一个打破语言墙的搜索引擎\n案例如github仓库检索\n主流都是英文检索\n这直接忽视了中文 日文 俄国等开发者的工作成果\n而不同国家文化的基因导致擅长领域不同\n中国开发者提供大而全可落地\n英文提供原型和思维但不会有太多商用细节\n等等",
+      "text_en": "Build a search engine that breaks the language wall\nExample: GitHub repo search\nMainstream is English-only retrieval\nThat ignores work by Chinese, Japanese, Russian developers and others\nDifferent national cultures specialize in different things\nChinese developers ship large, complete, landable systems\nEnglish often gives prototypes and thinking, with fewer commercial details\nand so on",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2083493899851714775",
+      "url": "https://x.com/therealfreddyx/status/2083493899851714775",
+      "created_at": "2026-08-01T10:03:49.000Z",
+      "text": "其实是\n还无法完全认同钱乃身外之物的观点\n还是觉得寒窗苦读学习这么多年\n就应该赚很多钱\n才对得起过往的辛苦与波折\n以及家人的期许\n现在有点激流勇退的感觉\n在顶峰却自愿放弃\n还没真正赚到大钱却谈钱不重要\n\n羡慕大冰对待赚钱的态度\n够用就行没了再去赚\n他是有赚大钱能力\n但选择坚守内心抵制诱惑\n意志力超强\n既然知道钱不会让我变得幸福\n却又担心这个机会成本\n好像不去赚钱就是对不起当前处境\n忧虑这些可能不属于自己的东西\n及时满足了得到了\n其实会以另一种形式付出成本",
+      "text_en": "The truth is\nI still can't fully agree that money is just a thing outside the self\nI still feel that after so many years of hard study\nI ought to make a lot of money\nto honor the hardship and the twists\nand the family's hopes\nNow it feels a bit like retiring at the peak\nChoosing to step back while still high\nTalking about money not mattering before I've actually made a lot\n\nI envy Da Bing's attitude toward earning\nEnough is enough; if it's gone, go earn again\nHe could make big money\nbut chooses to hold the inner line against temptation\nWillpower off the charts\nI already know money won't make me happier\nand still worry about the opportunity cost\nas if not chasing money is a betrayal of the current situation\nAnxious about things that may not even be mine\nAnd if I do get the timely satisfaction\nit will just be paid for in another form",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2083486933389381982",
+      "url": "https://x.com/therealfreddyx/status/2083486933389381982",
+      "created_at": "2026-08-01T09:36:08.000Z",
+      "text": "一个声音说\n说存款是安心的底气\n说在深圳就得努力搞钱\n说在其位谋其职不要抵触主流\n可是代价太大了\n一年多赚10万换来结果是\n平和感自洽感活人感更加难以企及\n更不论\n付出的时间是生命的长度和新鲜度\n\n另一个声音问\n是否能不眼红同僚的收入水平\n是否持平心态\n是否能有团队兼容这种模式\n而不是作为孤立的特\n也不是变为成合伙人给自己画饼\n那你求什么？\n无所求回报\n只要理想土壤\n自己也会开出硕果\n并不依附任何人或运气来致富么\n从心底相信吗\n不看短期收入\n只看是否能人生自洽幸福\n以及金钱只是顺带赠予的吗",
+      "text_en": "One voice says\nsavings are the ground of peace of mind\nin Shenzhen you have to grind for money\nplay the role, don't fight the mainstream\nBut the cost is too high\nAn extra 100k a year buys you\npeace, self-consistency, aliveness that get even harder to reach\nNot to mention\nthe time you pay is the length and freshness of a life\n\nAnother voice asks\ncan you not envy colleagues' pay\ncan you keep a level mind\ncan a team actually live with this mode\ninstead of you being an isolated special case\nand instead of becoming a fake partner painting yourself a pie\nThen what are you asking for?\nNo return asked\nOnly the soil of an ideal\nand fruit will grow on its own\nNot depending on anyone or luck to get rich?\nDo you believe that in your gut\nNot looking at short-term income\nonly whether life can be self-consistent and happy\nand money is just a side gift?",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2083459892900433960",
+      "url": "https://x.com/therealfreddyx/status/2083459892900433960",
+      "created_at": "2026-08-01T07:48:41.000Z",
+      "text": "低物欲生活\n和极致省钱生活的界线\n偶尔打车用滴滴专车\n偶尔为更好体验买单\n不应该自我攻击\n\n减少不必要开支\n抵制消费主义\n不是没苦硬吃\n是更加理性带着智慧对待金钱\n不是一刀切变成铁公鸡四处省钱\n不然变成另一种被金钱禁锢的形式\n\n潜意识是因为家人不会如此消费\n故而有消费羞耻心",
+      "text_en": "The line between a low-desire life\nand an extreme penny-pinching life\nOccasionally take a Didi premium car\nOccasionally pay for a better experience\nDon't attack yourself for that\n\nCut unnecessary spending\nResist consumerism\nThat's not making yourself suffer on purpose\nIt's treating money with more reason and wisdom\nNot a one-cut becoming a miser who saves everywhere\nThat would just be another way of being caged by money\n\nUnderneath is that family wouldn't spend like this\nso there's shame around spending",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2083450272383369463",
+      "url": "https://x.com/therealfreddyx/status/2083450272383369463",
+      "created_at": "2026-08-01T07:10:28.000Z",
+      "text": "高薪工作不会让我人生更幸福\n平和自洽的人生理念\n与过于看重经济收入的择业态度违背\n如此选择必然会牺牲和妥协\n幸福会让步于此\n但也不是说\n让你自降薪资降低门槛\n而是要找到真正匹配的工作和团队\n钱少一些又何妨\n自己能吃饱饭\n家人能吃饱饭\n然后再谈吃好饭\n活人的成本是很低的\n但能否做出如此大的心态转变\n需要点时间来思量\n从搞钱是第一要务\n换成\n平和自洽幸福是第一\n钱能活人即可\n不必有意追求\n有意求的应该是理想",
+      "text_en": "A high-paying job won't make my life happier\nA peaceful, self-consistent philosophy of life\nconflicts with treating income as the main axis of career choice\nChoose that way and you will sacrifice and compromise\nHappiness will yield\nThat doesn't mean\nyou should slash your salary and lower the bar\nIt means find work and a team that actually match\nA bit less money — so what\nIf I can eat\nand family can eat\nthen we can talk about eating well\nThe cost of staying alive is low\nWhether I can make that big a mental shift\ntakes some time to sit with\nFrom money as job one\nto\npeace, self-consistency, happiness as job one\nMoney enough to live is enough\nNo need to chase it on purpose\nWhat you chase on purpose should be the ideal",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2083434540136362475",
+      "url": "https://x.com/therealfreddyx/status/2083434540136362475",
+      "created_at": "2026-08-01T06:07:57.000Z",
+      "text": "最担心是陷入高不成低不就的境遇\n眼高手低或是心比天高\n然执行不够即能力不足\n映射的是心性不强\n落得里外不是人\n走不进普罗大众烟火人间\n又碰不到理想乌托邦的底\n会落得孑然一身\n孤独终老啊",
+      "text_en": "What I fear most is landing neither high nor low\nEyes bigger than the stomach, or a heart higher than the sky\nwhile execution — meaning ability — isn't enough\nThat maps to a weak temperament\nFitting neither inside nor outside\nUnable to walk into ordinary smoke-and-fire life\nand unable to touch the floor of the ideal utopia\nYou end up alone\nlonely to the end",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2083375103757414420",
+      "url": "https://x.com/therealfreddyx/status/2083375103757414420",
+      "created_at": "2026-08-01T02:11:46.000Z",
+      "text": "被历史财务决策绑架\n有个稳定又理想的工作\n而不应该成为生活全部\n要花大部分注意力和时间在\n自己、家人和朋友之上\nAI 黎明时代\n回归到人的本身\n回归到基础议题\n而不是被金钱禁锢着\n人生而自由\n也不能被历史和规训裹挟\n如何成为更好的自己\n先做一个能让自己着迷的人\n要放弃金钱的决心\n是否够坚定\n因为现如今已然影响到\n以人为本的自由基本盘\n如：体育、形象、沟通、社交、影响力",
+      "text_en": "Kidnapped by past financial decisions\nHaving a stable, ideal job\nshouldn't be the whole of life\nMost attention and time should go to\nyourself, family, and friends\nAt the dawn of AI\nreturn to the person\nreturn to basic questions\ninstead of being caged by money\nPeople are born free\nand shouldn't be dragged by history and discipline either\nHow to become a better self\nFirst become someone who fascinates yourself\nIs the resolve to let go of money\nfirm enough\nBecause it already affects\nthe free, people-first baseline\nlike: sport, appearance, communication, social life, influence",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2083368082215723151",
+      "url": "https://x.com/therealfreddyx/status/2083368082215723151",
+      "created_at": "2026-08-01T01:43:52.000Z",
+      "text": "专业技术迷思\n搞完一个阶段性的难题攻坚工作\n最有成就感和满足感是在中后期\n以及结束后的不久\n然后随时间推移会感受到\n某种类似多巴胺的激素迅速下降\n好像觉得攻克完的难题没那么高级\n会觉得不过如此\n难以做到有相同的心态去复述和讲解\n何以陷入这种自贬叙事\n学习老印在美国 IT 圈的心态叙事\n奈何本性难移\n目前解法只能靠不断用新项目来刺激大脑\n只不过这种方法是短暂的指标手段\n当成自己不断向前的动力\n坚持实践和交付顺带变成了解药\n而不是常人认为的坚持不懈苦熬",
+      "text_en": "A professional-technical myth\nAfter finishing a hard, staged piece of work\nthe peak of achievement and satisfaction is mid-to-late\nand shortly after it ends\nThen as time passes you feel\nsomething like dopamine drop fast\nthe solved problem no longer feels that advanced\njust \"that's all it was\"\nHard to retell and explain it with the same mindset\nWhy fall into that self-deprecating story\nLearn the narrative Indian engineers use in US IT\nbut nature is hard to move\nFor now the fix is stimulating the brain with new projects\nThat's only a short-term treating-the-symptom move\nUse it as fuel to keep going forward\nKeep practicing and shipping, and that becomes the antidote along the way\nnot the grim endurance people usually mean by persistence",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2082860844321476849",
+      "url": "https://x.com/therealfreddyx/status/2082860844321476849",
+      "created_at": "2026-07-30T16:08:17.000Z",
+      "text": "Todo\n个人博客首页做一个视频展示墙\n自动播放最近的作品演示视频\n3D 交互效果类似展厅效果",
+      "text_en": "Todo\nPut a video wall on the personal-blog home\nAutoplay recent project demos\n3D interaction, like a gallery",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2082794874064232660",
+      "url": "https://x.com/therealfreddyx/status/2082794874064232660",
+      "created_at": "2026-07-30T11:46:09.000Z",
+      "text": "不够勇敢的表现是\n不敢承认自己的失败\n不敢承认自己把事情搞砸了\n回避冲突、难堪、尴尬\n变成逃避、孤僻\n不敢看到别人对自己失望\n掩盖真实情绪\n只能不断给自己加码\n给脸上贴金标榜是另辟蹊径\n最后不想和真实的人类打交道\n但不想说太多啊\n怕变成自我攻击\n好像自己一无是处",
+      "text_en": "Not being brave looks like this\nNot daring to admit failure\nNot daring to admit you wrecked things\nAvoiding conflict, embarrassment, awkwardness\nTurning into escape and withdrawal\nNot daring to see others disappointed in you\nCovering real emotion\nOnly piling more onto yourself\nGilding your face as if you'd found another path\nUntil you don't want to deal with real humans\nBut I don't want to say too much\nafraid it becomes self-attack\nas if I'm worth nothing",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2082508832157392915",
+      "url": "https://x.com/therealfreddyx/status/2082508832157392915",
+      "created_at": "2026-07-29T16:49:31.000Z",
+      "text": "开个新坑\n直播录制简单的vibe coding过程\n在过程中体现工程、产品思维\n选择热门的话题产品\n大量记录如何调教 ai\n如何对抗幻觉和低质量产物",
+      "text_en": "New pit\nLivestream a simple vibe-coding session\nShow engineering and product thinking in the process\nPick a hot topic product\nRecord a lot of how you steer the AI\nhow you fight hallucination and low-quality output",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2082133993072570676",
+      "url": "https://x.com/therealfreddyx/status/2082133993072570676",
+      "created_at": "2026-07-28T16:00:02.000Z",
+      "text": "一种人是表大于里\n另一种是里大于表\n皆可谓表里不一\n伪君子和坏种都是表大于里\n里大于表的人不屑于展示出来\n有时会变成逃避的代名词\n而真小人是表里如一\n真性情也是",
+      "text_en": "One kind of person is more surface than inside\nAnother is more inside than surface\nBoth are insides that don't match outsides\nHypocrites and bad seeds are surface over inside\nPeople with more inside than surface don't bother displaying it\nand that can become another word for hiding\nA true villain is the same inside and out\nTrue temperament is too",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2082112658640384143",
+      "url": "https://x.com/therealfreddyx/status/2082112658640384143",
+      "created_at": "2026-07-28T14:35:16.000Z",
+      "text": "要组建自己的技术圈子\n共享经验和资源\nnetworking小众方向赛道抱团取暖\n也是人生支点之一\n不依赖平台和公司\n找一个彼此相互support的组织\n长期复利效应会有的",
+      "text_en": "Need to build my own technical circle\nShare experience and resources\nNetwork a niche track and keep each other warm\nThat's also a fulcrum in life\nDon't depend on a platform or a company\nFind an organization that supports each other\nLong-term compounding will show",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
     {
       "id": "2081362068767391857",
       "url": "https://x.com/therealfreddyx/status/2081362068767391857",

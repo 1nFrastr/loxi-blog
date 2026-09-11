@@ -131,8 +131,14 @@ function estimateHeight(post: XPost) {
     const ratio = m.width && m.height ? m.height / m.width : 0.62
     h += Math.min(360, Math.max(140, 360 * ratio))
   }
-  else if (media.length > 1) {
+  else if (media.length === 2) {
     h += 200
+  }
+  else if (media.length === 3) {
+    h += 140
+  }
+  else if (media.length > 3) {
+    h += 280
   }
   return h
 }
