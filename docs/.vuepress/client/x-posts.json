@@ -1,7 +1,606 @@
 {
   "username": "therealfreddyx",
-  "curated_at": "2026-09-11",
+  "curated_at": "2026-11-05",
   "posts": [
+    {
+      "id": "2116079498928255172",
+      "url": "https://x.com/therealfreddyx/status/2116079498928255172",
+      "created_at": "2026-10-30T08:07:22.000Z",
+      "text": "codex 的用户体验很烂\n对比 cursor 真的拉爆了\n\n大的层面来说有：\n- 对话文字段落整体视觉看起来不舒服\n- UI 按钮布局 ICON 等不符合直觉，我找了半天不知道怎么打开文件浏览器\n- 不一致性：命名一会叫 ChatGPT 一会叫 Codex 这是 OpenAI 一贯以来的问题，包括各种模型命名皆如此\n- 动画效果卡顿，Cursor 摒弃了过渡动画是很聪明的做法\n- 默认没有 Pending User Message Queue，新消息直接打断上一轮正在运行的对话\n\n整体感觉 Cursor 的用户体验就是轻量、迅速、一致、美观\n还是感谢一下 @ryolu_ 的工作\n小哥不在 Cursor 操刀后\nUI 坏味道已经初见端倪了\n比如在对话窗口顶部的 1 new message提示\n真没啥意义还丑每次新消息都提醒都是烦人\n强迫症患者看他就跟 App 的红点一样\n\n无语至极\n让用户摸不着头脑",
+      "text_en": "Codex's UX is terrible\nCompared with Cursor it really falls apart\n\nAt a high level:\n- The overall look of chat text blocks is uncomfortable\n- Button layout, icons, etc. are unintuitive — I hunted forever and still couldn't find the file browser\n- Inconsistency: it's ChatGPT one moment, Codex the next. Classic OpenAI, including how they name models\n- Animations stutter. Cursor dropping transition animations was a smart call\n- No pending user message queue by default — a new message just interrupts the turn that's still running\n\nCursor's UX feels light, fast, consistent, beautiful\nStill owe @ryolu_ for the work\nAfter he stopped driving Cursor's UI\nthe bad smell is already showing\nLike the \"1 new message\" chip at the top of the chat\nPointless and ugly, and it nags on every new message\nFor anyone with OCD it's the same as an app badge dot\n\nSpeechless\nLeaves the user with no idea what's going on",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HV3SfAebkAA8xag.jpg",
+          "width": 2048,
+          "height": 1059
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HV3TYZDa4AA1Bc7.jpg",
+          "width": 1164,
+          "height": 1046
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HV3T30EaIAAAzol.png",
+          "width": 1530,
+          "height": 716
+        }
+      ],
+      "thread_count": 2
+    },
+    {
+      "id": "2114398930062696940",
+      "url": "https://x.com/therealfreddyx/status/2114398930062696940",
+      "created_at": "2026-10-25T16:49:23.000Z",
+      "text": "为什么人对过去不开心的事耿耿于怀\n而快乐的经历却很容易忘记\n大脑为什么要关注痛苦的事\n很多时候我希望能有一个删除记忆的开关\n或许是刻在基因里趋利避害的生存本能\n记住痛苦是规避未来风险\n但也让活着的当下带来巨大苦恼",
+      "text_en": "Why do people dwell on unhappy things from the past\nwhile happy experiences are so easy to forget\nWhy does the brain attend to pain\nA lot of the time I wish there were a switch to delete memory\nMaybe it's survival instinct carved into the genes — seek gain, avoid harm\nRemembering pain is how you dodge future risk\nbut it also dumps huge distress into the present of being alive",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2113837805722013889",
+      "url": "https://x.com/therealfreddyx/status/2113837805722013889",
+      "created_at": "2026-10-24T03:39:40.000Z",
+      "text": "这是我在 Boss 上的一句话介绍。\n\n关于AI 辅助语言学习我有挺多实践的，半年前曾在 AI 的帮助下 10 天考下雅思 6.5，也开源过几个学习类应用:\n\n1- DropBrain - 帮助阅读障碍或ADHD更好学习新知识的 AI 生成式问卷 https://github.com/1nFrastr/dropbrain\n\n2- SuperWord - 沉浸式背单词 https://github.com/1nFrastr/super-words\n\n3- Yakee - 给不识字小朋友做的游戏（说话蹦 emoji ) - https://github.com/1nFrastr/yakee\n\n还有一个 AI 智能硬件的概念产品：RoadMate - 近场陌生人社交闪卡 - https://github.com/1nFrastr/roadmate",
+      "text_en": "This is my one-line intro on Boss.\n\nI've practiced a lot with AI-assisted language learning. Half a year ago, with AI's help, I passed IELTS 6.5 in 10 days, and open-sourced a few learning apps:\n\n1- DropBrain — AI-generated quizzes to help people with dyslexia or ADHD learn new material https://github.com/1nFrastr/dropbrain\n\n2- SuperWord — immersive vocab https://github.com/1nFrastr/super-words\n\n3- Yakee — a game for kids who can't read yet (talk and emoji pop) — https://github.com/1nFrastr/yakee\n\nAnd a concept for AI hardware: RoadMate — near-field stranger-social flash cards — https://github.com/1nFrastr/roadmate",
+      "urls": [
+        "https://github.com/1nFrastr/dropbrain",
+        "https://github.com/1nFrastr/super-words",
+        "https://github.com/1nFrastr/yakee",
+        "https://github.com/1nFrastr/roadmate"
+      ],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HVXcRsubIAA5DRq.png",
+          "width": 802,
+          "height": 472
+        }
+      ],
+      "thread_count": 2
+    },
+    {
+      "id": "2113687476170809434",
+      "url": "https://x.com/therealfreddyx/status/2113687476170809434",
+      "created_at": "2026-10-23T17:42:19.000Z",
+      "text": "发现这个宝藏博主\nvibe coding制作知识类视频\n想象空间还很大\nPPT文件格式在未来会消亡\n取代它的是这种\n高质量、高信息密度\n视觉听觉全方面呈现\n更加形象、直观、用户友好的\n信息传递方式\n\n商业价值也巨大\n还是我感兴趣➕擅长的领域\n我实在干不来传统拍摄剪辑录音各种微调的杂活…\n\n挖个坑～搞个独立产品来变现\n也当成是AI多模态的实践之路吧",
+      "text_en": "Found this gem of a creator\nvibe-coding knowledge videos\nThe imagination space is still huge\nPPT as a format will die\nWhat replaces it is this\nhigh quality, high information density\nvisual + audio, all the way through\nmore vivid, more direct, more user-friendly\nway of passing information\n\nCommercial value is huge too\nand it's a domain I care about + I'm good at\nI really can't do the traditional shoot / cut / record / micro-tweak grind…\n\nStaking a claim — ship an indie product and monetize\nTreat it as a path to practice AI multimodal too",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HVVTcoiaAAAUfap.jpg",
+          "width": 1170,
+          "height": 2041
+        }
+      ],
+      "thread_count": 1
+    },
+    {
+      "id": "2111807584957030582",
+      "url": "https://x.com/therealfreddyx/status/2111807584957030582",
+      "created_at": "2026-10-18T13:12:18.000Z",
+      "text": "小孩子无忧无虑的快乐源自于\n没有对过去的烦恼（年纪小也没经历啥）\n没有对未来感到焦虑（不懂什么是未来，有父母兜底）\n只有当下开心的玩\n活在当下就足够了\n给成年人的启示是\n想要幸福\n就不要过于关注过去和未来\n我，活着，是现在的我\n上一秒的我和明天的我都无力改变\n只有当下这一秒的身体感受\n是真实发生和存在的\n强行代入当下会破环存在的感受\n要么变成活在未来\n而永远活在未来意味着当下的唯一作用\n是给未来作铺垫\n这样不是真正活着",
+      "text_en": "A child's carefree joy comes from\nno worry about the past (too young, not much has happened)\nno anxiety about the future (doesn't know what the future is; parents catch them)\nonly playing happy in the present\nLiving in the present is enough\nThe lesson for adults\nif you want to be happy\ndon't over-attend to past and future\nI, alive, am the me of now\nThe me of a second ago and the me of tomorrow I can't change\nOnly the bodily feel of this second\nis actually happening and existing\nForcing yourself into the present wrecks the sense of being\nor you end up living in the future\nand forever living in the future means the only use of now\nis to pave the way for later\nThat's not actually living",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2111185238676451380",
+      "url": "https://x.com/therealfreddyx/status/2111185238676451380",
+      "created_at": "2026-10-16T19:59:19.000Z",
+      "text": "聊一些深入但普遍存在我们日常的话题\n深度思考的洞察一定是有人欣赏的\n\n如何向agent一样工作学习\n理解agent会让你更好理解你的大脑\n互联网原生 到ai原生 到agent原生\n个体和组织如何变革\n为什么目前还是非常早期的ai基础设施的重要性\n从国内移动互联网发展史来看\n一个产品要10年才能稳坐市场 如微信生态 抖音\n技术、生活与哲学\n企图通过研究底层技术得吃一辈子是试图抓住确定性抵触变化趋势的无用功\n技术演讲和自己看得起自己\n社交媒体 少数kol的声音 独立思考 去魅是剥离幻想加工不被表象迷惑的必经之路",
+      "text_en": "Talk about topics that are deep but sit in everyday life\nInsights from real thinking will always have an audience\n\nHow to work and learn like an agent\nUnderstanding agents helps you understand your own brain\nInternet-native → AI-native → agent-native\nHow individuals and orgs change\nWhy AI infra still being so early matters\nLooking at China's mobile-internet history\na product takes 10 years to sit the market, like WeChat's ecosystem, Douyin\nTech, life, and philosophy\nTrying to study low-level tech so you can eat off it for life is useless work — clutching at certainty, fighting the trend of change\nTech talks, and taking yourself seriously\nSocial media, a handful of KOL voices, independent thought. Demystifying is the only way to strip the fantasy processing and not get fooled by surfaces",
+      "urls": [
+        "https://x.com/therealfreddyx/status/2110958702463516993"
+      ],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2111151853572657342",
+      "url": "https://x.com/therealfreddyx/status/2111151853572657342",
+      "created_at": "2026-10-16T17:46:39.000Z",
+      "text": "多夸夸自己才会发现\n自己一直在把很多不可能的事情变成了可能\n很多次例证是发生在小公司资源有限的情况下\n\n- 在电商公司通过技术获客让业务增长了 10 倍：我想出的 idea 一开始老板并不抱有太大希望，以我毒辣的技术眼光笃定必定能行，带着强烈的自信让老板也相信这条路，不就一个偶然机会出现让我抓住，结果是以超出了所有人想象的速度，完成了这个增长！\n\n- 在支付公司做远程开发时，亲自到中山某会所娱乐运营公司，帮他们迁移闭源的老旧离线系统到云端，是一个非标准的技术架构以及面临很多硬性约束，并且对方是完全不懂技术甚至沟通理解能力都很差的中年男人，我担任PM/全栈/FDE/架构师多角色，最终超预期完成交付！\n\n- LunaSwapping 换脸项目的开源版本在社区推广，获得了 某大 V 的转发带来不小的关注度和流量，这是我没想到的\n\n- 2025 年秋季看准 Agent 开发是未来趋势，准备了两周就去面试拿到了人生中最大的 OFFER，并且后续带来许多正向反馈和成长机会。那时国内做 Agent 的人还很少，随便准备一个 Demo 都能拿到一堆面试机会！\n\n-  数字游民那两年也是从 0 到 1 找客户、优化话术SOP提高转化率、错位竞争渠道、不靠任何人脉，收入和自由度都比打工高！而且还是自己喜欢做的事！",
+      "text_en": "Praise yourself more and you'll notice\nyou've been turning a lot of impossibles into possibles\nA lot of the proof happened at small companies with scarce resources\n\n- At an e-commerce company, tech-driven acquisition grew the business 10x: the idea I came up with, the boss didn't hold much hope at first. I was sure it would work, with a sharp technical eye, and that confidence got the boss to believe the path too. It wasn't just a lucky break I grabbed — the growth landed faster than anyone imagined!\n\n- Doing remote dev at a payments company, I went in person to an entertainment-venue operator in Zhongshan, migrating a closed-source legacy offline system to the cloud. Non-standard architecture, lots of hard constraints, and the other side was a middle-aged man who didn't know tech and could barely communicate. I wore PM / full-stack / FDE / architect at once, and delivered above expectation!\n\n- The open-source version of the LunaSwapping face-swap project, pushed in the community, got forwarded by a big V and brought real attention and traffic. I didn't see that coming\n\n- Fall 2025 I bet Agent development was the future, prepped two weeks, interviewed, and landed the biggest offer of my life, plus a lot of positive feedback and growth after. Back then almost nobody in China was doing Agents — a random demo got you a pile of interviews!\n\n- Those two years as a digital nomad were also 0-to-1: finding clients, tightening the pitch SOP to lift conversion, competing in a different channel, no network to lean on. Income and freedom both beat a day job! And it was work I actually liked!",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2110958702463516993",
+      "url": "https://x.com/therealfreddyx/status/2110958702463516993",
+      "created_at": "2026-10-16T04:59:09.000Z",
+      "text": "练习口头表达输出能力\n大脑和身体协作配合既有逻辑又有感染力\n先不考虑什么自媒体公开发布\n自己偷偷对着摄像头练习\n讲解和职业最相关也是你最熟悉的topic\n顺便当作面试和技术演讲训练\n如 nextjs sse背后是什么 之类的",
+      "text_en": "Practice spoken output\nBrain and body working together — logic plus presence\nDon't worry about publishing on social yet\nPractice secretly at the camera\nExplain a topic closest to the job, the one you know best\nTreat it as interview and tech-talk training too\nLike what sits behind Next.js SSE",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2109966952559190266",
+      "url": "https://x.com/therealfreddyx/status/2109966952559190266",
+      "created_at": "2026-10-13T11:18:17.000Z",
+      "text": "这是一个大型 cosplay 表演的世界\n包括职场面试也好\n你应该表现得像别人希望你表现的那样\n这样才是表里如一\n创新、自由、灵活是你的标签\n那就应该按照此分工\n去承担特质匹配的领域工作\n如研究最新 AI 实践、了解行业上下游利益链、广度要扛得住他人的期待\n有时候太关注自己的喜好\n是一种不想担责的表现\n不能因为不喜欢 AI 热点的喧嚣吵闹而不去入局\n不能因为某个产品不符合你的风格就不去用",
+      "text_en": "This is a giant cosplay of a world\nJob interviews included\nYou should perform the way others hope you'll perform\nThat's actually inside matching outside\nInnovation, freedom, flexibility are your labels\nThen take the work that matches those traits\nLike researching the latest AI practice, learning the industry's upstream/downstream interest chain — breadth that can hold other people's expectations\nSometimes over-attending to your own preferences\nis a way of not wanting to take responsibility\nYou can't sit out because you dislike the noise of AI hype\nYou can't skip a product because it isn't your style",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2109942365880569868",
+      "url": "https://x.com/therealfreddyx/status/2109942365880569868",
+      "created_at": "2026-10-13T09:40:35.000Z",
+      "text": "在他人面前说话自己贬低\n应该是一种创伤应激后的自我保护行为\n抢在别人面前否定自己\n企图能堵住来自他人的嘴\n因为你受不了他人对你的攻击、谩骂、否定和不尊重\n这能解释我在面试过程的一些行为表现\n如不想看到面试结果被拒绝就直接删掉HR 微信\n一旦感觉不对劲就想跑",
+      "text_en": "Talking yourself down in front of others\nis probably a trauma-stress self-protection move\nNegating yourself before anyone else can\ntrying to shut other people's mouths\nbecause you can't take their attack, insult, denial, disrespect\nThat explains some of how I behave in interviews\nLike deleting the HR WeChat so I don't have to see the rejection\nThe moment it feels off I want to run",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2109604557009629440",
+      "url": "https://x.com/therealfreddyx/status/2109604557009629440",
+      "created_at": "2026-10-12T11:18:15.000Z",
+      "text": "多表扬自己而不是贬低\n你Gap期间不仅一个人独闯东南亚\n还10天考了雅思7天考了aws架构师认证\n随缘找工作也平均一个月有一个offer\n这还不够乐观啊\n很棒了自己",
+      "text_en": "Praise yourself more instead of putting yourself down\nDuring the gap you not only went through Southeast Asia alone\nyou also passed IELTS in 10 days and the AWS architect cert in 7\nJob hunting on a whim still averaged an offer a month\nThat's plenty to be optimistic about\nWell done, self",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2109597934442660331",
+      "url": "https://x.com/therealfreddyx/status/2109597934442660331",
+      "created_at": "2026-10-12T10:51:56.000Z",
+      "text": "找传统开发岗位我没有优势\n简历关的机会都很难\n应该挖掘对于自己来说是有断层式竞争优势的\n意味着面试难度和心智压力成本很低\n意味着市面上大部分岗位不是为我定制的\n关注以下特征：\n- 简历被老板一把手欣赏的\n- 新成立的团队崭新崭新的 业务缺人\n- 内部AI转型需要复合型人才 转型焦虑\n- 产研 支撑 销售在能力范围内的都考虑\n- 人比事重要\n- 面试过程越轻松说明匹配度越高",
+      "text_en": "I have no edge for traditional engineering roles\nEven the resume screen is hard\nI should dig for where I have a step-change competitive advantage\nmeaning interview difficulty and mental cost are low\nmeaning most jobs on the market aren't made for me\nWatch for these:\n- A resume the actual boss likes\n- A brand-new team, brand-new business, short on people\n- Internal AI transformation that needs hybrids — transformation anxiety\n- Product, support, sales — anything in range, consider it\n- People over work\n- The easier the interview feels, the better the match",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2109524205582864759",
+      "url": "https://x.com/therealfreddyx/status/2109524205582864759",
+      "created_at": "2026-10-12T05:58:58.000Z",
+      "text": "国产剧不是烂\n是高质量的制作在市场上不匹配\n无意中看了「扫毒风暴」段奕宏 秦昊出演\n配乐 光线 剧情 演员全方面在线\n就是摄影画质还是比较拉跨\n不知道是不是观看平台的原因\n我在 Youtube 免费看的\n国内的大型剧集制作水平看不到和欧美的差距了\n更多是市场消费者的欣赏能力差距\n导致制作精良的作品打不过快餐式流量剧",
+      "text_en": "Chinese TV isn't bad\nIt's that high-quality production doesn't match the market\nStumbled on 「扫毒风暴」, Duan Yihong and Qin Hao\nScore, light, plot, acting all present\nJust the photography still lags\nNot sure if that's the platform\nI watched it free on YouTube\nBig domestic series don't look far from US/EU craft anymore\nThe bigger gap is audience taste\nso well-made work loses to fast-food traffic dramas",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2109273296546218428",
+      "url": "https://x.com/therealfreddyx/status/2109273296546218428",
+      "created_at": "2026-10-11T13:21:56.000Z",
+      "text": "不了解真实的行业现状\n判断就会失真\n世界很大社会上的公司也很多\n我以为自己只能走技术销售这条相对容易的路子\n跟几个朋友聊了想法之后\n发现还有别的可能继续做技术\n比如去一家业务稳定的小型公司\n薪资不高但够稳\n直接面对老板\n面试的时候评估老板价值观是否匹配\n这对于自己来说如探囊取物\n这么看起来技术工作好像也还能做几年\n没那么焦虑了\n但反思一下\n这个要转向面对人来工作的决定\n背后动机还不够坚定\n\n如果有一份简单技术工作提供给你\n完全在舒适区（简单获得，回报是目前最高的）\n你会接受吗？",
+      "text_en": "If you don't know the real state of the industry\njudgment goes false\nThe world is big and so are the companies in it\nI thought the only path left was technical sales, the relatively easy one\nAfter talking it through with a few friends\nthere are still ways to keep doing engineering\nLike a small company with stable business\nPay isn't high but it's steady\nYou face the boss directly\nIn the interview you check whether the boss's values match\nFor me that's easy\nLooked at that way I can still do engineering a few more years\nLess anxious\nBut reflecting\nthe decision to turn toward people-facing work\nstill doesn't have a firm enough motive behind it\n\nIf a simple engineering job were offered\nfully in the comfort zone (easy to get, currently the highest return)\nwould you take it?",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2109188313164960087",
+      "url": "https://x.com/therealfreddyx/status/2109188313164960087",
+      "created_at": "2026-10-11T07:44:15.000Z",
+      "text": "我可能很适合去做技术销售岗位\n当然不是那种刻板印象那种喝酒吹牛拉关系\n靠真诚和专业能力搭配 INFP 情绪感知力\n过往数字游民生涯有 OPC 背景\n未来想离人群、用户、钱更近\n这能让工作和人生议题统一化",
+      "text_en": "I might be a good fit for technical sales\nNot the stereotype of drinking, bragging, working connections\nSincerity plus craft, plus INFP emotional sensing\nDigital-nomad years with an OPC background\nGoing forward I want to be closer to people, users, money\nThat lets work and the life questions unify",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2108962088173584678",
+      "url": "https://x.com/therealfreddyx/status/2108962088173584678",
+      "created_at": "2026-10-10T16:45:19.000Z",
+      "text": "算了一笔账\n在一线城市生活的税后收入必须是每月支出的3.3倍\n才能过上相对自由的生活状态\n是根据一个标的算出来的：\n工作一个月能让我在大城市躺平几个月\n只有做一休三才会有安全感\n工作一年躺平三年\n工作10年躺平30年\n差不多是FIRE主义要实现的\n但提前退休并不需要在一线城市生活\n这个比例可以降低\n而在一线城市不工作的机会成本是巨大的\n感觉每天都在烧钱\n时间也是标好价格的\n因为每月账单在追着你跑\n至少得有一份收入能覆盖开销\n保持存款水位线不变\n这样才会心安啊",
+      "text_en": "Ran the numbers\nIn a first-tier city, after-tax income has to be 3.3x monthly spend\nto live in a relatively free state\nThe benchmark I used:\nhow many months of lying flat in a big city one month of work buys\nOnly work-one-rest-three feels safe\nWork a year, lie flat three\nWork 10 years, lie flat 30\nPretty much what FIRE is after\nBut early retirement doesn't require a first-tier city\nthat ratio can drop\nNot working in a first-tier city has huge opportunity cost\nEvery day feels like burning money\nTime has a price tag too\nbecause the monthly bills chase you\nYou at least need income that covers spend\nkeep the savings waterline from falling\nThat's when the mind can rest",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2108958476898820388",
+      "url": "https://x.com/therealfreddyx/status/2108958476898820388",
+      "created_at": "2026-10-10T16:30:58.000Z",
+      "text": "不能把非暴力不合作的躺平主义\n当成逃避社会竞争的借口\n也不能为了标榜自己一枝独秀而故意特立独行\n只想享受城市化带来的便利\n可是每一份舒适背后都有价格\n参与社会劳动面试是成年人最基本也是为数不多的竞争选拔环节\n况且还是开卷考试\n属实没有必要完全丢掉考试能力\n自由代价是贫困拮据\n你接受不了\ngap太久都差点骗过自己是富二代\n完全随心所欲的生活是特权是稀缺",
+      "text_en": "Don't use nonviolent non-cooperation / lying-flat\nas an excuse to dodge social competition\nDon't be contrarian just to look like the one branch that stands out\nYou only want the convenience of the city\nbut every comfort has a price\nShowing up to labor and interviews is the most basic competitive filter adults still have\nand it's an open-book exam\nNo real need to throw away exam skill entirely\nThe price of freedom is poverty and tightness\nyou can't accept that\nGap long enough I almost conned myself into being a rich second generation\nA fully do-as-you-please life is privilege, and scarce",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2108588219306787203",
+      "url": "https://x.com/therealfreddyx/status/2108588219306787203",
+      "created_at": "2026-10-09T15:59:41.000Z",
+      "text": "这样看起来外企是最适合的\n英文与沟通能力放在第一位\n薪资一般不过 WLB\n这个解法\n能把工作和人生议题统一 https://x.com/therealfreddyx/status/2108569518155170268",
+      "text_en": "Looked at that way, a foreign company fits best\nEnglish and communication first\nPay is average but WLB\nThis solution\ncan unify work and the life questions https://x.com/therealfreddyx/status/2108569518155170268",
+      "urls": [
+        "https://x.com/therealfreddyx/status/2108569518155170268"
+      ],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2108571751906967744",
+      "url": "https://x.com/therealfreddyx/status/2108571751906967744",
+      "created_at": "2026-10-09T14:54:15.000Z",
+      "text": "想做一个反神话反泡沫反吹嘘主题的自媒体频道\nAI Hype 和自媒体神话太多了\n没人沉下心来去解构流行 topic 的真实性和动机\n看 @poteto 的2000PR 自动化交付视频有感\n我难以判断她这一套方法论在实际工作中是否能 work 的真实性\n也不知道她所谓的自动化大规划交付是否有多少人工介入干预的比例\n需要深挖和实测才能验证",
+      "text_en": "Want to make an anti-myth, anti-bubble, anti-hype channel\nToo much AI hype and influencer mythology\nNobody sits down to take apart whether a trending topic is real, or what the motive is\nWatching @poteto's 2000-PR automated-delivery video\nI can't tell whether that methodology actually works on the job\nor how much of the so-called automated large-scale delivery is still human in the loop\nNeeds digging and hands-on to verify",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2108569518155170268",
+      "url": "https://x.com/therealfreddyx/status/2108569518155170268",
+      "created_at": "2026-10-09T14:45:23.000Z",
+      "text": "现阶段的我\n还是要把时间花在与真实人类的连接上\n而不是研究高新技术以获得高薪工作\n要走进真实生活\n关注身边的人\n经营深度关系\n扩大交际圈链接资源\n夯实基础如语言能力、沟通能力\n磨练自己的意志力心性\n维护身体外形而不是继续武装大脑\n经营个人互联网 IP 而不是永远追赶技术\n这需要大量时间和注意力来反复练习\n\n可以推导出\n我将在不短的时间内\n维持低水平收入\n和大量可支配的时间和注意力自主权\n来完成以上课题\n\n谈恋爱亦遵循该生活准则\n什么是不可替代的\n什么能穿透金钱物质的表面\n触及爱的真实本质\n因为你这个人的本身选择在一起\n而不是附加的稍纵即逝的“现实价值”\n才是你要追寻的匹配关系",
+      "text_en": "Where I am now\nI still need to spend time connecting with real humans\nnot researching hot tech for a high-pay job\nWalk into real life\nAttend to people around you\nBuild deep relationships\nGrow the circle and the resources it links\nHarden the basics: language, communication\nTrain will and temperament\nMaintain the body, not keep armoring the brain\nBuild a personal internet IP instead of forever chasing tech\nThat takes a lot of time and attention, practiced over and over\n\nWhich implies\nfor a stretch that won't be short\nI'll keep income low\nand a lot of disposable time and attention, under my own control\nto finish those assignments\n\nDating follows the same rule of life\nWhat's irreplaceable\nWhat can cut through the surface of money and stuff\nand touch the real nature of love\nChoosing to be together because of who you are\nnot the extra, fleeting \"practical value\"\nThat's the match you're after",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2108448114923495659",
+      "url": "https://x.com/therealfreddyx/status/2108448114923495659",
+      "created_at": "2026-10-09T06:42:58.000Z",
+      "text": "ChatGPT 不是规划出来的\n抖音也不是\n没有人能预测未来\n未来规划在这个时代已经成为笑话",
+      "text_en": "ChatGPT wasn't planned\nNeither was Douyin\nNobody can predict the future\nFuture-planning in this era has become a joke",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2107010525918048712",
+      "url": "https://x.com/therealfreddyx/status/2107010525918048712",
+      "created_at": "2026-10-05T07:30:30.000Z",
+      "text": "AI 行业盛行社会达尔文主义\n包括优绩主义\n最好是背景 title 光鲜亮丽\n说话好听不管对不对\n即使半吊子水平也能把事情说的圆满\n就面试来说\n你越会装\n知识面越广\n说的越好听\n让对方感觉你比他懂的更多和看起来更深入\n毕竟现在都不需要介入太多技术细节了\n随便吹能把逻辑闭环圆回来\n展示你的认知和理解\n随便吊打其他竞争者\n即使是用钱堆出来也没关系\n能翻倍把这个钱挣回来就行\n你要表现的比谁都懂这个领域\n要表现的这个活只有你能干的成\n要表现的你比谁都懂得多\n最好不要示弱表现的很谦卑\n也不可表现过于专注某领域不问窗外事\n你要的薪资越高越容易被尊重\n把姿态放低只会被社达主义看不起",
+      "text_en": "The AI industry runs on social Darwinism\nmeritocracy included\nBest if the background and title look shiny\nSounds good, whether it's right or not\nEven a half-baked level can make the story land\nIn interviews\nthe better you perform\nthe broader the knowledge\nthe better it sounds\nthe more they feel you know more and go deeper than they do\nYou barely have to touch technical detail anymore\nBluff a closed logic loop\nshow your take and your understanding\nand you can dunk on the other candidates\nEven if you stacked it with money, whatever\nas long as you can earn that money back several times over\nYou have to look like you know the domain better than anyone\nlike this job only you can finish\nlike you know more than anyone\nDon't show weakness or look too humble\nand don't look so locked on one field you ignore the rest of the world\nThe higher the salary you ask, the easier you get respect\nLower the posture and social Darwinism looks down on you",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2107005089936445895",
+      "url": "https://x.com/therealfreddyx/status/2107005089936445895",
+      "created_at": "2026-10-05T07:08:54.000Z",
+      "text": "没钱不要玩 AI\n动辄 20 美金一个月的订阅费\n热门的至少要买 10 个吧\n而这还是基础套餐\n碰上多模态应用如图片视频的还得翻倍\n顶级模型要加倍\n额外用量要加倍\n那我就算 300 美刀一个月吧\n一个月固定支出 2400 块钱\n如果还在一线城市生活\n固定成本快要 7000 一个月了\n还没算上房贷之类\n以我为例一个月再加 3000 固定房贷\n时间虽然是自由的\n但账单在追着我跑啊\n没收入还搞 AI 那是富人的游戏啊\n\n在一线城市玩 AI 的目的是什么？\n当然是要看金钱上的回报\n相比老家躺平每个月要多花 6000 成本\n一年就是7.2w\n考虑到这是全世界T0 热门行业的杠杆效应\n如果没有给个人带来至少 10 倍的回报\n那还真不如不研究\n\n穷人玩不了啊\n你没钱根本不了解最顶尖的模型和应用能力\n落后于行业最新实践和趋势\n和有钱玩家的认知不在一个水平线上\n这样你玩的都是剩下的过时的滞后的\n马太效应加剧\n越穷就越落后于人\n越落后就资源越少\n资源越少又加剧投产比越低\n\n我准备下定决心去实践验证几个月\n每月 AI 预算 3000 块钱\n看能给我带来多大的回报\n其实这远比组团队创业做生意的回报潜力大\n投入固定可控，但回报很有想象空间",
+      "text_en": "Don't play AI if you don't have money\nSubscriptions start at $20 a month\nThe hot ones, buy at least 10\nand that's the base plan\nMultimodal — images, video — double it\nTop models, double again\nOverage, double again\nCall it $300 a month\nThat's 2400 RMB fixed\nStill living in a first-tier city\nfixed cost is almost 7000 a month\nbefore mortgage and the rest\nFor me, add another 3000 in housing\nTime is free\nbut the bills are chasing me\nDoing AI with no income is a rich person's game\n\nWhat's the point of playing AI in a first-tier city?\nMoney return, obviously\nVs lying flat back home that's 6000 extra a month\n72000 a year\nThis is a T0 industry worldwide, leverage included\nif it doesn't return at least 10x to you personally\nyou'd really be better off not studying it\n\nPoor people can't play\nWithout money you never touch the top models and apps\nyou lag the latest practice and trend\nyour picture of the field isn't even on the same line as people with money\nWhat you play is leftovers, outdated, late\nMatthew effect compounds\npoorer → further behind\nfurther behind → fewer resources\nfewer resources → worse return on spend\n\nI'm deciding to run a few months of proof\n3000 RMB a month AI budget\nsee what return it actually brings\nThe upside is far larger than hiring a team and starting a business\nSpend is fixed and controllable; return has room to imagine",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2106991113768722800",
+      "url": "https://x.com/therealfreddyx/status/2106991113768722800",
+      "created_at": "2026-10-05T06:13:22.000Z",
+      "text": "新科技封建主义\n集聚了用户、数据、算力、资本的平台垄断了生产资料\n如自媒体平台和创作者的关系\n创作者并不直接能根据内容变现\n而是遵循平台黑箱算法推荐机制\n不需要你的同意就封禁降权你的账号\n对自己的内容没有议价权\n\n互联网产生的新富豪阶级\n其实是新时代的赛博地主\n但社会制度并没有及时跟随\n没有设计合理的分配制度\n跟不上科技造富带来愈加严重的马太效应\n强者越强\n弱者越弱\n资源匮乏者疲于生计\n无法做出长远目标决策\n\n这是为什么 AI 越来越强\n社会人民仍让感受不到幸福\n工作时长不但没有减少\n还带来大批量的失业\n人类靠 AI 躺平的奢望至少要在填满富人阶级的胃口后\n才会顺带被底层人民沾光\n至少第一批受益的人\n绝对不会是普罗大众以及基层的 AI 工作者",
+      "text_en": "New-tech feudalism\nPlatforms that clustered users, data, compute, and capital monopolized the means of production\nLike creators vs social platforms\nCreators can't monetize content directly\nthey follow a black-box recommendation machine\nwhich can ban or downrank the account without consent\nNo bargaining power over their own work\n\nThe new rich the internet minted\nare this era's cyber landlords\nbut the social system didn't keep up\nno reasonable distribution was designed\nit can't catch the Matthew effect of tech making fortunes\nthe strong get stronger\nthe weak get weaker\npeople short on resources scramble to live\nand can't make long-horizon decisions\n\nThat's why AI gets stronger\nand people still don't feel happy\nhours didn't shrink\nand it brought mass unemployment\nThe fantasy of humans lying flat on AI has to fill the rich class's appetite first\nbefore the people at the bottom get a side splash\nThe first beneficiaries\nwill not be the public, or the rank-and-file AI workers",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2104577504208200080",
+      "url": "https://x.com/therealfreddyx/status/2104577504208200080",
+      "created_at": "2026-09-28T14:22:32.000Z",
+      "text": "想了解AI 生成影视剧配乐的能力怎么样了\n欧美科幻电影的音效像艺术品一样\n恰到好处的力量和美感",
+      "text_en": "Want to know how good AI is now at scoring film and TV\nSound in Western sci-fi is like art\nthe force and the beauty land just right",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2104563549691666701",
+      "url": "https://x.com/therealfreddyx/status/2104563549691666701",
+      "created_at": "2026-09-28T13:27:05.000Z",
+      "text": "应该要花时间了解特定行业\n上下游痛点\n产品服务如何交付\n如何产生价值和差异化竞争\n基础的行业调研能力\n如具身智能、端侧 AI、PaaS 服务等\n这样才是真正具有全局视野的人才\n面对任何岗位都具备入局能力\n比业内人更了解这个行业\n机会必然不会少",
+      "text_en": "You should spend time learning a specific industry\nupstream and downstream pain\nhow the product/service is delivered\nhow value is created and how you differentiate\nBasic industry-research skill\nembodied AI, on-device AI, PaaS, etc.\nThat's what a person with a real global view looks like\nable to enter any role\nknowing the industry better than insiders\nopportunity won't be scarce",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2104247430783127583",
+      "url": "https://x.com/therealfreddyx/status/2104247430783127583",
+      "created_at": "2026-09-27T16:30:57.000Z",
+      "text": "利他\n帮他人节约时间\n带来新知识\n是做内容最朴素的出发点",
+      "text_en": "Altruism\nSave other people time\nBring them new knowledge\nThe plainest reason to make content",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2104246881329303568",
+      "url": "https://x.com/therealfreddyx/status/2104246881329303568",
+      "created_at": "2026-09-27T16:28:46.000Z",
+      "text": "需要在某些领域形成压倒性优势\n才能弥补自己在某些短板\n大力出奇迹\n如果能让足够多的人认识你\n在绝对的基数上乘以小概率\n资源也会被放大集聚到你的面前\n在绝对的实力面前方法技巧不值得一提\n看起来还是得走内容创作和营销的路子\n获取流量\n获取关注\n获取注意力\n才能应对传统职业发展带来的瓶颈",
+      "text_en": "You need an overwhelming edge in some domain\nto cover the short boards\nForce makes miracles\nIf enough people know you\na small probability times a huge base\nand resources amplify and gather in front of you\nIn front of absolute strength, tricks aren't worth mentioning\nLooks like it still has to be content and marketing\nGet traffic\nGet follows\nGet attention\nto deal with the ceiling of a traditional career path",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2104130179446759696",
+      "url": "https://x.com/therealfreddyx/status/2104130179446759696",
+      "created_at": "2026-09-27T08:45:02.000Z",
+      "text": "还是线形发展思维\n想考技能 证书 经验去带来新机会\n投入产出比会变好 但永远是1点几倍\n不会有10x倍的增长可能\n\n学不会杠杆思考和放大执行\n永远在底层折腾劳累\n为五斗米折腰\n一分耕耘一分收获是穷人思维\n什么是消费\n什么是投资\n花钱也要考虑放大效应\n\n去参加卓叔增重私教是投资\n花钱买情绪价值是线性消费\n\n健身、英语能力、自媒体\n都具备杠杆效应",
+      "text_en": "Still linear-growth thinking\nWant to sit skills, certs, experience to bring new chances\nROI gets better but it's always 1.something x\nnever a 10x shot\n\nNever learn leverage thinking and amplified execution\nforever grinding at the bottom\nbending for a handful of rice\nSow one, reap one is poor-person thinking\nWhat's consumption\nwhat's investment\nSpending money should consider amplification too\n\nZhuo Shu's weight-gain personal training is investment\nPaying for emotional value is linear consumption\n\nFitness, English, a personal media presence\nall have leverage",
+      "urls": [],
+      "media": [],
+      "thread_count": 2
+    },
+    {
+      "id": "2103893967876378735",
+      "url": "https://x.com/therealfreddyx/status/2103893967876378735",
+      "created_at": "2026-09-26T17:06:25.000Z",
+      "text": "去美国洛杉矶硅谷社区大学读书\n作为海外职业的跳板\n但既然有这个勇气\n愿意付出如此巨大的代价\n时间金钱心智成本\n更何况物理距离\n有此勇气\n足以覆盖任何在国内练好英语找到好外企工作的机会\n何必还要远渡重洋\n用不到一半的成本足以得到你想要的\n2 年 30 万\n1 年 10 万\n何乐不为呢\n\n想彻底换个环境啊\n没办法在国内贫瘠土壤生存\n目标感完全不同\n跨洋学习有背水一战的意义\n强行给你人生上一个大目标",
+      "text_en": "Go to a community college in LA / Silicon Valley\nas a springboard into an overseas career\nBut if you already have that courage\nand are willing to pay that huge cost\ntime, money, mind\nlet alone the physical distance\nthat courage\nalready covers any chance of grinding English at home and landing a good foreign-company job\nWhy cross the ocean\nLess than half the cost gets you what you want\n2 years 300k\n1 year 100k\nWhy not\n\nWant to change the environment entirely\nCan't survive in this barren domestic soil\nThe sense of a goal is completely different\nStudying across an ocean has the meaning of burning the boats\nit forces a large goal onto your life",
+      "urls": [],
+      "media": [],
+      "thread_count": 2
+    },
+    {
+      "id": "2102304248608260096",
+      "url": "https://x.com/therealfreddyx/status/2102304248608260096",
+      "created_at": "2026-09-22T07:49:26.000Z",
+      "text": "乙流中招躺了一周\nBabyLovable 竟然跑不起来了\n因为依赖了很多云服务但我又一直在白嫖免费计划\n首先是 Daytona 沙盒回收了免费计划的自定义网络放行规则\n导致沙盒里面无法访问 Freestyle Git 服务\n至少要冲 300 刀太贵了\n我只好改代码关闭文件真相源同步这个核心能力\n也就是免费计划的话沙盒销毁文件就丢失了\n\n第二个是Vercel Workflow 用量限制也到头了\n只好购买 20 刀月计划\n还能接受就这样吧\n 顺便 可以考虑下迁移到 vercel sandbox",
+      "text_en": "Caught influenza B, down for a week\nBabyLovable wouldn't even run\nbecause it depends on a pile of cloud services and I've been freeloading the free plans\nFirst, Daytona sandbox pulled custom network-allow rules off the free plan\nso the sandbox couldn't reach Freestyle Git\nTopping up at least $300 is too expensive\nI had to change code and turn off file-source-of-truth sync, a core capability\nmeaning on the free plan, when the sandbox dies the files die\n\nSecond, Vercel Workflow usage also hit the wall\nhad to buy the $20/month plan\nacceptable, fine\n could also consider moving to Vercel Sandbox",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2102066822996803993",
+      "url": "https://x.com/therealfreddyx/status/2102066822996803993",
+      "created_at": "2026-09-21T16:05:59.000Z",
+      "text": "其实最近发这些无良公司曝光贴\n是很消耗能量磁场和心力的\n也知道人微言轻说话没分量\n单纯靠情绪发泄解决不了问题\n即使被冠以正义的使命\n更智慧的方法也许是\n先让自己成为有影响力的人\n任重道远\n不成功，经验都是狗屁",
+      "text_en": "Posting these exposés of rotten companies lately\nreally drains energy, field, and mental force\nI also know a small voice doesn't weigh much\nVenting emotion alone doesn't solve it\neven when it's framed as a justice mission\nThe wiser move might be\nbecome someone with influence first\nA long road\nUntil you succeed, experience is bullshit",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2102059004247867674",
+      "url": "https://x.com/therealfreddyx/status/2102059004247867674",
+      "created_at": "2026-09-21T15:34:55.000Z",
+      "text": "【友情帮转】百万粉博主秋芝2046公司避雷\n我就发个吐槽感受就把我毕业了，那我就继续发避雷帖\n\n整个面试流程特别长，线上线下有一堆笔试要花很长时间弄，且笔试内容需要花很多时间，hr问题很不专业且在面试过程不断打压求职者能力，并且在前几轮面试是绝口不提待遇问题的，以至于我到现在还这么生气，对求职者很苛刻的各种筛选，等求职者问公司待遇的时候支支吾吾！（我不问甚至都不打算主动说）\n\n线上线下笔试面试要填个人信息（身份证号等）！！也不知道拿去到底干嘛用！公司位置特别偏，附近没地铁，为了线下去面试我来回坐了四个多小时的车，并且不报销路费和线下笔试费用！\n\n而且最后的待遇十分幽默，在深圳，单休，六个月试用期且试用期打八折，加班没有加班费，社保非深二档，而且工资低于深圳同岗平均水平1-2k！（跟招聘页面的工资完全不符）\n\n并且面试的时候还没有入职的情况hr还不断强调什么ai行业节奏快要加班！这点工资还没加班费，且还没入职，就开始pua求职者无偿加班（说是加班体现在绩效中，那不是说明你绩效不加班就不会给满吗）我对该公司企业文化也十分担忧，连带着秋芝这个账号后面都不想看了，感觉视频和公众号文章全都是低价压榨劳动者的产物。\n\n如果真的对待遇有自信，请在招聘页面写明公司工作时间，休息安排，试用期等内容！不要让求职者面试笔试线上线下完成一大堆工作之后再告知待遇，我是废了很多心思准备面试的，不要把求职者当猴耍！\n\n我一没透露你公司名字，二没侮辱你hr和博主，就只是如实说了一些面试体验和工作待遇，怪不得小红书一个避雷贴没有，甚至连相关帖子都搜不到[微笑R]头一次遇到内容公司薪资这么低这么压榨员工的\n\n#秋招避雷快逃 #秋芝2046\n\n百万 AI 博主秋芝2046 烂透了\n人前光鲜亮丽，张口一句粤语「雷猴娃」\n人后资本家嘴皮昭然若揭，伪装成可爱知性高知女性背后却是周扒皮吃骨头喝人血的玩意\n上篇帖子是小红书网友在面试该公司时遭到极其不公正、毫无同理心的经历\n甚至招聘信息都是欺诈的，直到最后面试通过谈 offer 时才不要脸的摆出简直血汗工厂般的工作时长要求和极低的薪资福利\n然后该网友在当天被举报帖子下架，被秋芝官方拉黑，也怪不得网上找不到他们的差评 出于对互联网精神初衷的拥护\n不希望看到这种败类公司赚够吆喝还能耀武扬威的，我觉得出手帮助更多人了解他们的真面目。\n 败类和流氓都能来到互联网/AI 行业做事还想打造小而美人设，法律上不惩罚道德败类，但我们可以共同建立行业准则！",
+      "text_en": "[Forwarding] Avoid the company behind million-follower creator 秋芝2046\nI posted a complaint and they blocked me, so I'll keep posting the warning\n\nThe whole interview process is extremely long, a pile of online and onsite written tests that take forever, and the tests themselves eat a lot of time. HR questions are unprofessional and they keep putting the candidate down. In the early rounds they refuse to mention compensation, which is why I'm still this angry. Brutal screening of candidates, then when you ask about pay they hem and haw! (If I don't ask they don't even plan to bring it up)\n\nOnline and onsite tests/interviews require personal info (ID number etc.)!! Who knows what they do with it! The office is way out, no metro nearby. Going onsite I spent 4+ hours on the road each way, and they don't reimburse travel or the onsite test fee!\n\nAnd the final package is a joke. In Shenzhen: one day off a week, six-month probation at 80% pay, no overtime pay, social insurance not even Shenzhen tier 2, and salary 1–2k below the Shenzhen average for the same role! (Totally different from the listing)\n\nAnd before you've even joined, HR keeps stressing that AI moves fast so you have to OT! This pay, no OT pay, not even hired, and they start PUAing unpaid overtime (they say OT shows up in performance — doesn't that mean performance never maxes unless you OT?). I'm very worried about the culture, and I don't even want to watch the 秋芝 account anymore. The videos and WeChat posts all feel like the product of cheap labor extraction.\n\nIf you're confident in the package, put hours, days off, probation, etc. on the listing! Don't make candidates finish a mountain of interviews and tests online and off, then tell them the pay. I put a lot into preparing. Don't treat candidates like monkeys!\n\nI didn't name the company, didn't insult HR or the creator, just described the interview and the pay. No wonder Xiaohongshu has zero warning posts, you can't even search related threads [smile] First time I've seen a content company pay this low and squeeze people this hard\n\n#秋招避雷快逃 #秋芝2046\n\nMillion-follower AI creator 秋芝2046 is rotten\nIn public she's polished, opens with Cantonese 「雷猴娃」\nBehind the curtain the capitalist mouth is obvious — dressed as a cute, intellectual, highly educated woman, underneath she's skinning people for bone and blood\nThe last post is a Xiaohongshu user who got an extremely unfair, zero-empathy interview there\nEven the job post was a lie — only when the offer talk came did they shamelessly put out sweatshop hours and miserable pay\nThen that user's post was reported down the same day, official 秋芝 blocked them, no wonder you can't find bad reviews online. Out of loyalty to the original internet spirit\nI don't want this kind of rotten company to cash the hype and still swagger. I think it's worth helping more people see what they are.\n Scum and thugs can come do internet/AI work and still want a small-and-beautiful persona. The law doesn't punish moral scum, but we can build industry norms together!",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSwC1hkakAASusZ.jpg",
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSwC3a9bQAABhqa.jpg",
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSwDUOOboAEX3ZJ.jpg",
+          "width": 946,
+          "height": 2048
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSwDUOOakAAK6j5.jpg",
+          "width": 946,
+          "height": 2048
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSwDWhSasAAO04U.jpg",
+          "width": 1216,
+          "height": 1240
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSwDdkcakAAuCSc.jpg",
+          "width": 904,
+          "height": 916
+        }
+      ],
+      "thread_count": 2
+    },
+    {
+      "id": "2099783634668626263",
+      "url": "https://x.com/therealfreddyx/status/2099783634668626263",
+      "created_at": "2026-09-15T08:53:25.000Z",
+      "text": "连载第4集\n在我连发3篇讨伐笔记之后\n以及7000+名网友们的支持下\n这个无良公司的面试官终于破防了\n他作出了回应！是什么？\n竟然是全网拉黑我的账号\n哈哈哈哈\np4是我关注他之前的状态\n（其实他也删掉了其他几十篇宣传tapnow的帖子，这是我周末发第三篇后发现的，他清空笔记只保留了最新那条）",
+      "text_en": "Serial, episode 4\nAfter I posted 3 denunciation notes in a row\nand 7000+ people backed it\nthe interviewer at this rotten company finally broke\nHis response? What was it?\nBlocking me everywhere\nhahaha\np4 is how it looked before I followed him\n(He also deleted dozens of other TapNow promo posts. I noticed after the third note this weekend — he wiped the account down to the latest one)",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSPuFNlakAAnrqY.jpg",
+          "width": 1200,
+          "height": 1600
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSPuFNjaAAAjryn.jpg",
+          "width": 946,
+          "height": 2048
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSPuFNda8AAH0n5.jpg",
+          "width": 946,
+          "height": 2048
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSPuFNma0AA_1Li.jpg",
+          "width": 946,
+          "height": 2048
+        }
+      ],
+      "thread_count": 1
+    },
+    {
+      "id": "2099049526661349595",
+      "url": "https://x.com/therealfreddyx/status/2099049526661349595",
+      "created_at": "2026-09-13T08:16:20.000Z",
+      "text": "前情提要：主播参加深圳添科智能公司又名TapNow的视频创作产品团队的面试，在分别和HR 聊 1 小时、技术负责人一面 90 分钟后惨遭二面 20 分钟无理由挂人，后续联系 HR 已读不回的悲惨被耍猴经历。\n\n截止目前已在小红书获得 6000 次浏览，以及在评论区获得大量网友在同一公司相同经历的共鸣，感谢诸位支持。因为没有技术社区 V站账号，暂且以这里为主阵地，如果有自愿帮忙转贴到 V 站的小伙伴请联系我。\n\n故事已经来到第3 集，是时候公开一些细节图来实锤这团队负责人招聘的真实心理过程。P4 P5 是腾讯会议的时间线。分别是上午 11 点-12 点一面，实际到 12 点半结束用时 90 分钟。紧着者 HR 约面下午 3 点，用时 20 分钟结束被无理由挂。\n\n我立刻去找 HR 问面试反馈，聊天记录在 P1\n几乎是在同一分钟内 HR 就回复最后一段话「没事，每次面试都是一次经验」意思就是你面试没通过，但不好意思我们不解释理由。\n\n重点来了，为什么在一分钟内就确定面试结果？甚至都不需要去询问二面面试官。真相是：HR 是一位伟大的先知，他能预知未来，在面试开始前就已经知道我必然会挂的结果。\n\n让我们来做一个沙盘推演。一面技术负责人在过程中觉得这位候选人还算有点意思，为了深挖技术细节让我共享屏幕来演示，不知不觉时间超过约定时间 30 分钟才结束。实际上团队内部并没有合适的岗位，或者从头到尾都没想招人，但面试官又觉得他给我释放出了明显的可继续推进的信号（他主动跟我说约下轮面试），由于要维护自己的光辉形象不能食言，就决定出一记损招。\n\n让手下两个小弟来当恶人，说「你们二面就随便对付一下，随便找个理由挂了他」。果不其然，二面假笑哥双人组合上线，连会议室都愿意去，直接在人来人往的工位开视频。可见这就是一场注定没有结果的开始。\n\n当然二面开始前，HR 也已经知道负责人的意思了，也就配合走一下过场演演戏。不然怎么解释结束后 1 分钟内就给我发明确拒绝信息，之后已读不回不想负责任当甩手掌柜呢？\n\n基于以上种种，始作俑者是这个技术负责人，他可太坏了明面一套背后一套，你要是不浪费我 90 分钟而直接一面挂我，那我确实要感谢你的真实。但你偏要当伪君子，维持表面风光人设，选择把小弟推出来当背锅恶人，明摆着你就是个逃避型人格，叠加自恋 NPD 属性\n\n于是让我还没入职，就感受到贵司几乎和大厂如出一辙的团队文化，也就是说上午可以和你称兄道弟一口一个家人，下午因为你要离职或者触发了共同利益就纷纷做出切割动作，再也熟悉不过了。你们 HR 不就是在这种文化感染下，做出明智的切割行为吗？已读不回，生怕多打一个字就会被公司开除。",
+      "text_en": "Previously: I interviewed with Shenzhen Tianke Intelligent, also known as TapNow, on their video-creation product team. After 1 hour with HR and 90 minutes with the tech lead, I got a 20-minute second round and was rejected with no reason. Then HR read and never replied — a miserable get-strung-along.\n\nSo far 6000 views on Xiaohongshu, and a lot of comments from people with the same experience at the same company. Thanks for the support. I don't have a V2EX account, so this is the main base for now. If someone wants to cross-post to V2EX, contact me.\n\nWe're at episode 3. Time to show some detail screenshots that nail the hiring psychology of this team's lead. P4 P5 are the Tencent Meeting timeline. Round 1 11:00–12:00, actually ended 12:30, 90 minutes. Then HR booked 3pm, 20 minutes, rejected with no reason.\n\nI immediately asked HR for feedback. Chat in P1\nAlmost in the same minute HR sent the last line 「It's fine, every interview is experience」 meaning you didn't pass, but sorry, we won't explain.\n\nHere's the point. How was the result locked in within a minute? They didn't even need to ask the second-round interviewers. The truth: HR is a great prophet. He can see the future. He already knew I'd fail before it started.\n\nLet's run a sandbox. In round 1 the tech lead found the candidate somewhat interesting, had me share screen to go deeper, and went 30 minutes over. Internally there was no real seat, or they never meant to hire, but he'd already given me a clear we'll-continue signal (he offered the next round himself). To keep the glowing image he couldn't go back on it, so he pulled a dirty move.\n\nHave two juniors play the villains: 「just deal with round 2, hang him for any reason」. Sure enough, the fake-smile duo showed up, wouldn't even take a meeting room, took the video at a busy desk. You can see it was a start with no possible ending.\n\nAnd before round 2, HR already knew the lead's intent, so they walked the scene. How else do you explain a clear reject within a minute of hanging up, then read-and-ignore, no responsibility, hands off?\n\nFrom all of that, the author is this tech lead. He's rotten — one face in front, another behind. If you hadn't wasted my 90 minutes and just failed me in round 1, I'd actually thank you for being real. Instead you play the hypocrite, keep the shiny persona, push juniors out as the villains. Avoidant personality plus narcissistic NPD, obviously\n\nSo before I even joined I felt a team culture almost identical to big tech: in the morning you're brothers, family; in the afternoon, if you're leaving or you hit a shared interest, everyone cuts. All too familiar. Isn't that the culture your HR caught, making the wise cut? Read and ignore, terrified one extra word gets them fired.",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSFSUhwbsAEUXw-.jpg",
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSFSUhpaUAAqRsX.jpg",
+          "width": 910,
+          "height": 2023
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSFSUhsaAAA-GSu.jpg",
+          "width": 922,
+          "height": 2048
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSFSfDAbEAAOvZI.jpg",
+          "width": 758,
+          "height": 1349
+        },
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HSFSgshaEAENpMe.jpg",
+          "width": 758,
+          "height": 1349
+        }
+      ],
+      "thread_count": 2
+    },
+    {
+      "id": "2098659187429654614",
+      "url": "https://x.com/therealfreddyx/status/2098659187429654614",
+      "created_at": "2026-09-12T06:25:16.000Z",
+      "text": "产品定位是：\n为热爱创新的用户打造的一站式快速/低成本/灵活/自由的一站式创意工坊\n\n举例：\n帮助用户打造3d 可视化、游戏、remotion、视觉效果惊艳的引流潮流的创意产品，而非传统web产品（电商/博客之类）\n模板、skills、工具都是协助用户更好完成创意产出的手段 https://x.com/therealfreddyx/status/2098198150934823359",
+      "text_en": "Product positioning:\na one-stop fast / low-cost / flexible / free creative workshop for people who love to invent\n\nExample:\nhelp users make 3D viz, games, Remotion, visually stunning, traffic-y creative products — not traditional web (e-commerce / blogs and the like)\nTemplates, skills, tools are all means to help users finish the creative output https://x.com/therealfreddyx/status/2098198150934823359",
+      "urls": [
+        "https://x.com/therealfreddyx/status/2098198150934823359"
+      ],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2098435361328554167",
+      "url": "https://x.com/therealfreddyx/status/2098435361328554167",
+      "created_at": "2026-09-11T15:35:51.000Z",
+      "text": "最新情报：网友反馈第一篇被删了\n其实是小红书在不做任何告知的情况下隐藏了该帖子\n静观其变 https://x.com/therealfreddyx/status/2098384530294149342",
+      "text_en": "Latest: someone said the first post was deleted\nActually Xiaohongshu hid it with no notice\nWatch and wait https://x.com/therealfreddyx/status/2098384530294149342",
+      "urls": [
+        "https://x.com/therealfreddyx/status/2098384530294149342"
+      ],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HR8jsiFa4AEcatl.jpg",
+          "width": 946,
+          "height": 2048
+        }
+      ],
+      "thread_count": 1
+    },
+    {
+      "id": "2098384530294149342",
+      "url": "https://x.com/therealfreddyx/status/2098384530294149342",
+      "created_at": "2026-09-11T12:13:52.000Z",
+      "text": "不发不知道一发吓一跳，我以为我的面试过程已经很离奇了，谁曾想评论区不少网友现身说法，纷纷表示也受到了这家公司文化的洗礼。主包也就难过内耗了一天，感谢这么多朋友支持让俺的心脏不疼了，暂时收起告他精神损失费的想法，转为动力去写连载文来揭露这团队的司马昭之心，请听我娓娓道来\n\n从周三面挂了之后主播也是变身老鼠人在家躺了半天平复心情，还抱有一丝丝希望等待他们HR在下班时间之前，给我至少解释一下不通过的原因，结果人家演都不想演了，下午6点后还是已读不回，便彻底死心拉黑删除ta\n\n于是第二天振作起来之后，写了一篇讨贼檄文分别发布在多个社区包括推特等，分别艾特了他们同事、官号以及南风老胡自称是技术负责人。到今天为止两天了，他们依然没有任何表示，还继续在自己账号下发招聘贴热心回复评论区咨询，对我的艾特视而不见。\n\n这说明什么？你们的沉默震耳欲聋啊！这说明不是某个基层工程师或者hr的个人行为，而是彻头彻尾自上而下的企业文化的表现。你们的默许就是赞同。\n\n由此推论TapNow的面试从一开始就是有预谋的，招人是幌子，而是想套行业方案和借机秀优越感。\n\n顺便请教一下，为啥每个同事都在各个社媒平台带着Tapnow的用户名后缀大肆宣扬自己的产品，也许是你们被迫无耐吗？幕后老板要求的？\n\n既然想在社媒平台树立自己的贞节牌坊和光辉形象，还十分高调到各个技术社区去招人，为啥就不怕面试者发你们的避雷贴呢？社媒不是你家开的，我们也能发声，如此低估我们求职者的声音和影响，如果不是脑子进水了这个都想不明白，拿是不是证明你们npd ego优越感已经膨胀出天际了啊",
+      "text_en": "You don't know until you post. I thought my interview was already bizarre — then the comments filled with people saying they'd been baptized by this company's culture too. I spent a day sad and spinning. Thanks to so many friends, my heart doesn't hurt as much. Parking the idea of suing for mental damages for now, turning it into fuel to write a serial that shows what this team is really after. Let me walk you through it\n\nAfter Wednesday's reject I went full rat-person, lay at home half a day to settle, still hoping their HR would at least explain the no before end of day. They didn't even bother acting. After 6pm still read-no-reply, so I gave up, blocked, deleted them\n\nNext day I got up, wrote a denunciation, posted it across communities including Twitter, @ their coworkers, the official account, and Nanfeng Laohu who calls himself the tech lead. Two days later, still nothing. They keep posting hiring notes on their own accounts and cheerfully answering comments, ignoring my @s.\n\nWhat's that. Your silence is deafening. This isn't one junior engineer or one HR acting alone. It's culture, top to bottom. Your tacit OK is agreement.\n\nSo the TapNow interview was premeditated from the start. Hiring was the cover. They wanted to extract industry solutions and show superiority.\n\nAlso, why does every coworker on every social platform wear a TapNow username suffix and push the product. Forced? Boss's order?\n\nIf you want a chastity plaque and a glowing image on social, and you're loud about hiring in every tech community, why aren't you afraid candidates will post warnings? Social isn't your house. We can speak too. Underestimating candidates' voice and impact that badly — if your brain isn't waterlogged you can figure this out. Doesn't that prove the NPD ego superiority has already inflated off the planet",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HR71mgaboAAlFIZ.jpg",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "thread_count": 1
+    },
+    {
+      "id": "2098243369206214718",
+      "url": "https://x.com/therealfreddyx/status/2098243369206214718",
+      "created_at": "2026-09-11T02:52:57.000Z",
+      "text": "有没有人注意到 Github 的成就徽章换了 UI 颜色\n灰色代表银牌🥈看起来跟出 Bug 一样好丑啊\n黄色那个是铜牌🥉还能看的过去\n之前都是彩色的不区分等级",
+      "text_en": "Anyone notice GitHub achievement badges changed UI colors\nGray for silver 🥈 looks like a bug, ugly\nYellow for bronze 🥉 is passable\nThey used to be colored with no rank split",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HR5031WbwAANo0Y.jpg",
+          "width": 2048,
+          "height": 1379
+        }
+      ],
+      "thread_count": 1
+    },
+    {
+      "id": "2098198150934823359",
+      "url": "https://x.com/therealfreddyx/status/2098198150934823359",
+      "created_at": "2026-09-10T23:53:16.000Z",
+      "text": "打算给babylovable改个正式名字\ntriple\ntriply\ntriple-i\ninvent & innovative & interesting\nTripleIn\nBuild-In\nBuildin\nBuild3\ninBuilder\noutventor\nEdgeBuilder\nLetsBuild\nFireBuilder\nStarBuilder\niBuilder",
+      "text_en": "Thinking of a real name for babylovable\ntriple\ntriply\ntriple-i\ninvent & innovative & interesting\nTripleIn\nBuild-In\nBuildin\nBuild3\ninBuilder\noutventor\nEdgeBuilder\nLetsBuild\nFireBuilder\nStarBuilder\niBuilder",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2097922080197284045",
+      "url": "https://x.com/therealfreddyx/status/2097922080197284045",
+      "created_at": "2026-09-10T05:36:16.000Z",
+      "text": "展开说说\n背景：双非本 毕业7年 全栈开发经验5年\n\n1️⃣流程超快：周一上午在小红书投简历给他们同事，下午接到hr电话沟通接近1小时。周三上午一面和技术负责人聊了90分钟，紧接着下午3点二面被两个无名小子20分钟挂，之后问HR反馈已读不回装死人\n\n2️⃣给够情绪价值：二面假笑哥全程面带耐人寻味的笑容😊给你宾至如归的感觉，而且还有一位哥在旁不说话纯来观看猴子表演给你撑场子，表达对候选人的重视。两位哥都开着摄像头在工位，特意不去会议室，让你提前感受过道人来人往的热闹氛围\n\n3️⃣包容性超好：简历写的是ai应用全栈开发，给你问ai infra关于沙盒资源如何用k8s调度，以及向你科普沙盒的多种隔离级别。受教颇多，感谢二面微笑哥的指点，听君一席话胜读十年书，感谢你在我不擅长的领域进行无私教学\n\n4️⃣组织架构非常扁平化：技术负责好像还是kol在技术社区挺活跃的一直发招人帖子，可能是@islaohu 吧？一面90分钟感觉有戏。但二面为什么安排更低级别的工程师来面，还是两个，这不是体验组织的扁平化难道是什么呀？基层工程师有一票否决权，在tapnow工作一定特别有owner意识和成就感啦",
+      "text_en": "Let me unpack it\nBackground: non-elite undergrad, 7 years out, 5 years full-stack\n\n1️⃣ Process is blazing: Monday morning I sent a resume on Xiaohongshu to one of their coworkers, afternoon HR called for almost an hour. Wednesday morning round 1 with the tech lead, 90 minutes, then 3pm round 2, two nameless guys, 20 minutes, hung. Asked HR for feedback — read, no reply, playing dead\n\n2️⃣ Emotional value: round-2 fake-smile guy wore a meaningful 😊 the whole time, made you feel at home, plus another guy who said nothing, just watched the monkey show to hold the space, to show they value the candidate. Both on camera at their desks, specifically not a meeting room, so you can feel the busy hallway early\n\n3️⃣ Super inclusive: resume said AI-app full-stack, they asked AI infra about scheduling sandbox resources with k8s, and lectured me on isolation levels. Learned a lot, thanks round-2 smile guy, one talk from you beats ten years of books, thanks for the unpaid teaching in a domain I'm not strong in\n\n4️⃣ Extremely flat org: the tech lead seems to be a KOL who's been posting hiring notes in tech communities, maybe @islaohu? Round 1, 90 minutes, felt like it might work. Then why put lower-level engineers on round 2, and two of them — if that's not experiencing a flat org, what is? Junior engineers have veto power. Working at TapNow must be so owner-y and fulfilling",
+      "urls": [],
+      "media": [
+        {
+          "type": "photo",
+          "url": "https://pbs.twimg.com/media/HR1Q02RbgAA_Vi-.jpg",
+          "width": 1200,
+          "height": 1600
+        }
+      ],
+      "thread_count": 1
+    },
+    {
+      "id": "2097707814986899525",
+      "url": "https://x.com/therealfreddyx/status/2097707814986899525",
+      "created_at": "2026-09-09T15:24:51.000Z",
+      "text": "baby lovable 开源项目的变现思路\n想到一个：提供商业授权版\n核心区别是提供完全可控的 infra 层\n不依赖云服务能力\n支持完全自建\n借助开源的 daytona / supabase / workflow 等组件\n提供打包/部署/维护等一站式交付能力\n售价 10 万元起",
+      "text_en": "A monetization idea for the baby lovable open-source project\nOne: a commercial licensed edition\nThe core difference is a fully controllable infra layer\nno cloud-service dependency\nfull self-hosting\nusing open-source Daytona / Supabase / workflow pieces\none-stop pack / deploy / maintain\nstarting at 100,000 RMB",
+      "urls": [],
+      "media": [],
+      "thread_count": 1
+    },
+    {
+      "id": "2097369943197306947",
+      "url": "https://x.com/therealfreddyx/status/2097369943197306947",
+      "created_at": "2026-09-08T17:02:16.000Z",
+      "text": "https://x.ai/bot Grok Bot 官网前端动效体验非常丝滑，有空复刻一下",
+      "text_en": "https://x.ai/bot Grok Bot's official frontend motion is extremely smooth. Recreate it when I have time",
+      "urls": [
+        "https://x.ai/bot"
+      ],
+      "media": [],
+      "thread_count": 1
+    },
     {
       "id": "2097041655748813120",
       "url": "https://x.com/therealfreddyx/status/2097041655748813120",
